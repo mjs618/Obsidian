@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d071454db065726d",
+        "id": "ee8cc6df0f95cd5b",
         "type": "tabs",
         "children": [
           {
-            "id": "6d40590d6029ec2a",
+            "id": "c6f77ca0735bdc0f",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -175,11 +175,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "85d32b011e2472e9",
+  "active": "c6f77ca0735bdc0f",
   "lastOpenFiles": [
+    "模版/模版图标.md",
     "conflict-files-obsidian-git.md",
     "技术笔记/🌱 环境管理最佳实践（conda + pip）.md",
-    "模版/模版图标.md",
     "模版",
     "技术笔记/Git 常用命令与常见问题处理.md",
     "技术笔记/🚀 conda 常用命令速查表.md",
