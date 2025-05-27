@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "bc661ac37ad8b3df",
+        "id": "727cb347cb267d5c",
         "type": "tabs",
         "children": [
           {
-            "id": "5b8e0103e2a3ea4e",
+            "id": "88620a7668ec53b3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "技术笔记/🐳 Docker 命令速查表.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "🐳 Docker 命令速查表"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Conda",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -175,18 +179,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2ce4a5b4ac118426",
+  "active": "88620a7668ec53b3",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "模版/模版图标.md",
+    "技术笔记/🐳 Docker 命令速查表.md",
+    "技术笔记/Git 常用命令与常见问题处理.md",
+    "技术笔记/Obsidian 数据同步.md",
+    "conflict-files-obsidian-git.md",
+    "技术笔记/🚀 pip 常用命令速查表.md",
+    "技术笔记/🚀 conda 常用命令速查表.md",
     "技术笔记/🌱 环境管理最佳实践（conda + pip）.md",
     "模版",
-    "技术笔记/Git 常用命令与常见问题处理.md",
-    "技术笔记/🚀 conda 常用命令速查表.md",
-    "技术笔记/🚀 pip 常用命令速查表.md",
-    "技术笔记/Conda 包管理工具使用指南.md",
-    "技术笔记/Obsidian 数据同步.md",
     "README.md",
+    "技术笔记/Conda 包管理工具使用指南.md",
     "技术笔记"
   ]
 }
