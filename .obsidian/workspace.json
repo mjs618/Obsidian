@@ -4,25 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "893ed888874a685d",
+        "id": "a55db301427f997d",
         "type": "tabs",
         "children": [
           {
-            "id": "1799edc3bae430bf",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: workspace.json"
-            }
-          },
-          {
-            "id": "ae722df2b760b85c",
+            "id": "b9d3bb63752df3d2",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -34,51 +20,8 @@
               "icon": "lucide-file",
               "title": "🌱 环境管理最佳实践（conda + pip）"
             }
-          },
-          {
-            "id": "f9c416a3379de138",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: workspace.json"
-            }
-          },
-          {
-            "id": "aae228122e2ea831",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: workspace.json"
-            }
-          },
-          {
-            "id": "43875f9b00244005",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "conflict-files-obsidian-git.md",
-                "bFile": "conflict-files-obsidian-git.md",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: conflict-files-obsidian-git"
-            }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -236,7 +179,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "43875f9b00244005",
+  "active": "b9d3bb63752df3d2",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
     "技术笔记/🌱 环境管理最佳实践（conda + pip）.md",
