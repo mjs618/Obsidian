@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "557be023b4877968",
+    "id": "c09607c170e064aa",
     "type": "split",
     "children": [
       {
-        "id": "bc661ac37ad8b3df",
+        "id": "9cffb16c2176042c",
         "type": "tabs",
         "children": [
           {
-            "id": "5b8e0103e2a3ea4e",
+            "id": "9e76c58c36b49928",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
+                "file": "技术笔记/🐳 Docker 命令速查表.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: workspace.json"
+              "icon": "lucide-file",
+              "title": "🐳 Docker 命令速查表"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "043abbcd63c3f875",
+    "id": "47f2695e8f8fbc76",
     "type": "split",
     "children": [
       {
-        "id": "e3d9acc91da8c4dc",
+        "id": "db1fd76521583a64",
         "type": "tabs",
         "children": [
           {
-            "id": "2ce4a5b4ac118426",
+            "id": "e8323d04286c001c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,12 +48,12 @@
             }
           },
           {
-            "id": "f0945fbf47f8afaa",
+            "id": "08045a9efb6186f9",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Conda",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,7 @@
             }
           },
           {
-            "id": "9473ff55c0021db0",
+            "id": "77e0a7b0a8ca4da6",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -81,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "261c9ffabd6cbe8d",
+    "id": "7c6b47aca4218c50",
     "type": "split",
     "children": [
       {
-        "id": "58cb69320aa4c875",
+        "id": "83576d33f01f991d",
         "type": "tabs",
         "children": [
           {
-            "id": "f574282906ebd956",
+            "id": "bf321c1c8117930d",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "技术笔记/🐳 Docker 命令速查表.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "README 的反向链接列表"
+              "title": "🐳 Docker 命令速查表 的反向链接列表"
             }
           },
           {
-            "id": "ea736654eb39e9e2",
+            "id": "29b46e94a864c290",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "技术笔记/🐳 Docker 命令速查表.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "README 的出链列表"
+              "title": "🐳 Docker 命令速查表 的出链列表"
             }
           },
           {
-            "id": "0c3218924f6b7b76",
+            "id": "0a8528f6c749293e",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,22 +137,22 @@
             }
           },
           {
-            "id": "51f198824fb510b6",
+            "id": "c39f96c03b24f151",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "技术笔记/🐳 Docker 命令速查表.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README 的大纲"
+              "title": "🐳 Docker 命令速查表 的大纲"
             }
           },
           {
-            "id": "85d32b011e2472e9",
+            "id": "e529ad7aa4aec98b",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -179,19 +179,8 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "85d32b011e2472e9",
+  "active": "9e76c58c36b49928",
   "lastOpenFiles": [
-    "技术笔记/🐳 Docker 命令速查表.md",
-    "conflict-files-obsidian-git.md",
-    "模版/模版图标.md",
-    "技术笔记/🌱 环境管理最佳实践（conda + pip）.md",
-    "模版",
-    "技术笔记/Git 常用命令与常见问题处理.md",
-    "技术笔记/🚀 conda 常用命令速查表.md",
-    "技术笔记/🚀 pip 常用命令速查表.md",
-    "技术笔记/Conda 包管理工具使用指南.md",
-    "技术笔记/Obsidian 数据同步.md",
-    "README.md",
-    "技术笔记"
+    "技术笔记/🌱 环境管理最佳实践（conda + pip）.md"
   ]
 }
