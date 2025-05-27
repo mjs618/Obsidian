@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f4be554f01897227",
+        "id": "bc661ac37ad8b3df",
         "type": "tabs",
         "children": [
           {
-            "id": "a554966819bd24fc",
+            "id": "5b8e0103e2a3ea4e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Conda",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -175,18 +175,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "85d32b011e2472e9",
+  "active": "2ce4a5b4ac118426",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
-    "技术笔记/Git 常用命令与常见问题处理.md",
     "模版/模版图标.md",
-    "技术笔记/Obsidian 数据同步.md",
-    "技术笔记/🚀 pip 常用命令速查表.md",
-    "技术笔记/🚀 conda 常用命令速查表.md",
     "技术笔记/🌱 环境管理最佳实践（conda + pip）.md",
     "模版",
-    "README.md",
+    "技术笔记/Git 常用命令与常见问题处理.md",
+    "技术笔记/🚀 conda 常用命令速查表.md",
+    "技术笔记/🚀 pip 常用命令速查表.md",
     "技术笔记/Conda 包管理工具使用指南.md",
+    "技术笔记/Obsidian 数据同步.md",
+    "README.md",
     "技术笔记"
   ]
 }
