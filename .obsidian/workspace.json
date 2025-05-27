@@ -4,20 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "ee8cc6df0f95cd5b",
+        "id": "71e057185a1ba56a",
         "type": "tabs",
         "children": [
           {
-            "id": "c6f77ca0735bdc0f",
+            "id": "2ad7d761b21ab031",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "split-diff-view",
+              "state": {
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: workspace.json"
+            }
+          },
+          {
+            "id": "9380095f25df33e6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "conflict-files-obsidian-git"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -175,10 +194,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c6f77ca0735bdc0f",
+  "active": "9380095f25df33e6",
   "lastOpenFiles": [
-    "模版/模版图标.md",
     "conflict-files-obsidian-git.md",
+    "模版/模版图标.md",
     "技术笔记/🌱 环境管理最佳实践（conda + pip）.md",
     "模版",
     "技术笔记/Git 常用命令与常见问题处理.md",
