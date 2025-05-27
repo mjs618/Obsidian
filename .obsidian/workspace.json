@@ -62,9 +62,65 @@
               "icon": "lucide-file",
               "title": "模版图标"
             }
+          },
+          {
+            "id": "cad88213a40f139a",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: workspace.json"
+            }
+          },
+          {
+            "id": "96344afe02c6096d",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: workspace.json"
+            }
+          },
+          {
+            "id": "d0005a8143279f21",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "conflict-files-obsidian-git.md",
+                "bFile": "conflict-files-obsidian-git.md",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: conflict-files-obsidian-git"
+            }
+          },
+          {
+            "id": "32842581da030473",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "conflict-files-obsidian-git.md",
+                "bFile": "conflict-files-obsidian-git.md",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: conflict-files-obsidian-git"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -222,18 +278,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a96b70b50b457cd4",
+  "active": "32842581da030473",
   "lastOpenFiles": [
-    "技术笔记/Git 常用命令与常见问题处理.md",
+    "conflict-files-obsidian-git.md",
+    "技术笔记/Obsidian 数据同步.md",
     "模版/模版图标.md",
+    "技术笔记/Git 常用命令与常见问题处理.md",
     "技术笔记/🚀 pip 常用命令速查表.md",
     "技术笔记/🚀 conda 常用命令速查表.md",
     "技术笔记/🌱 环境管理最佳实践（conda + pip）.md",
     "模版",
     "README.md",
-    "技术笔记/Obsidian 数据同步.md",
     "技术笔记/Conda 包管理工具使用指南.md",
-    "conflict-files-obsidian-git.md",
     "技术笔记"
   ]
 }
