@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git 常用命令与常见问题处理.md",
+                "file": "技术笔记/Git 常用命令与常见问题处理.md",
                 "mode": "source",
                 "source": true
               },
@@ -33,7 +33,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git 常用命令与常见问题处理.md",
+                "file": "技术笔记/Git 常用命令与常见问题处理.md",
                 "mode": "preview",
                 "source": false
               },
@@ -199,10 +199,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "25ba13854ce7a055",
+  "active": "2ce4a5b4ac118426",
   "lastOpenFiles": [
     "技术笔记/Conda 包管理工具使用指南.md",
-    "Git 常用命令与常见问题处理.md",
+    "技术笔记/Git 常用命令与常见问题处理.md",
     "技术笔记/Obsidian 数据同步.md",
     "conflict-files-obsidian-git.md",
     "README.md",
