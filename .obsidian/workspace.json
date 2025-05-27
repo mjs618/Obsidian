@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c39ac24783bd6d31",
+        "id": "a7ce7440035653f7",
         "type": "tabs",
         "children": [
           {
-            "id": "f85eadb7a23c5417",
+            "id": "1008bcb477038ad8",
             "type": "leaf",
             "state": {
               "type": "split-diff-view",
@@ -181,9 +181,9 @@
   },
   "active": "85d32b011e2472e9",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
     "技术笔记/Git 常用命令与常见问题处理.md",
     "模版/模版图标.md",
-    "conflict-files-obsidian-git.md",
     "技术笔记/Obsidian 数据同步.md",
     "技术笔记/🚀 pip 常用命令速查表.md",
     "技术笔记/🚀 conda 常用命令速查表.md",
