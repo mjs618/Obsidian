@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "53e7c023fdbfd6e0",
+        "id": "006a50b063a42939",
         "type": "tabs",
         "children": [
           {
-            "id": "7a26c8d52a260fad",
+            "id": "e23fc3b3e7f182fc",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: workspace.json"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -179,8 +175,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7a26c8d52a260fad",
+  "active": "85d32b011e2472e9",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "技术笔记/Git 常用命令与常见问题处理.md",
     "技术笔记/Obsidian 数据同步.md",
     "技术笔记/Conda 包管理工具使用指南.md",
     "技术笔记",
