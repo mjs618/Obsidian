@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9d18f1cdc0f0be7c",
+        "id": "53e7c023fdbfd6e0",
         "type": "tabs",
         "children": [
           {
-            "id": "cd48a2650eee3a8e",
+            "id": "7a26c8d52a260fad",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "技术笔记/Conda 包管理工具使用指南.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Conda 包管理工具使用指南"
             }
           }
         ]
@@ -175,11 +179,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cd48a2650eee3a8e",
+  "active": "7a26c8d52a260fad",
   "lastOpenFiles": [
     "技术笔记/Obsidian 数据同步.md",
     "技术笔记/Conda 包管理工具使用指南.md",
-    "README.md",
-    "技术笔记"
+    "技术笔记",
+    "README.md"
   ]
 }
