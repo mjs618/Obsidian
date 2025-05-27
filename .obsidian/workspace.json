@@ -4,39 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "71e057185a1ba56a",
+        "id": "bc661ac37ad8b3df",
         "type": "tabs",
         "children": [
           {
-            "id": "2ad7d761b21ab031",
+            "id": "5b8e0103e2a3ea4e",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: workspace.json"
-            }
-          },
-          {
-            "id": "9380095f25df33e6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
+              "title": "新标签页"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -194,7 +175,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9380095f25df33e6",
+  "active": "2ce4a5b4ac118426",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
     "模版/模版图标.md",
