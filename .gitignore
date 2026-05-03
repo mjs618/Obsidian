@@ -1,0 +1,21 @@
+# OS and editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Local worktrees and scratch output
+.worktrees/
+worktrees/
+local-reports/
+*.log
+
+# Obsidian local UI/cache churn
+.obsidian/cache/
+.obsidian/workspace*.json
+
+# Keep Markdown notes, images, plugin manifests, and vault content tracked.
