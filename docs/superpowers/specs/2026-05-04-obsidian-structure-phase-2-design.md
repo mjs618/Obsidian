@@ -95,8 +95,8 @@ Move existing content without changing note bodies first:
 
 Then update affected links:
 
-- `[[AI学习/00-索引]]` -> `[[20-AI/AI学习/00-索引]]`
-- `[[AI日记/00-索引]]` -> `[[20-AI/AI日记/00-索引]]`
+- `[[20-AI/AI学习/00-索引]]` -> `[[20-AI/AI学习/00-索引]]`
+- `[[20-AI/AI日记/00-索引]]` -> `[[20-AI/AI日记/00-索引]]`
 - Any AI diary topic links should stay relative by basename where they already resolve, or use the new full path when needed.
 
 The AI diary automation should no longer fall back to the old `E:\Obsidian\AI日记` path after the migration. Its project directory should be fixed to `E:\Obsidian\20-AI\AI日记`.
