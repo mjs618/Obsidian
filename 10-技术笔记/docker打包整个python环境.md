@@ -1,3 +1,15 @@
+---
+type: 笔记
+domain: 技术
+status: 进行中
+tags:
+  - 领域/技术
+  - 类型/笔记
+  - Docker
+---
+
+# Docker 打包整个 Python 环境
+
 所需准备素材：
 - 源代码
 - dockerdesktop
