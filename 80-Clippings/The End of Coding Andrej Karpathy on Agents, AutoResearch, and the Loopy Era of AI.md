@@ -30,6 +30,19 @@ What happens when AI agents can design experiments, collect data, and improve �
 1:00:59 MicroGPT and Agentic Education  
 1:05:40 Conclusion
 
+## 快速摘要
+
+- 这篇笔记解决什么问题：记录 Karpathy 对编码代理、AutoResearch、AI 时代技能和教育形态的判断。
+- 最有用的结论：人的瓶颈从“写代码”转向“拆任务、写指令、并行调度代理、验收结果”。
+- 后续复用场景：设计代理工作流、编写给代理看的项目说明、改造知识库入口和任务页。
+
+## 相关入口
+
+- [[80-Clippings/00-索引]]
+- [[80-Clippings/剪藏处理台]]
+- [[20-AI/AI日记/Topics/00-AI主题地图]]
+- [[40-知识库/知识库核心知识与构建方法总结]]
+
 ## 提炼观点
 
 1. 编程正在从“写代码”转向“表达意图并调度代理”。Karpathy 认为工程师的默认工作流已经明显改变，人的瓶颈从打字速度转向任务拆分、指令质量、并行调度和验收能力。
@@ -48,6 +61,12 @@ What happens when AI agents can design experiments, collect data, and improve �
 - [[20-AI/AI日记/Topics/Anthropic]]
 - [[40-知识库/知识库核心知识与构建方法总结]]
 - [[00-管理/知识库治理规范]]
+
+## 后续动作
+
+- 将“代理工作流”沉淀为 AI 主题地图中的长期观察点。
+- 将“写给代理的知识库”纳入知识库治理规范的维护原则。
+- 后续如果继续跟踪 AutoResearch，可单独建立主题页，不在原始剪藏中继续堆叠。
 
 ## Transcript
 
