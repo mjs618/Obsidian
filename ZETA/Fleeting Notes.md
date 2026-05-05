@@ -32,6 +32,29 @@ tags:
 >
 > 适合快速记录一个想法。
 
+## 快速捕获
+
+- 使用命令面板运行 `QuickAdd: Create Fleeting Note`。
+- 标题用一句话命名，例如 `AI 是认知训练器`。
+- 新笔记会保存到 [[ZETA/FLEETING]]。
+- 正文只写原始想法、触发来源和一个下一步，不在这里展开长文。
+
+## 每日记录建议
+
+- 当天一闪而过的想法：先写进今日笔记。
+- 超过 3 句话或值得回看的想法：新建一条 Fleeting Note。
+- 已经能行动：转入项目。
+- 已经形成判断：转入 Permanent Note。
+
+## 已捕获想法
+
+```dataview
+table dateformat(file.mtime, "yyyy-MM-dd HH:mm") as "更新", status as "状态"
+from "ZETA/FLEETING"
+sort file.mtime desc
+limit 20
+```
+
 ## 分拣动作
 
 - 能推进项目：移到 [[PARA/Projects]] 或项目页。
