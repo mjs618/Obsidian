@@ -36,7 +36,7 @@ tags:
 
 - 使用命令面板运行 `QuickAdd: Create Fleeting Note`。
 - 标题用一句话命名，例如 `AI 是认知训练器`。
-- 新笔记会保存到 [[ZETA/FLEETING]]。
+- 新笔记会保存到 `ZETA/FLEETING`。
 - 正文只写原始想法、触发来源和一个下一步，不在这里展开长文。
 
 ## 每日记录建议

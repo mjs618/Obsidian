@@ -109,7 +109,7 @@
           "folder": {
             "enabled": true,
             "folders": [
-              "PARA/WORKSTATION"
+              "30-工作/项目"
             ],
             "chooseWhenCreatingNote": false,
             "createInSameFolderAsActiveFile": false,
@@ -176,7 +176,7 @@
           "folder": {
             "enabled": true,
             "folders": [
-              "PARA/RESOURCES/DOCUMENTATIONS"
+              "70-数据资料"
             ],
             "chooseWhenCreatingNote": false,
             "createInSameFolderAsActiveFile": false,
@@ -284,12 +284,12 @@
           "templatePath": "SYSTEM/TEMPLATE/FORMAT/template_project.md",
           "fileNameFormat": {
             "enabled": true,
-            "format": "1. {{VALUE}}"
+            "format": "{{VALUE}}"
           },
           "folder": {
             "enabled": true,
             "folders": [
-              "PARA/PROJECTS/{{VALUE}}"
+              "30-工作/项目"
             ],
             "chooseWhenCreatingNote": false,
             "createInSameFolderAsActiveFile": false,
@@ -423,7 +423,7 @@
           "folder": {
             "enabled": true,
             "folders": [
-              "PARA/RESOURCES/MEETINGS/GENERAL"
+              "30-工作/会议记录"
             ],
             "chooseWhenCreatingNote": false,
             "createInSameFolderAsActiveFile": false,
@@ -453,7 +453,7 @@
           "folder": {
             "enabled": true,
             "folders": [
-              "PARA/RESOURCES/MEETINGS/TEAM"
+              "30-工作/会议记录"
             ],
             "chooseWhenCreatingNote": false,
             "createInSameFolderAsActiveFile": false,
@@ -483,7 +483,7 @@
           "folder": {
             "enabled": true,
             "folders": [
-              "PARA/RESOURCES/MEETINGS/STANDUP"
+              "30-工作/会议记录"
             ],
             "chooseWhenCreatingNote": false,
             "createInSameFolderAsActiveFile": false,

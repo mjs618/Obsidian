@@ -15,7 +15,7 @@
   "enable_folder_templates": true,
   "folder_templates": [
     {
-      "folder": "PARA/PROJECTS",
+      "folder": "30-工作/项目",
       "template": "SYSTEM/TEMPLATE/FORMAT/template_project_note.md"
     },
     {
@@ -27,23 +27,23 @@
       "template": "SYSTEM/TEMPLATE/FORMAT/template_contact.md"
     },
     {
-      "folder": "PARA/RESOURCES/DOCUMENTATIONS",
+      "folder": "70-数据资料",
       "template": "SYSTEM/TEMPLATE/FORMAT/template_documentation_note.md"
     },
     {
-      "folder": "PARA/RESOURCES/MEETINGS/GENERAL",
+      "folder": "30-工作/会议记录",
       "template": "SYSTEM/TEMPLATE/FORMAT/template_meeting_general.md"
     },
     {
-      "folder": "PARA/RESOURCES/MEETINGS/TEAM",
+      "folder": "30-工作/会议记录",
       "template": "SYSTEM/TEMPLATE/FORMAT/template_meeting_team.md"
     },
     {
-      "folder": "PARA/RESOURCES/MEETINGS/STANDUP",
+      "folder": "30-工作/会议记录",
       "template": "SYSTEM/TEMPLATE/FORMAT/template_meeting_standup.md"
     },
     {
-      "folder": "PARA/WORKSTATION",
+      "folder": "30-工作/项目",
       "template": "SYSTEM/TEMPLATE/FORMAT/template_workstation_note.md"
     },
     {
