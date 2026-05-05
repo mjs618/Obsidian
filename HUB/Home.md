@@ -21,7 +21,7 @@ tags:
 
 > [!dusk-hero]
 > **知识工作台**
-> 捕获 · 项目 · 任务 · 沉淀
+> 唯一日常入口 · 捕获 · 项目 · 任务 · 沉淀
 
 > [!dusk-actions]
 > `BUTTON[open_moc]` `BUTTON[open_daily_note]` `BUTTON[create_new_note]` `BUTTON[quick_switcher]` `BUTTON[open_inbox]`
@@ -31,7 +31,7 @@ tags:
 >
 > `BUTTON[quick_switcher]` `BUTTON[recent_files]`
 >
-> [[HUB/Map|知识地图]] · [[HUB/Inbox|收件箱]] · [[PARA/Projects|项目]]
+> [[HUB/Map|知识地图]] · [[HUB/Inbox|收件箱]] · [[PARA/Projects|项目]] · [[ZETA/00-ZETA|沉淀]]
 
 > [!dusk-status]+ 库概览
 > ```dataviewjs
@@ -51,7 +51,7 @@ tags:
 > ```
 
 > [!dusk-flow]+ 工作流
-> [[HUB/Inbox|01 捕获]] → [[PARA/Projects|02 推进]] → [[HUB/Tasks|03 整理]] → [[ZETA/00-ZETA|04 沉淀]]
+> [[HUB/Inbox|01 捕获]] → [[PARA/Projects|02 推进]] → [[HUB/Tasks|03 整理]] → [[ZETA/00-ZETA|04 沉淀]] → [[DAILY/00-DAILY|05 复盘]]
 
 > [!dusk-next]+ 下一步
 > ```dataviewjs
@@ -145,7 +145,7 @@ tags:
 > ........................................................................................................................
 
 > [!dusk-map]+ 快速地图
-> [[HUB/Map|地图]] · [[PARA/00-PARA|PARA]] · [[ZETA/00-ZETA|ZETA]] · [[DAILY/00-DAILY|日记]] · [[STICKY/00-STICKY|便签]] · [[SYSTEM/00-SYSTEM|系统]]
+> [[HUB/Map|全库地图]] · [[PARA/00-PARA|PARA]] · [[ZETA/00-ZETA|ZETA]] · [[DAILY/00-DAILY|日记]] · [[STICKY/00-STICKY|便签]] · [[SYSTEM/00-SYSTEM|系统]]
 
 ````tabs
 tab: 工作

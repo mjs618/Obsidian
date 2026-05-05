@@ -12,75 +12,25 @@ tags:
 
 # Obsidian Vault
 
-> [!hero]+ Obsidian Vault
-> **Dusk Knowledge System**
->
-> 日常入口：[[HUB/Home]]。原有中文目录继续作为内容库，新的 HUB / PARA / ZETA / DAILY 只负责导航和工作流。
+> [!info]+ Dusk Knowledge System
+> 日常入口是 [[HUB/Home]]；结构地图是 [[HUB/Map]]。编号目录继续作为长期内容库。
 
-## Start Here
-
-> [!multi-column]
->
-> > [!hub] HUB
-> > [[HUB/Home]]
-> >
-> > 每天从这里开始。
->
-> > [!para] PARA
-> > [[PARA/Projects]]
-> >
-> > 看项目和下一步。
->
-> > [!zeta] ZETA
-> > [[ZETA/00-ZETA]]
-> >
-> > 沉淀知识。
->
-> > [!daily] DAILY
-> > [[DAILY/00-DAILY]]
-> >
-> > 做复盘。
->
-> > [!sticky] STICKY
-> > [[STICKY/00-STICKY]]
-> >
-> > 临时脑暴和草稿。
->
-> > [!system] SYSTEM
-> > [[SYSTEM/00-SYSTEM]]
-> >
-> > 模板、配置、治理。
-
-## Content Library
-
-> [!multi-column]
->
-> > [!system] 管理
-> > [[00-管理/00-管理索引]]
->
-> > [!project] 技术
-> > [[10-技术笔记/00-索引]]
->
-> > [!zeta] AI
-> > [[20-AI/00-索引]]
->
-> > [!project] 工作
-> > [[30-工作/00-索引]]
->
-> > [!system] 知识库
-> > [[40-知识库/00-索引]]
->
-> > [!capture] 思维
-> > [[60-思维笔记/00-索引]]
->
-> > [!zeta] 剪藏
-> > [[80-Clippings/00-索引]]
->
-> > [!task] 未分类
-> > [[未分类/00-索引]]
-
-## 最简单用法
+## 快速开始
 
 1. 打开 [[HUB/Home]]。
-2. 不知道放哪里，就进 [[HUB/Inbox]]。
-3. 每周只整理 [[HUB/Tasks]] 里的 1 项。
+2. 不知道放哪里，先进入 [[HUB/Inbox]]。
+3. 想理解全库结构，打开 [[HUB/Map]]。
+4. 系统治理、标签和模板，从 [[00-管理/00-管理索引]] 进入。
+
+## 两层结构
+
+| 层级 | 目录 | 职责 |
+| --- | --- | --- |
+| 工作流层 | `HUB`、`PARA`、`ZETA`、`DAILY`、`STICKY`、`SYSTEM` | 捕获、行动、沉淀、复盘和系统入口 |
+| 内容库层 | `00-管理` 到 `99-归档`、`Templates`、`未分类` | 长期内容、资料、模板和归档 |
+
+## 维护原则
+
+- 入口只保留少数稳定页面，避免重复导航。
+- 新内容先收集，再分拣、整理、链接和提炼。
+- 历史方案优先归档或降频，不直接删除知识正文。

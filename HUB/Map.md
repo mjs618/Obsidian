@@ -13,14 +13,21 @@ tags:
 # Vault Map
 
 > [!home]+ Dusk Structure
-> 主页负责行动，地图负责理解结构。旧中文目录继续保存内容，新 Dusk 模块负责导航。使用方式见 [[HUB/How to Use]]。
+> [[HUB/Home]] 负责日常行动，本页负责解释全库结构。Dusk 模块是工作流层，编号目录是内容库层。
+
+## 两层结构
+
+| 层级 | 包含目录 | 职责 |
+| --- | --- | --- |
+| 工作流层 | `HUB`、`PARA`、`ZETA`、`DAILY`、`STICKY`、`SYSTEM` | 决定今天从哪里开始、内容如何流动、系统在哪里维护 |
+| 内容库层 | `00-管理`、`10-技术笔记`、`20-AI`、`30-工作`、`40-知识库`、`50-生活`、`60-思维笔记`、`70-数据资料`、`80-Clippings`、`90-Excalidraw`、`99-归档`、`Templates`、`未分类` | 长期保存笔记、资料、模板、项目和归档 |
 
 ## Core Modules
 
 > [!hub] HUB
 > [[HUB/Home]] · [[HUB/Inbox]] · [[HUB/Tasks]]
 >
-> 每天打开的入口层。
+> 每天打开的入口层。`Home` 做行动，`Map` 做结构，`Inbox` 做捕获，`Tasks` 做页面级整理。
 
 > [!para] PARA
 > [[PARA/Projects]] · [[PARA/Areas]] · [[PARA/Resources]] · [[PARA/Archive]]
@@ -45,7 +52,7 @@ tags:
 > [!system] SYSTEM
 > [[SYSTEM/00-SYSTEM]]
 >
-> 模板、配置、治理和后台文档。
+> 模板、配置、治理和后台文档；具体规则仍以 [[00-管理/00-管理索引]] 为准。
 
 ## Flow
 
@@ -69,7 +76,7 @@ flowchart TD
     ZETA --> Permanent[Permanent Notes]
 ```
 
-## Existing Vault Mapping
+## Workflow To Content Mapping
 
 | 模块 | 用途 | 对应现有内容 |
 | --- | --- | --- |
@@ -79,3 +86,14 @@ flowchart TD
 | DAILY | 日/周/月复盘 | 周报、日记模板、月度总结模板 |
 | STICKY | 临时脑暴和草稿 | 未分类、灵感卡片 |
 | SYSTEM | 模板、配置、治理 | `00-管理`、`Templates`、`.obsidian` |
+
+## 从问题进入
+
+| 我现在想做什么 | 入口 | 形成什么 |
+| --- | --- | --- |
+| 快速记一条东西 | [[HUB/Inbox]] | 临时记录或待整理任务 |
+| 推进项目 | [[PARA/Projects]] | 下一步、资料和复盘 |
+| 查技术资料 | [[10-技术笔记/00-索引]] | 命令、场景和踩坑记录 |
+| 跟踪 AI | [[20-AI/AI日记/Topics/00-AI主题地图]] | 主题判断和日报链接 |
+| 整理剪藏 | [[80-Clippings/剪藏处理台]] | 摘要、观点和主题链接 |
+| 检查系统 | [[00-管理/00-管理索引]] | 治理规则、维护清单和审查记录 |
