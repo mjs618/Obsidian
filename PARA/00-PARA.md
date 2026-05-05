@@ -15,6 +15,9 @@ tags:
 > [!home]+ Projects, Areas, Resources, Archive
 > PARA 用来按行动状态组织内容。先判断“这件事是否需要推进”，再决定放在哪里。
 
+> [!info]+ 使用边界
+> PARA 是行动视角，不是新的正文仓库。项目、领域、资料和归档的正文仍优先留在编号目录中。
+
 > [!project] Projects
 > [[PARA/Projects]]
 >
@@ -34,3 +37,12 @@ tags:
 > [[PARA/Archive]]
 >
 > 不活跃但需要保留。
+
+## 快速判断
+
+| 问题 | 去向 |
+| --- | --- |
+| 有明确成果和下一步吗 | [[PARA/Projects]] |
+| 需要长期维护但没有截止日期吗 | [[PARA/Areas]] |
+| 只是资料、来源或参考吗 | [[PARA/Resources]] |
+| 不活跃但仍需保留吗 | [[PARA/Archive]] |

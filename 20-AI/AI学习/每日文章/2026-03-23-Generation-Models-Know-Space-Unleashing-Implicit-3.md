@@ -68,16 +68,16 @@ score: 7.77
 
 ## 关联知识
 
-- [[Video Diffusion Models]]
-- [[Multimodal Large Language Models]]
-- [[3D Scene Understanding]]
-- [[World Models]]
-- [[Neural Radiance Fields (NeRF)]]
-- [[Embodied AI]]
-- [[Latent Diffusion Models]]
-- [[Physical Reasoning in AI]]
-- [[Token Fusion Mechanisms]]
-- [[Few-shot 3D Learning]]
+- Video Diffusion Models
+- Multimodal Large Language Models
+- 3D Scene Understanding
+- World Models
+- Neural Radiance Fields (NeRF)
+- Embodied AI
+- Latent Diffusion Models
+- Physical Reasoning in AI
+- Token Fusion Mechanisms
+- Few-shot 3D Learning
 
 ## 🔗 相关笔记
 

@@ -2,10 +2,10 @@
 title: "The End of Coding: Andrej Karpathy on Agents, AutoResearch, and the Loopy Era of AI"
 source: "https://www.youtube.com/watch?v=kwSVtQ7dziU"
 author:
-  - "[[No Priors: AI]]"
-  - "[[Machine Learning]]"
-  - "[[Tech]]"
-  - "[[& Startups]]"
+  - "No Priors: AI"
+  - "Machine Learning"
+  - "Tech"
+  - "& Startups"
 published: 2026-03-20
 created: 2026-03-24
 description: "Your guide to the AI revolution, co-hosts Elad Gil and Sarah Guo talk to the world's leading engineers, researchers and founders about the biggest questions:..."

@@ -276,7 +276,7 @@ At the top of each long note after frontmatter and title, add compact sections:
 ## 相关入口
 
 - [[HUB/Map]]
-- [[对应主题或项目入口]]
+- 对应主题或项目入口
 ```
 
 - [ ] **Step 2: Improve `sd.md`**

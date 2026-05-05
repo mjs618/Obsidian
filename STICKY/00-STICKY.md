@@ -15,6 +15,9 @@ tags:
 > [!capture]+ Sticky Notes
 > 临时脑暴、草稿和短期想法。内容不长期停留，最终进入 PARA 或 ZETA。
 
+> [!info]+ 边界
+> STICKY 只承载短期草稿。能行动的转 PARA，能沉淀的转 ZETA，失效的清理。
+
 > [!capture] Inbox
 > [[HUB/Inbox]]
 >
@@ -34,3 +37,10 @@ tags:
 > [[Templates/原生模板/💡 灵感卡片模板]]
 >
 > 用于快速记录短想法。
+
+## 清理规则
+
+- 每周检查一次。
+- 能转为项目的，链接到 [[PARA/Projects]]。
+- 能转为长期主题的，链接到 [[ZETA/Permanent Notes]]。
+- 没有上下文、没有价值的草稿直接清理。

@@ -35,12 +35,12 @@ tags:
 
 > [!dusk-status]+ 库概览
 > ```dataviewjs
-> const items = [
+> const items = Array.of(
 >   ["项目", '"30-工作"'],
 >   ["AI", '"20-AI"'],
 >   ["剪藏", '"80-Clippings"'],
 >   ["收件箱", '"HUB"']
-> ];
+> );
 > const wrap = dv.container.createDiv({ cls: "dusk-stat-grid" });
 > for (const [label, query] of items) {
 >   const count = dv.pages(query).length;
@@ -55,11 +55,11 @@ tags:
 
 > [!dusk-next]+ 下一步
 > ```dataviewjs
-> const items = [
+> const items = Array.of(
 >   ["记录一个想法", "HUB/Inbox"],
 >   ["处理一项任务", "HUB/Tasks"],
 >   ["沉淀一条知识", "ZETA/00-ZETA"]
-> ];
+> );
 > const wrap = dv.container.createDiv({ cls: "dusk-next-grid" });
 > for (const [label, path] of items) {
 >   const card = wrap.createEl("a", {
@@ -104,13 +104,13 @@ tags:
 > > const done = pages.file.tasks.where(t => t.completed).length;
 > > const fresh = pages.where(p => p.file.cday && p.file.cday.toISODate() === dv.date("today").toISODate()).length;
 > > const wrap = dv.container.createDiv({ cls: "dusk-mini-grid" });
-> > for (const [label, value] of [["待办", todo], ["完成", done], ["新增", fresh]]) {
+> > for (const [label, value] of Array.of(["待办", todo], ["完成", done], ["新增", fresh])) {
 > >   const card = wrap.createDiv({ cls: "dusk-mini" });
 > >   card.createSpan({ text: String(value), cls: "dusk-mini-number" });
 > >   card.createSpan({ text: label, cls: "dusk-mini-label" });
 > > }
 > > const queue = dv.container.createDiv({ cls: "dusk-inbox-strip" });
-> > for (const [label, query] of [["收件箱", '"HUB"'], ["未分类", '"未分类"'], ["剪藏", '"80-Clippings"']]) {
+> > for (const [label, query] of Array.of(["收件箱", '"HUB"'], ["未分类", '"未分类"'], ["剪藏", '"80-Clippings"'])) {
 > >   const item = queue.createDiv({ cls: "dusk-inbox-item" });
 > >   item.createSpan({ text: label, cls: "dusk-inbox-label" });
 > >   item.createSpan({ text: String(dv.pages(query).length), cls: "dusk-inbox-number" });
