@@ -6,7 +6,10 @@ source: arxiv-cs-cy
 url: "http://arxiv.org/abs/2603.18980v1"
 published: 2026-03-19
 read_date: 2026-03-22
+domain: AI
 tags:
+  - 领域/AI
+  - 类型/文章
   - ai-reader
   - research
   - wearable

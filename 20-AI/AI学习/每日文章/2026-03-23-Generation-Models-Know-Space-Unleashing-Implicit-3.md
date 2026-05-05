@@ -6,7 +6,10 @@ source: arxiv-cs-ai
 url: "http://arxiv.org/abs/2603.19235v1"
 published: 2026-03-19
 read_date: 2026-03-23
+domain: AI
 tags:
+  - 领域/AI
+  - 类型/文章
   - ai-reader
   - paper
   - arxiv

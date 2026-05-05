@@ -1,5 +1,10 @@
 ---
+type: 笔记
+domain: 技术
+status: 进行中
 tags:
+  - 领域/技术
+  - 类型/笔记
   - 技术文档
   - Conda
 ---

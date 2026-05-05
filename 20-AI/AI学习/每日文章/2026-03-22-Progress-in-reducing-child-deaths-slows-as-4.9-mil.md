@@ -6,7 +6,10 @@ source: who-ageing
 url: "https://www.who.int/news/item/18-03-2026-progress-in-reducing-child-deaths-slows-as-4.9-million-children-die-before-age-five"
 published: 2026-03-18
 read_date: 2026-03-22
+domain: AI
 tags:
+  - 领域/AI
+  - 类型/文章
   - ai-reader
   - global
   - policy

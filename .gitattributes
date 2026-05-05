@@ -1,0 +1,25 @@
+# Keep text files stable across Windows and other machines.
+* text=auto
+
+# Obsidian vault content and configuration should not churn line endings.
+*.md text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+
+# Windows helper scripts stay native to Windows.
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+
+# Binary assets.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.pdf binary
+*.zip binary

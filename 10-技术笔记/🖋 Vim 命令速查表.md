@@ -1,4 +1,3 @@
-
 ---
 type: 笔记
 domain: 技术
@@ -363,4 +362,3 @@ tags:
 - `:set foldmethod=marker`   - 基于标记的折叠
 
 ---
-

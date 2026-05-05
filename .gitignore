@@ -20,4 +20,9 @@ local-reports/
 .obsidian/graph.json
 .obsidian/workspace*.json
 
+# Obsidian plugin runtime state that changes with local usage.
+.obsidian/plugins/home-tab/data.json
+.obsidian/plugins/novel-word-count/data.json
+.obsidian/plugins/recent-files-obsidian/data.json
+
 # Keep Markdown notes, images, plugin manifests, and vault content tracked.

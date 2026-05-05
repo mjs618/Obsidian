@@ -8,8 +8,14 @@ author:
   - "& Startups"
 published: 2026-03-20
 created: 2026-03-24
+type: 文章
+domain: 阅读
+status: 已完成
 description: "Your guide to the AI revolution, co-hosts Elad Gil and Sarah Guo talk to the world's leading engineers, researchers and founders about the biggest questions:..."
 tags:
+  - 领域/AI
+  - 类型/文章
+  - 状态/已完成
   - "clippings"
 ---
 ![](https://www.youtube.com/watch?v=kwSVtQ7dziU)
