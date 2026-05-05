@@ -1,0 +1,49 @@
+{
+  "debounceTimeout": 0,
+  "ignoreOpenFiles": true,
+  "ignoreForceViewAll": true,
+  "folders": [
+    {
+      "folder": "HUB",
+      "viewMode": "obsidianUIMode: preview"
+    },
+    {
+      "folder": "PARA",
+      "viewMode": "obsidianEditingMode: live"
+    },
+    {
+      "folder": "ZETA",
+      "viewMode": "obsidianEditingMode: live"
+    },
+    {
+      "folder": "DAILY",
+      "viewMode": "obsidianEditingMode: live"
+    },
+    {
+      "folder": "STICKY",
+      "viewMode": "obsidianEditingMode: live"
+    },
+    {
+      "folder": "SYSTEM",
+      "viewMode": "obsidianEditingMode: live"
+    }
+  ],
+  "files": [
+    {
+      "filePattern": "HUB/Home",
+      "viewMode": "obsidianUIMode: preview"
+    },
+    {
+      "filePattern": "HUB/Map",
+      "viewMode": "obsidianUIMode: preview"
+    },
+    {
+      "filePattern": "HUB/Inbox",
+      "viewMode": "obsidianUIMode: preview"
+    },
+    {
+      "filePattern": "HUB/Tasks",
+      "viewMode": "obsidianUIMode: preview"
+    }
+  ]
+}

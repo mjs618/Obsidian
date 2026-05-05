@@ -1,0 +1,58 @@
+{
+  "logoType": "lucideIcon",
+  "logo": {
+    "lucideIcon": "search",
+    "imagePath": "",
+    "imageLink": ""
+  },
+  "logoScale": 1.1,
+  "iconColorType": "default",
+  "wordmark": "Obsidian",
+  "customFont": "textFont",
+  "fontSize": "3.2em",
+  "fontColorType": "default",
+  "fontWeight": 600,
+  "maxResults": 6,
+  "showbookmarkedFiles": true,
+  "showRecentFiles": true,
+  "maxRecentFiles": 6,
+  "storeRecentFile": true,
+  "showPath": true,
+  "selectionHighlight": "default",
+  "showShortcuts": true,
+  "markdownOnly": true,
+  "unresolvedLinks": false,
+  "recentFilesStore": [
+    {
+      "filepath": "00-管理/标签与属性速查.md",
+      "timestamp": 1777971379069
+    },
+    {
+      "filepath": "HUB/How to Use.md",
+      "timestamp": 1777969243768
+    },
+    {
+      "filepath": "Templates/原生模板/💡 灵感卡片模板.md",
+      "timestamp": 1777969155788
+    },
+    {
+      "filepath": "DAILY/00-DAILY.md",
+      "timestamp": 1777969153903
+    },
+    {
+      "filepath": "DAILY/Monthly Notes.md",
+      "timestamp": 1777969153792
+    },
+    {
+      "filepath": "DAILY/Weekly Notes.md",
+      "timestamp": 1777968843454
+    }
+  ],
+  "bookmarkedFileStore": [],
+  "searchDelay": 0,
+  "replaceNewTabs": true,
+  "newTabOnStart": false,
+  "closePreviousSessionTabs": false,
+  "omnisearch": true,
+  "showOmnisearchExcerpt": true
+}

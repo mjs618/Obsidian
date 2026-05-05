@@ -1,0 +1,90 @@
+{
+  "journals": {
+    "personal": {
+      "id": "personal",
+      "type": "calendar",
+      "name": "personal",
+      "rootFolder": "",
+      "openOnStartup": false,
+      "startupSection": "day",
+      "day": {
+        "enabled": true,
+        "openMode": "tab",
+        "nameTemplate": "",
+        "dateFormat": "",
+        "folder": "DAILY/DAILY",
+        "template": "SYSTEM/TEMPLATE/FORMAT/template_daily_note.md",
+        "ribbon": {
+          "show": true,
+          "icon": "",
+          "tooltip": ""
+        },
+        "createOnStartup": false
+      },
+      "week": {
+        "enabled": true,
+        "openMode": "active",
+        "nameTemplate": "",
+        "dateFormat": "YYYY-MMMM-[W]ww",
+        "folder": "DAILY/WEEKLY",
+        "template": "SYSTEM/TEMPLATE/FORMAT/template_weekly_note.md",
+        "ribbon": {
+          "show": false,
+          "icon": "",
+          "tooltip": ""
+        },
+        "createOnStartup": false
+      },
+      "month": {
+        "enabled": true,
+        "openMode": "active",
+        "nameTemplate": "",
+        "dateFormat": "YYYY-MMMM",
+        "folder": "DAILY/MONTHLY",
+        "template": "SYSTEM/TEMPLATE/FORMAT/template_monthly_note.md",
+        "ribbon": {
+          "show": false,
+          "icon": "",
+          "tooltip": ""
+        },
+        "createOnStartup": false
+      },
+      "quarter": {
+        "enabled": false,
+        "openMode": "active",
+        "nameTemplate": "",
+        "dateFormat": "",
+        "folder": "",
+        "template": "",
+        "ribbon": {
+          "show": false,
+          "icon": "",
+          "tooltip": ""
+        },
+        "createOnStartup": false
+      },
+      "year": {
+        "enabled": false,
+        "openMode": "active",
+        "nameTemplate": "",
+        "dateFormat": "",
+        "folder": "",
+        "template": "",
+        "ribbon": {
+          "show": false,
+          "icon": "",
+          "tooltip": ""
+        },
+        "createOnStartup": false
+      }
+    }
+  },
+  "calendar": {
+    "firstDayOfWeek": 1,
+    "firstWeekOfYear": 1
+  },
+  "calendar_view": {
+    "leaf": "right",
+    "weeks": "left"
+  }
+}

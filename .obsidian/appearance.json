@@ -1,3 +1,15 @@
 {
-  "cssTheme": "Minimal"
+  "cssTheme": "Minimal",
+  "accentColor": "#ba4949",
+  "theme": "moonstone",
+  "enabledCssSnippets": [
+    "base",
+    "Gradient Callouts",
+    "MCL Multi Column",
+    "MCL Wide Views",
+    "show-hover-title",
+    "datacore-classes",
+    "file-explorer-wrap",
+    "dusk-dashboard"
+  ]
 }

@@ -1,0 +1,34 @@
+{
+  "files": [
+    {
+      "useMoment": false,
+      "file": "HUB/Home.md"
+    },
+    {
+      "useMoment": false,
+      "file": "HUB/Map.md"
+    },
+    {
+      "useMoment": false,
+      "file": "HUB/Inbox.md"
+    },
+    {
+      "useMoment": false,
+      "file": "HUB/Tasks.md"
+    },
+    {
+      "useMoment": false,
+      "file": "DAILY/00-DAILY.md"
+    },
+    {
+      "useMoment": false,
+      "file": "PARA/Projects.md"
+    },
+    {
+      "useMoment": false,
+      "file": "SYSTEM/00-SYSTEM.md"
+    }
+  ],
+  "useExistingPane": true,
+  "useHoverEditor": false
+}
