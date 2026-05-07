@@ -15,10 +15,10 @@ tags:
 > [!task]+ Page Tasks
 > 这里只放页面级任务。每天不用清空，每周选 1 项即可。
 
-> [!done] sd.md
+> [!task] sd.md
 > [[10-技术笔记/sd]]
 >
-> 已补标题、用途、字段对应关系、待确认项和相关项目链接。
+> 已补标题、用途、字段对应关系和相关项目链接；仍需决定附件拆分和待确认项。
 
 > [!done] Karpathy 转录
 > [[80-Clippings/The End of Coding Andrej Karpathy on Agents, AutoResearch, and the Loopy Era of AI]]

@@ -25,9 +25,9 @@ tags:
 ## Core Modules
 
 > [!hub] HUB
-> [[HUB/Home]] · [[HUB/Inbox]] · [[HUB/Tasks]]
+> [[HUB/Home]] · [[HUB/How to Use]] · [[HUB/Inbox]] · [[HUB/Tasks]]
 >
-> 每天打开的入口层。`Home` 做行动，`Map` 做结构，`Inbox` 做捕获，`Tasks` 做页面级整理。
+> 每天打开的入口层。`Home` 做行动，`Map` 做结构，`How to Use` 做最短路径说明，`Inbox` 做捕获，`Tasks` 做页面级整理。
 
 > [!para] PARA
 > [[PARA/Projects]] · [[PARA/Areas]] · [[PARA/Resources]] · [[PARA/Archive]]

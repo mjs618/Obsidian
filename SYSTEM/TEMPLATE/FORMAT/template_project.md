@@ -7,6 +7,8 @@ connections:
 tags:
   - project
 type: project_family
+domain: 工作
+status: 进行中
 cssclasses:
   - hide-properties_editing
   - hide-properties_reading

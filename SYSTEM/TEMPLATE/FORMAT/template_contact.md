@@ -7,6 +7,8 @@ phone: 0
 aliases: 
 tags: 
 type: contact
+domain: 工作
+status: 进行中
 ---
 # Personal Notes
 

@@ -15,9 +15,9 @@ tags:
 
 ## 相关日报
 
-- [[2026-05-07]] GPT-5.5 Instant 成为 ChatGPT 默认模型，OpenAI 同时被曝通过新交付平台向 AI 服务并购延伸。
-- [[2026-05-04]] OpenAI 推出 Advanced Account Security，显示账户安全正成为 AI 平台能力的一部分。
-- [[2026-05-03]] OpenAI 发布 Advanced Account Security，并继续进入美国军方涉密 AI 供应商名单。
+- [[20-AI/AI日记/2026/05/2026-05-07|2026-05-07]] GPT-5.5 Instant 成为 ChatGPT 默认模型，OpenAI 同时被曝通过新交付平台向 AI 服务并购延伸。
+- [[20-AI/AI日记/2026/05/2026-05-04|2026-05-04]] OpenAI 推出 Advanced Account Security，显示账户安全正成为 AI 平台能力的一部分。
+- [[20-AI/AI日记/2026/05/2026-05-03|2026-05-03]] OpenAI 发布 Advanced Account Security，并继续进入美国军方涉密 AI 供应商名单。
 
 ## 待跟踪
 

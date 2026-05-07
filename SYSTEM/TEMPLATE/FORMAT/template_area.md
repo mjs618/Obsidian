@@ -4,6 +4,8 @@ area_category:
 summary: 
 tags: 
 type: area_family
+domain: 工作
+status: 进行中
 created: <% tp.file.creation_date() %>
 ---
 # [[2. <%tp.file.folder() %>]] 

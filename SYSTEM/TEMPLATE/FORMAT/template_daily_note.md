@@ -1,4 +1,11 @@
 ---
+type: 日记
+domain: 生活
+status: 草稿
+tags:
+  - 领域/生活
+  - 类型/日记
+  - 状态/草稿
 cssclasses:
   - hide-properties_editing
   - hide-properties_reading
@@ -106,4 +113,3 @@ table area_category as "Area Category", created as "Date Created" from "PARA/ARE
 WHERE type = "area_family"
 ```
 ````
-

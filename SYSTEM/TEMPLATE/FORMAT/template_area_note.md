@@ -3,6 +3,8 @@ area: <% tp.file.folder() %>
 summary: 
 tags: 
 type: area_note
+domain: 工作
+status: 进行中
 created: <% tp.file.creation_date() %>
 ---
 # [[2. <%tp.file.folder() %>]] 

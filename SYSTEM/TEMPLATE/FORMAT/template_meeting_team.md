@@ -7,6 +7,8 @@ meeting_status: false
 tags:
   - meeting
 type: meeting
+domain: 工作
+status: 进行中
 created: <% tp.file.creation_date() %>
 cssclasses:
   - hide-properties_editing
@@ -29,4 +31,3 @@ Meeting Status: `INPUT[toggle:meeting_status]` (`VIEW[{meeting_status} ? "Done" 
 
 
 # Next Actions
-
