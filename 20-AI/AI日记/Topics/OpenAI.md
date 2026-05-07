@@ -11,15 +11,15 @@ tags:
 # OpenAI
 
 ## 简介
-
 聚焦 OpenAI 的产品发布、商业合作、安全策略与平台分发变化。
 
 ## 相关日报
 
+- [[2026-05-07]] GPT-5.5 Instant 成为 ChatGPT 默认模型，OpenAI 同时被曝通过新交付平台向 AI 服务并购延伸。
 - [[2026-05-04]] OpenAI 推出 Advanced Account Security，显示账户安全正成为 AI 平台能力的一部分。
 - [[2026-05-03]] OpenAI 发布 Advanced Account Security，并继续进入美国军方涉密 AI 供应商名单。
 
 ## 待跟踪
 
-- OpenAI 的安全能力是否扩展到更多企业与高权限场景。
-- OpenAI 在政府、云厂商与终端分发上的合作边界如何继续变化。
+- GPT-5.5 Instant 的默认化是否会持续强化 ChatGPT 作为工作入口和搜索入口的黏性。
+- OpenAI 在政府、云厂商、企业交付与终端分发上的合作边界如何继续变化。
