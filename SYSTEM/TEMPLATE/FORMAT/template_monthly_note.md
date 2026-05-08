@@ -72,7 +72,10 @@ let startDate = dv.current().file.frontmatter["journal-start-date"];
 let endDate = dv.current().file.frontmatter["journal-end-date"];
 
 let meetings = dv.pages('"30-工作/会议记录"')
-    .where(m => m.meeting_status === false && m.type === "meeting" && m.scheduled_date >= dv.date(startDate) && m.scheduled_date <= dv.date(endDate));
+    .where(m => m.meeting_status === false
+        && (m.type === "meeting" || m.type === "会议" || m.template_type === "meeting")
+        && m.scheduled_date >= dv.date(startDate)
+        && m.scheduled_date <= dv.date(endDate));
 
 let withDates = meetings.where(m => m.scheduled_date);
 let withoutDates = meetings.where(m => !m.scheduled_date);
@@ -97,11 +100,14 @@ tab: Projects
 let startDate = dv.current().file.frontmatter["journal-start-date"];
 let endDate = dv.current().file.frontmatter["journal-end-date"];
 
+const isProject = p => p.type == "project_note" || p.type == "project_family" || p.type == "项目" || p.template_type == "project_note" || p.template_type == "project_family";
+const isCompleted = p => p.Status == "4 Completed" || p.status == "已完成";
+
 let pages = dv.pages('"30-工作/项目"')
-    .where(p => (p.type == "project_note" || p.type == "project_family") 
-            && p.Status != "4 Completed" 
-            && p.Due_Date >= dv.date(startDate) 
-            && p.Due_Date <= dv.date(endDate));
+    .where(p => isProject(p)
+            && !isCompleted(p)
+            && (p.Due_Date >= dv.date(startDate) || p.Due_Date == null)
+            && (p.Due_Date <= dv.date(endDate) || p.Due_Date == null));
 
 let withDueDates = pages.where(p => p.Due_Date != null);
 let withoutDueDates = pages.where(p => p.Due_Date == null);
@@ -129,7 +135,7 @@ dv.table(
 tab: Areas
 ```dataview
 table area_category as "Area Category", created as "Date Created" from "PARA/AREAS"
-WHERE type = "area_family"
+WHERE type = "area_family" OR template_type = "area_family"
 ```
 ````
 # Monthly Goals

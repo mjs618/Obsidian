@@ -23,8 +23,8 @@ hide due date
 limit 10
 ```
 tab: Overdue
-```tasks 
-not done 
+```tasks
+not done
 due before <% tp.file.title %>
 sort by priority
 hide due date
@@ -50,7 +50,7 @@ limit 10
 tab: Meetings
 ```dataviewjs
 let meetings = dv.pages('"30-工作/会议记录"')
-    .where(m => m.meeting_status === false && m.type === "meeting");
+    .where(m => m.meeting_status === false && (m.type === "meeting" || m.type === "会议" || m.template_type === "meeting"));
 
 // Separate meetings with and without scheduled dates
 let withDates = meetings.where(m => m.scheduled_date);
@@ -76,8 +76,11 @@ dv.table(
 ```
 tab: Projects
 ```dataviewjs
+const isProject = p => p.type == "project_note" || p.type == "project_family" || p.type == "项目" || p.template_type == "project_note" || p.template_type == "project_family";
+const isCompleted = p => p.Status == "4 Completed" || p.status == "已完成";
+
 let pages = dv.pages('"30-工作/项目"')
-    .where(p => (p.type == "project_note" || p.type == "project_family") && p.Status != "4 Completed");
+    .where(p => isProject(p) && !isCompleted(p));
 
 // Separate pages with and without due dates
 let withDueDates = pages.where(p => p.Due_Date != null);
@@ -110,6 +113,6 @@ dv.table(
 tab: Areas
 ```dataview
 table area_category as "Area Category", created as "Date Created" from "PARA/AREAS"
-WHERE type = "area_family"
+WHERE type = "area_family" OR template_type = "area_family"
 ```
 ````

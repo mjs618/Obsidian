@@ -1,14 +1,19 @@
 ---
-scheduled_date: 
-start_time: 
-end_time: 
+scheduled_date:
+start_time:
+end_time:
 summary: ""
 meeting_status: false
 tags:
+  - 领域/工作
+  - 类型/会议
+  - 状态/进行中
   - meeting
   - standup
   - agile
-type: meeting
+type: 会议
+template_type: meeting
+meeting_type: standup
 domain: 工作
 status: 进行中
 created: <% tp.file.creation_date() %>
@@ -16,21 +21,33 @@ cssclasses:
   - hide-properties_editing
   - hide-properties_reading
 ---
-# Meeting Details
+# <% tp.file.title %>
+
+## 会议信息
+
 Scheduled Date:  `INPUT[date(showcase):scheduled_date]`
 Start Time: `INPUT[time:start_time]`  End Time:  `INPUT[time:end_time]`
 Meeting Summary: `INPUT[text(limit(30)):summary]`
 Meeting Status: `INPUT[toggle:meeting_status]` (`VIEW[{meeting_status} ? "Done" : "Not Done"]`)
-# Attendees Tag
-- 
-# Topic Tag
-- 
-# Agenda
-1.  What you completed?
-2.  What are you working currently?
-3.  What are the roadblocks?
-4.  Any topic outside of the above agenda but needs teams input (16th minute items)?
-# Notes
+
+## 参会人标签
+
+-
+
+## 主题标签
+
+-
+
+## 议程
+
+1. 已完成什么？
+2. 当前正在做什么？
+3. 有哪些阻塞？
+4. 是否有需要团队输入的额外议题？
+
+## 会议记录
 
 
-# Next Actions
+## 行动项
+
+- [ ]

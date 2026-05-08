@@ -1,12 +1,16 @@
 ---
-type: 临时笔记
+type: 笔记
+template_type: fleeting_note
+zeta_stage: fleeting
 domain: 思维
 status: 待整理
 created: {{DATE:YYYY-MM-DD HH:mm}}
 modified: {{DATE:YYYY-MM-DD HH:mm}}
 tags:
+  - 领域/思维
   - 待整理
   - 类型/卡片
+  - 状态/待整理
   - 灵感
 aliases: []
 ---
@@ -25,6 +29,12 @@ aliases: []
 ## 原始想法
 
 
+## 初步判断
+
+- 为什么值得记：
+- 可能价值：
+- 不确定点：
+
 ## 可能去向
 
 - [ ] 项目：[[PARA/Projects]]
@@ -34,4 +44,4 @@ aliases: []
 
 ## 下一步
 
-- [ ] 
+- [ ]
