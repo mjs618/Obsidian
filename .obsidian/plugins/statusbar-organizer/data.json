@@ -63,6 +63,22 @@
       "plugin-obsidian-git;1": {
         "position": 15,
         "visible": true
+      },
+      "plugin-properties;1": {
+        "position": 16,
+        "visible": true
+      },
+      "plugin-auto-note-mover;1": {
+        "position": 17,
+        "visible": true
+      },
+      "plugin-metadata-menu;1": {
+        "position": 18,
+        "visible": true
+      },
+      "plugin-obsidian-git-obsidian-git-statusbar-idle-obsidian-git-statusbar-status;1": {
+        "position": 19,
+        "visible": true
       }
     }
   },
