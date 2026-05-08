@@ -5,8 +5,10 @@ status: 进行中
 cssclasses:
   - home-dashboard
 tags:
+  - 领域/收集箱
   - 待整理
   - 类型/汇总
+  - 状态/进行中
 ---
 
 # Fleeting Notes
@@ -61,3 +63,19 @@ limit 20
 - 是长期问题：链接到 [[ZETA/Permanent Notes]] 或主题地图。
 - 只是来源：移到 [[ZETA/Literature Notes]]。
 - 无价值：删除或记录后清理。
+
+## 升级判断
+
+| 信号 | 动作 |
+| --- | --- |
+| 一周后仍想继续思考 | 转成 Permanent Note 或主题地图条目 |
+| 已经能推动具体事情 | 链接到项目页并写下一步 |
+| 只是一个来源或链接 | 转入 Literature Notes |
+| 没有上下文也无法复用 | 删除或归档 |
+
+## Fleeting Note 合格标准
+
+- 标题是一句话。
+- 有触发来源。
+- 有原始想法。
+- 有一个下一步或放弃理由。
