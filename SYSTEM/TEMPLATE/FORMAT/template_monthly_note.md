@@ -141,10 +141,26 @@ WHERE type = "area_family" OR template_type = "area_family"
 # Monthly Goals
 <%tp.file.cursor()%>
 
+- 本月最重要的主题：
+- 本月必须交付或完成：
+- 本月要减少投入的方向：
+
 # Summary of the Month
+
+- 主要成果：
+- 关键失误：
+- 系统性变化：
 
 
 # Reflections & Learnings
 
+- 可复用经验：
+- 需要写入主题地图或 Permanent Note：
+- 下个月应停止的做法：
+
 
 # Plan for Next Month
+
+- 下月第一优先级：
+- 需要拆成项目：
+- 需要维护的领域：

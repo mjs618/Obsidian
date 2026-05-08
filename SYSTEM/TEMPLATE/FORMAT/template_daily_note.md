@@ -40,10 +40,20 @@ limit 10
 ````
 # New Tasks
 
+- [ ] 今日最重要推进：
+- [ ] 必须处理：
+- [ ] 可以放弃或延后：
 
 # Daily Notes
 
 <%tp.file.cursor()%>
+
+# Evening Close
+
+- 今天完成了什么：
+- 需要回流到项目/主题/资料的内容：
+- 明天第一步：
+
 # Overview
 
 ````tabs

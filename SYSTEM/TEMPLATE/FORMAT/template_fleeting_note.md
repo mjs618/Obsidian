@@ -45,3 +45,10 @@ aliases: []
 ## 下一步
 
 - [ ]
+
+## 升级判断
+
+- [ ] 能变成行动：转项目或任务
+- [ ] 能变成观点：转 Permanent Note
+- [ ] 只是资料线索：转 Literature Note 或 Resources
+- [ ] 失去上下文：删除或归档

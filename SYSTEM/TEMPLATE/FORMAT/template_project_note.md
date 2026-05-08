@@ -27,9 +27,22 @@ cssclasses:
 **Priority Level:** `INPUT[inlineSelect(option(1 Critical), option(2 High), option(3 Medium), option(4 Low)):Priority_Level]`
 **Status:** `INPUT[inlineSelect(option(1 To Do), option(2 In Progress), option(3 Testing), option(4 Completed), option(5 Blocked)):Status]`
 
+## 所属上下文
+
+- 所属项目：
+- 关联领域：
+- 本记录要回答的问题：
+
 ## 记录目标
 
+- 本次记录要推动什么：
+- 预计输出：
 
+## 决策与阻塞
+
+- 已确认决策：
+- 当前阻塞：
+- 需要谁提供信息：
 
 ## 过程记录
 
@@ -42,6 +55,12 @@ cssclasses:
 ## 下一步
 
 - [ ]
+
+## 回流
+
+- [ ] 已链接到项目页
+- [ ] 已提炼到主题或 Permanent Note
+- [ ] 已清理不再需要的临时内容
 
 <%* tp.hooks.on_all_templates_executed(async () => {
     const file = tp.file.find_tfile(tp.file.path(true));

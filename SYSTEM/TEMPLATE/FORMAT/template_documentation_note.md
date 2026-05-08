@@ -24,6 +24,7 @@ created: <% tp.file.creation_date() %>
 - Reference: `INPUT[text:reference]`
 - 获取方式：
 - 使用场景：
+- 版本或日期：
 
 ## 摘要
 
@@ -33,6 +34,14 @@ created: <% tp.file.creation_date() %>
 
 -
 
+## 可信度与边界
+
+- 可信来源：
+- 适用范围：
+- 过期风险：
+
 ## 后续动作
 
 - [ ] 链接到相关项目或主题
+- [ ] 提炼可复用结论
+- [ ] 标记是否需要定期更新

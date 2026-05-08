@@ -56,13 +56,28 @@ dv.taskList(dv.pages().file.tasks
 # Weekly Goals
 <%tp.file.cursor()%>
 
+- 本周只推进的 1-3 件事：
+- 本周不再投入的事：
+- 本周要沉淀的经验或主题：
+
 # Summary of the Week
+
+- 完成：
+- 未完成：
+- 关键变化：
 
 
 # Notes & Reflections
 
+- 有复用价值的经验：
+- 需要写成 Permanent Note 的判断：
+- 需要归档或清理的内容：
+
 
 # Plan for Next Week
+
+- 下一周第一步：
+- 需要提前准备：
 
 
 # Overview

@@ -48,6 +48,18 @@ Meeting Status: `INPUT[toggle:meeting_status]` (`VIEW[{meeting_status} ? "Done" 
 ## 会议记录
 
 
+## 今日结论
+
+- 已确认：
+- 阻塞：
+- 需要同步：
+
 ## 行动项
 
 - [ ]
+
+## 会后回流
+
+- [ ] 阻塞已写入项目页
+- [ ] 行动项已分配到责任人或任务入口
+- [ ] 不再需要的临时记录已清理
