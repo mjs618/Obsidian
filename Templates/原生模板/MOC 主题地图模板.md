@@ -1,9 +1,12 @@
 ---
-type: 模板
-domain: 模板
+type: MOC
+template_type: native_moc
+domain: 知识管理
 status: 进行中
 tags:
-  - 类型/模板
+  - 领域/知识
+  - 类型/汇总
+  - 状态/进行中
 ---
 
 # {{主题名}}地图

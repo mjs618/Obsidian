@@ -53,12 +53,18 @@ tags:
 > [!dusk-flow]+ 工作流
 > [[HUB/Inbox|01 捕获]] → [[PARA/Projects|02 推进]] → [[HUB/Tasks|03 整理]] → [[ZETA/00-ZETA|04 沉淀]] → [[DAILY/00-DAILY|05 复盘]]
 
+> [!dusk-use]+ 今天只做三件事
+> 1. 先把新想法、链接、临时任务放进 [[HUB/Inbox]]，不现场分类。
+> 2. 只推进 1 个项目或 1 条任务，入口是 [[PARA/Projects]] 和 [[HUB/Tasks]]。
+> 3. 当天结束前，把最有价值的一条记录沉淀到 [[ZETA/00-ZETA]] 或今日笔记。
+
 > [!dusk-next]+ 下一步
 > ```dataviewjs
 > const items = Array.of(
->   ["记录一个想法", "HUB/Inbox"],
->   ["处理一项任务", "HUB/Tasks"],
->   ["沉淀一条知识", "ZETA/00-ZETA"]
+>   ["捕获新内容", "HUB/Inbox"],
+>   ["推进项目", "PARA/Projects"],
+>   ["处理整理队列", "HUB/Tasks"],
+>   ["沉淀可复用知识", "ZETA/00-ZETA"]
 > );
 > const wrap = dv.container.createDiv({ cls: "dusk-next-grid" });
 > for (const [label, path] of items) {
