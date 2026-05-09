@@ -13,7 +13,11 @@ source_version: 'V2.1'
 source_created: '2026-05-07'
 license: 'CC BY 4.0'
 imported: '2026-05-08'
-status: 'active'
+status: 'archived'
+quality: 'C'
+risk: '高'
+reviewed: '2026-05-09'
+archived_reason: '承诺10万+阅读和爆文效果，易诱导标题党和过度承诺'
 tags:
   - '领域/AI'
   - '类型/提示词'
@@ -22,11 +26,16 @@ tags:
   - '平台运营'
   - '公众号'
   - '长文写作'
+  - '风险级/过度承诺'
+  - '风险级/平台合规'
 ---
 
 > [!info] 来源与使用
 > 来源：Yao Open Prompts；许可：CC BY 4.0；原路径：`prompts/06-ai-content/wechat-article-expert.md`。
 > 分类：[[20-AI/AI提示词库/06-内容创作与运营/00-索引|内容创作与运营]] / 平台运营。使用时复制下方 Prompt 区域，并把变量或占位符替换为真实任务。
+
+> [!danger] 已归档
+> 该模板以“10万+爆文”和平台传播效果为目标，存在过度承诺和标题党风险。保留作反模式参考，不建议直接复制。公众号写作应改为基于事实材料、读者问题、观点结构和发布前事实检查的流程。
 
 # 公众号写作专家
 
@@ -543,4 +552,3 @@ tags:
 
 ---
 ````
-

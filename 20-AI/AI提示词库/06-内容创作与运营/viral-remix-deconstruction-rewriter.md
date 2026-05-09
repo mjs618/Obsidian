@@ -13,7 +13,11 @@ source_version: 'V2.1'
 source_created: '2026-05-07'
 license: 'CC BY 4.0'
 imported: '2026-05-08'
-status: 'active'
+status: 'archived'
+quality: 'C'
+risk: '高'
+reviewed: '2026-05-09'
+archived_reason: '包含仿写、复刻和爆款迁移表达，版权与平台合规风险高'
 tags:
   - '领域/AI'
   - '类型/提示词'
@@ -31,8 +35,8 @@ tags:
 > 来源：Yao Open Prompts；许可：CC BY 4.0；原路径：`prompts/06-ai-content/viral-remix-deconstruction-rewriter.md`。
 > 分类：[[20-AI/AI提示词库/06-内容创作与运营/00-索引|内容创作与运营]] / 运营辅助。使用时复制下方 Prompt 区域，并把变量或占位符替换为真实任务。
 
-> [!warning] 使用边界
-> 只用于提取注意力机制、叙事结构、转折节奏和表达策略，不复制原视频文案、口头禅、个人经历、案例细节、镜头脚本或账号人设。输出必须基于用户真实经历和平台规则生成原创版本，不承诺爆款、流量或转化结果。
+> [!danger] 已归档
+> 该模板以爆款拆解、仿写重构和流量迁移为核心，版权与平台合规风险高。保留作反模式参考，不建议直接复制。若要学习参考内容，只能提取叙事结构、问题设置和节奏方法，不复制原文案、案例细节、账号人设或镜头脚本。
 
 # 爆款仿写拆解与重构专家
 

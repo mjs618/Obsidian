@@ -13,7 +13,11 @@ source_version: 'V1.0'
 source_created: '2025-08-19'
 license: 'CC BY 4.0'
 imported: '2026-05-08'
-status: 'active'
+status: 'deprecated'
+quality: 'B'
+risk: '中'
+reviewed: '2026-05-09'
+deprecated_reason: '原模板过长且目标过大，已由拆分模板替代'
 tags:
   - '领域/AI'
   - '类型/提示词'
@@ -27,6 +31,9 @@ tags:
 > [!info] 来源与使用
 > 来源：Yao Open Prompts；许可：CC BY 4.0；原路径：`prompts/02-ai-work/high-quality-ai-ppt-generator.md`。
 > 分类：[[20-AI/AI提示词库/02-工作生产力/00-索引|工作生产力与交付]] / PPT。使用时复制下方 Prompt 区域，并把变量或占位符替换为真实任务。
+
+> [!warning] 已被替代
+> 该模板目标过大且规则较长，不建议直接作为日常主用模板。优先使用 [[20-AI/AI提示词库/10-网络精选/15-高质量PPT生成器拆分模板|高质量PPT生成器拆分模板]]，按内容梳理、页面规划、视觉风格、最终检查分步执行。
 
 # 生成高质量PPT
 
@@ -434,4 +441,3 @@ def content_adaptation(user_input):
 
 这套提示词通过精心设计的认知架构和技术实现，能够将任意文字内容转化为专业级的PPT网页演示文稿。
 ````
-

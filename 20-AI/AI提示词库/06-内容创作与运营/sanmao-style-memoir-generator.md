@@ -13,7 +13,11 @@ source_version: 'V1.0'
 source_created: ''
 license: 'CC BY 4.0'
 imported: '2026-05-08'
-status: 'active'
+status: 'archived'
+quality: 'C'
+risk: '高'
+reviewed: '2026-05-09'
+archived_reason: '要求复刻特定作者风格，存在版权、人格风格和近似仿写风险'
 tags:
   - '领域/AI'
   - '类型/提示词'
@@ -22,11 +26,16 @@ tags:
   - '仿写'
   - '三毛风格'
   - '回忆录'
+  - '风险级/特定作者风格'
+  - '风险级/仿写'
 ---
 
 > [!info] 来源与使用
 > 来源：Yao Open Prompts；许可：CC BY 4.0；原路径：`prompts/06-ai-content/sanmao-style-memoir-generator.md`。
 > 分类：[[20-AI/AI提示词库/06-内容创作与运营/00-索引|内容创作与运营]] / 仿写。使用时复制下方 Prompt 区域，并把变量或占位符替换为真实任务。
+
+> [!danger] 已归档
+> 该模板要求复刻“三毛风格”，属于特定作者风格模仿，容易造成近似仿写和版权边界问题。保留作反模式参考，不建议直接复制。可替代做法是提取“旅行回忆录的叙事结构、情绪层次和细节观察方法”，再生成原创表达。
 
 # 三毛风格回忆录生成器
 
@@ -160,4 +169,3 @@ tags:
 
 **请输入您的原始文本，开始三毛风格转换！** 🌍
 ````
-

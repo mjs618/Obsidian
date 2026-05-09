@@ -13,7 +13,11 @@ source_version: 'V2.1'
 source_created: '2026-05-07'
 license: 'CC BY 4.0'
 imported: '2026-05-08'
-status: 'active'
+status: 'archived'
+quality: 'C'
+risk: '高'
+reviewed: '2026-05-09'
+archived_reason: '承诺爆款和病毒式传播，包含不可验证的背书'
 tags:
   - '领域/AI'
   - '类型/提示词'
@@ -22,11 +26,16 @@ tags:
   - '文案创作'
   - '短视频'
   - '口播文案'
+  - '风险级/过度承诺'
+  - '风险级/平台合规'
 ---
 
 > [!info] 来源与使用
 > 来源：Yao Open Prompts；许可：CC BY 4.0；原路径：`prompts/06-ai-content/spoken-viral-script.md`。
 > 分类：[[20-AI/AI提示词库/06-内容创作与运营/00-索引|内容创作与运营]] / 文案创作。使用时复制下方 Prompt 区域，并把变量或占位符替换为真实任务。
+
+> [!danger] 已归档
+> 该模板包含“口播文案之神”“病毒式传播”“研究过10万条爆款”等不可验证背书和过度承诺。保留作反模式参考，不建议直接复制。需要口播脚本时，应要求基于真实资料、目标受众和合规边界生成多个候选版本。
 
 # 口播爆款文案
 
@@ -292,4 +301,3 @@ tags:
 
 ---
 ````
-

@@ -13,7 +13,11 @@ source_version: 'V2.1'
 source_created: '2026-05-07'
 license: 'CC BY 4.0'
 imported: '2026-05-08'
-status: 'active'
+status: 'archived'
+quality: 'C'
+risk: '高'
+reviewed: '2026-05-09'
+archived_reason: '以平台流量密码和爆款承诺为核心，时效性和合规风险高'
 tags:
   - '领域/AI'
   - '类型/提示词'
@@ -22,11 +26,16 @@ tags:
   - '平台运营'
   - '抖音'
   - '爆款策划'
+  - '风险级/过度承诺'
+  - '风险级/平台合规'
 ---
 
 > [!info] 来源与使用
 > 来源：Yao Open Prompts；许可：CC BY 4.0；原路径：`prompts/06-ai-content/douyin-viral-planner.md`。
 > 分类：[[20-AI/AI提示词库/06-内容创作与运营/00-索引|内容创作与运营]] / 平台运营。使用时复制下方 Prompt 区域，并把变量或占位符替换为真实任务。
+
+> [!danger] 已归档
+> 该模板以“爆款”“流量密码”“流量爆发”为核心，平台机制时效性强且容易诱导过度承诺。保留作反模式参考，不建议直接复制。平台内容策划应改为基于账号定位、受众需求、内容价值和合规边界的候选方案。
 
 # 抖音爆款策划师
 
@@ -435,4 +444,3 @@ tags:
 
 ---
 ````
-

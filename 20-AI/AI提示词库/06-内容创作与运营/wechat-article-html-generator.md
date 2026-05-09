@@ -13,7 +13,11 @@ source_version: 'V0.9'
 source_created: '2026-05-06'
 license: 'CC BY 4.0'
 imported: '2026-05-08'
-status: 'active'
+status: 'archived'
+quality: 'C'
+risk: '高'
+reviewed: '2026-05-09'
+archived_reason: '包含规避 AI 检测、虚构可信细节和风格模仿要求，不适合作为主用模板'
 tags:
   - '领域/AI'
   - '类型/提示词'
@@ -23,11 +27,16 @@ tags:
   - '微信公众号'
   - 'HTML排版'
   - '文章生成'
+  - '风险级/AI检测规避'
+  - '风险级/虚构内容'
 ---
 
 > [!info] 来源与使用
 > 来源：Yao Open Prompts；许可：CC BY 4.0；原路径：`prompts/06-ai-content/wechat-article-html-generator.md`。
 > 分类：[[20-AI/AI提示词库/06-内容创作与运营/00-索引|内容创作与运营]] / 公众号。使用时复制下方 Prompt 区域，并把变量或占位符替换为真实任务。
+
+> [!danger] 已归档
+> 该模板包含“对抗 AI 生成文本检测工具”、模拟文风、虚构生活细节等高风险要求，容易诱导不透明写作、伪造真实感和规避检测。不建议直接使用；如需公众号 HTML 排版，应只保留排版结构，内容生成改用事实来源明确的写作模板。
 
 # 微信公众号文章HTML生成器
 
@@ -254,4 +263,3 @@ tags:
 </p>
 }
 ````
-

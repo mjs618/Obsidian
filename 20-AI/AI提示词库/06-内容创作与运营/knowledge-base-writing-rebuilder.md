@@ -13,7 +13,11 @@ source_version: 'V1.0'
 source_created: '2025-06-25'
 license: 'CC BY 4.0'
 imported: '2026-05-08'
-status: 'active'
+status: 'testing'
+quality: 'B'
+risk: '中'
+reviewed: '2026-05-09'
+review_note: '结构重构有价值，但去除AI痕迹表达需改为提升清晰度和原创表达'
 tags:
   - '领域/AI'
   - '类型/提示词'
@@ -22,11 +26,15 @@ tags:
   - '写作'
   - '知识库'
   - '文章重构'
+  - '风险级/AI痕迹'
 ---
 
 > [!info] 来源与使用
 > 来源：Yao Open Prompts；许可：CC BY 4.0；原路径：`prompts/06-ai-content/knowledge-base-writing-rebuilder.md`。
 > 分类：[[20-AI/AI提示词库/06-内容创作与运营/00-索引|内容创作与运营]] / 写作。使用时复制下方 Prompt 区域，并把变量或占位符替换为真实任务。
+
+> [!warning] 审核意见
+> 该模板的“核心观点抽离、逻辑重构、内容补充”有价值，但“去除 AI 痕迹”容易被理解为检测规避。使用前应改成“提升清晰度、语气自然度、原创表达和事实可核查性”，不承诺绕过检测。
 
 # 知识库AI写作法
 
@@ -152,4 +160,3 @@ tags:
    - 补充内容应与核心观点自然融合，不显突兀
    - 文章整体应读起来像一篇完整的原创文章，而非拼接内容
 ```
-

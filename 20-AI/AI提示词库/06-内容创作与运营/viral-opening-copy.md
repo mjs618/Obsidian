@@ -13,7 +13,11 @@ source_version: 'V2.1'
 source_created: '2026-05-07'
 license: 'CC BY 4.0'
 imported: '2026-05-08'
-status: 'active'
+status: 'archived'
+quality: 'C'
+risk: '高'
+reviewed: '2026-05-09'
+archived_reason: '过度强调注意力劫持和爆款承诺，易诱导标题党'
 tags:
   - '领域/AI'
   - '类型/提示词'
@@ -22,11 +26,16 @@ tags:
   - '文案创作'
   - '短视频'
   - '爆款开头'
+  - '风险级/过度承诺'
+  - '风险级/平台合规'
 ---
 
 > [!info] 来源与使用
 > 来源：Yao Open Prompts；许可：CC BY 4.0；原路径：`prompts/06-ai-content/viral-opening-copy.md`。
 > 分类：[[20-AI/AI提示词库/06-内容创作与运营/00-索引|内容创作与运营]] / 文案创作。使用时复制下方 Prompt 区域，并把变量或占位符替换为真实任务。
+
+> [!danger] 已归档
+> 该模板强调“无法划走”“注意力劫持”“爆款开头”，容易诱导标题党和过度刺激型内容。保留作结构研究，不建议直接复制。需要开头文案时，应要求兑现承诺、避免夸张和误导。
 
 # 文案爆款开头
 
@@ -320,4 +329,3 @@ tags:
 
 ---
 ````
-

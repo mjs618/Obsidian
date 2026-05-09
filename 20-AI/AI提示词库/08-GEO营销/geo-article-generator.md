@@ -13,7 +13,11 @@ source_version: 'V1.0'
 source_created: '2025-08-19'
 license: 'CC BY 4.0'
 imported: '2026-05-08'
-status: 'active'
+status: 'testing'
+quality: 'B'
+risk: '中'
+reviewed: '2026-05-09'
+review_note: 'GEO文章结构可参考，但通过AI检测、完美符合等表达需去承诺化'
 tags:
   - '领域/AI'
   - '类型/提示词'
@@ -22,11 +26,16 @@ tags:
   - 'GEO'
   - 'AI搜索'
   - '文章生成'
+  - '风险级/AI检测'
+  - '风险级/过度承诺'
 ---
 
 > [!info] 来源与使用
 > 来源：Yao Open Prompts；许可：CC BY 4.0；原路径：`prompts/08-ai-marketing/geo-article-generator.md`。
 > 分类：[[20-AI/AI提示词库/08-GEO营销/00-索引|GEO 营销]] / GEO。使用时复制下方 Prompt 区域，并把变量或占位符替换为真实任务。
+
+> [!warning] 审核意见
+> 该模板的 GEO 文章结构有参考价值，但“通过 AI 检测”“完美符合”等表达容易造成不透明写作和过度承诺。使用前应改为“基于事实资料生成结构化草稿，并输出证据缺口与人工复核清单”。
 
 # GEO文章生成系统
 
@@ -270,4 +279,3 @@ def validate_article(content):
 
 系统已完全激活，认知引擎处于最优状态，等待您的输入！
 ````
-

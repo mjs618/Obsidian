@@ -13,7 +13,11 @@ source_version: 'V2.1'
 source_created: '2026-05-07'
 license: 'CC BY 4.0'
 imported: '2026-05-08'
-status: 'active'
+status: 'archived'
+quality: 'C'
+risk: '高'
+reviewed: '2026-05-09'
+archived_reason: '以爆款、种草、转化和KOC感为核心，易诱导不透明营销和平台合规风险'
 tags:
   - '领域/AI'
   - '类型/提示词'
@@ -27,6 +31,9 @@ tags:
 > [!info] 来源与使用
 > 来源：Yao Open Prompts；许可：CC BY 4.0；原路径：`prompts/06-ai-content/xiaohongshu-graphic-expert.md`。
 > 分类：[[20-AI/AI提示词库/06-内容创作与运营/00-索引|内容创作与运营]] / 平台运营。使用时复制下方 Prompt 区域，并把变量或占位符替换为真实任务。
+
+> [!danger] 已归档
+> 该模板以“爆款图文”“种草”“KOC感”和转化为核心，容易诱导不透明营销、夸张表达和平台合规风险。保留作反模式参考，不建议直接复制。
 
 # 小红书爆款图文专家
 
@@ -153,4 +160,3 @@ tags:
 
 ---
 ````
-

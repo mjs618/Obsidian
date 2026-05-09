@@ -13,7 +13,11 @@ source_version: 'V2.1'
 source_created: '2026-05-07'
 license: 'CC BY 4.0'
 imported: '2026-05-08'
-status: 'active'
+status: 'archived'
+quality: 'C'
+risk: '高'
+reviewed: '2026-05-09'
+archived_reason: '承诺互动率提升并强调互动操控，不适合作为主用模板'
 tags:
   - '领域/AI'
   - '类型/提示词'
@@ -22,11 +26,16 @@ tags:
   - '文案创作'
   - '短视频'
   - '互动文案'
+  - '风险级/过度承诺'
+  - '风险级/平台合规'
 ---
 
 > [!info] 来源与使用
 > 来源：Yao Open Prompts；许可：CC BY 4.0；原路径：`prompts/06-ai-content/high-engagement-copy.md`。
 > 分类：[[20-AI/AI提示词库/06-内容创作与运营/00-索引|内容创作与运营]] / 文案创作。使用时复制下方 Prompt 区域，并把变量或占位符替换为真实任务。
+
+> [!danger] 已归档
+> 该模板使用“互动率收割机”“提升300%-500%”等过度承诺，并强调争议和互动操控。保留作反模式参考，不建议直接复制。需要互动文案时，应改为“生成候选互动问题并做合规检查”。
 
 # 高互动文案
 
@@ -320,4 +329,3 @@ tags:
 
 ---
 ````
-

@@ -13,7 +13,11 @@ source_version: 'V2.1'
 source_created: '2026-05-07'
 license: 'CC BY 4.0'
 imported: '2026-05-08'
-status: 'active'
+status: 'archived'
+quality: 'C'
+risk: '高'
+reviewed: '2026-05-09'
+archived_reason: '包含模拟真人评论、骗赞、争议引导和舆论操控倾向'
 tags:
   - '领域/AI'
   - '类型/提示词'
@@ -22,11 +26,16 @@ tags:
   - '运营辅助'
   - '评论区'
   - '内容运营'
+  - '风险级/伪装互动'
+  - '风险级/舆论操控'
 ---
 
 > [!info] 来源与使用
 > 来源：Yao Open Prompts；许可：CC BY 4.0；原路径：`prompts/06-ai-content/comment-section-operator.md`。
 > 分类：[[20-AI/AI提示词库/06-内容创作与运营/00-索引|内容创作与运营]] / 运营辅助。使用时复制下方 Prompt 区域，并把变量或占位符替换为真实任务。
+
+> [!danger] 已归档
+> 该模板包含模拟真人评论、预设“神评论”、骗赞和争议引导，容易构成不透明互动和舆论操控。保留作反模式参考，不建议直接复制。评论区运营应改为“官方回复、问题收集、FAQ 补充、真实用户反馈整理”。
 
 # 评论区运营专家
 
@@ -142,4 +151,3 @@ tags:
 
 ---
 ````
-

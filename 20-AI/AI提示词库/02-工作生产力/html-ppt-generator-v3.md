@@ -13,7 +13,11 @@ source_version: 'V3.0'
 source_created: '2026-05-06'
 license: 'CC BY 4.0'
 imported: '2026-05-08'
-status: 'active'
+status: 'deprecated'
+quality: 'B'
+risk: '中'
+reviewed: '2026-05-09'
+deprecated_reason: '原模板过长且混合大纲、生成和检查，已由拆分模板替代'
 tags:
   - '领域/AI'
   - '类型/提示词'
@@ -27,6 +31,9 @@ tags:
 > [!info] 来源与使用
 > 来源：Yao Open Prompts；许可：CC BY 4.0；原路径：`prompts/02-ai-work/html-ppt-generator-v3.md`。
 > 分类：[[20-AI/AI提示词库/02-工作生产力/00-索引|工作生产力与交付]] / PPT。使用时复制下方 Prompt 区域，并把变量或占位符替换为真实任务。
+
+> [!warning] 已被替代
+> 该模板规则完整但复制成本高，不建议直接作为日常主用模板。优先使用 [[20-AI/AI提示词库/10-网络精选/14-网页PPT生成器拆分模板|网页PPT生成器拆分模板]]，先做内容大纲，再生成 HTML，最后做视觉与可用性检查。
 
 # 网页PPT生成器 V3.0
 
@@ -903,4 +910,3 @@ P4-卡片1-图标.svg    → 第 4 页第 1 张卡片图标
 
 AI 将自动完成：内容分析 → 图片清点与匹配 → 结构规划 → 布局匹配 → 生成完整可运行的单文件 HTML。
 ````
-

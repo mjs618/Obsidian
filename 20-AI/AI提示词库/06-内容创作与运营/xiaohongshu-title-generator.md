@@ -13,7 +13,11 @@ source_version: 'V5.0'
 source_created: '2026-05-06'
 license: 'CC BY 4.0'
 imported: '2026-05-08'
-status: 'active'
+status: 'testing'
+quality: 'B'
+risk: '中'
+reviewed: '2026-05-09'
+review_note: '标题结构可参考，但爆款导向需改为候选标题与风险评分'
 tags:
   - '领域/AI'
   - '类型/提示词'
@@ -28,6 +32,9 @@ tags:
 > [!info] 来源与使用
 > 来源：Yao Open Prompts；许可：CC BY 4.0；原路径：`prompts/06-ai-content/xiaohongshu-title-generator.md`。
 > 分类：[[20-AI/AI提示词库/06-内容创作与运营/00-索引|内容创作与运营]] / 标题。使用时复制下方 Prompt 区域，并把变量或占位符替换为真实任务。
+
+> [!warning] 审核意见
+> 该模板有标题检查清单和禁用词，保留参考价值；但“爆款标题”导向不适合主用。使用时应改为“生成候选标题 + 风险评分 + 是否兑现正文承诺”，不承诺点击、流量或转化。
 
 # 小红书爆款标题生成器
 
@@ -190,4 +197,3 @@ tags:
 {clipboard}
 ```
 ````
-

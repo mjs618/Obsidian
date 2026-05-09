@@ -13,7 +13,11 @@ source_version: 'V1.0'
 source_created: '2026-05-07'
 license: 'CC BY 4.0'
 imported: '2026-05-08'
-status: 'active'
+status: 'testing'
+quality: 'B'
+risk: '中'
+reviewed: '2026-05-09'
+review_note: '增长诊断结构可参考，但10倍增长等表达需去承诺化'
 tags:
   - '领域/AI'
   - '类型/提示词'
@@ -28,6 +32,9 @@ tags:
 > [!info] 来源与使用
 > 来源：Yao Open Prompts；许可：CC BY 4.0；原路径：`prompts/08-ai-marketing/geo-growth-diagnosis.md`。
 > 分类：[[20-AI/AI提示词库/08-GEO营销/00-索引|GEO 营销]] / GEO数据。使用时复制下方 Prompt 区域，并把变量或占位符替换为真实任务。
+
+> [!warning] 审核意见
+> 该模板的增长诊断结构有参考价值，但“10倍增长”“增长密码”等表达属于过度承诺。使用前应改为基于数据、假设、实验和复盘的诊断，不承诺排名、引用、流量或转化结果。
 
 # GEO增长诊断提示词
 
@@ -209,4 +216,3 @@ tags:
 - 长期目标：[具体指标和数值]
 ```
 ````
-

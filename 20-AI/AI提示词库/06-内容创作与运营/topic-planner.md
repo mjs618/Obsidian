@@ -13,7 +13,11 @@ source_version: 'V2.1'
 source_created: '2026-05-07'
 license: 'CC BY 4.0'
 imported: '2026-05-08'
-status: 'active'
+status: 'testing'
+quality: 'B'
+risk: '中'
+reviewed: '2026-05-09'
+review_note: '方法结构可参考，但爆款、流量和热点表达需重构后使用'
 tags:
   - '领域/AI'
   - '类型/提示词'
@@ -27,6 +31,9 @@ tags:
 > [!info] 来源与使用
 > 来源：Yao Open Prompts；许可：CC BY 4.0；原路径：`prompts/06-ai-content/topic-planner.md`。
 > 分类：[[20-AI/AI提示词库/06-内容创作与运营/00-索引|内容创作与运营]] / 内容工具。使用时复制下方 Prompt 区域，并把变量或占位符替换为真实任务。
+
+> [!warning] 审核意见
+> 该模板的选题方法有参考价值，但“爆款潜力”“流量密码”等表达容易诱导过度承诺。使用前应按 [[20-AI/AI提示词库/10-网络精选/17-提示词重构标准操作法|提示词重构标准操作法]] 改写为“用户需求、内容价值、证据、合规边界、测试指标”导向。
 
 # 选题策划师
 
@@ -630,4 +637,3 @@ tags:
 
 ---
 ````
-

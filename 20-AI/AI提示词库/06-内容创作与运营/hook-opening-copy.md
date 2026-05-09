@@ -13,7 +13,11 @@ source_version: 'V2.1'
 source_created: '2026-05-07'
 license: 'CC BY 4.0'
 imported: '2026-05-08'
-status: 'active'
+status: 'testing'
+quality: 'B'
+risk: '中'
+reviewed: '2026-05-09'
+review_note: '开场结构可参考，但爆款背书和注意力捕获表达需去承诺化'
 tags:
   - '领域/AI'
   - '类型/提示词'
@@ -22,11 +26,15 @@ tags:
   - '文案创作'
   - '短视频'
   - '钩子文案'
+  - '风险级/过度承诺'
 ---
 
 > [!info] 来源与使用
 > 来源：Yao Open Prompts；许可：CC BY 4.0；原路径：`prompts/06-ai-content/hook-opening-copy.md`。
 > 分类：[[20-AI/AI提示词库/06-内容创作与运营/00-索引|内容创作与运营]] / 文案创作。使用时复制下方 Prompt 区域，并把变量或占位符替换为真实任务。
+
+> [!warning] 审核意见
+> 该模板有“开场承诺、问题切入、价值预告”的结构价值，但“50万条爆款”“注意力捕获”等背书不可验证。使用前应改为“生成多个开场候选，并检查是否真实兑现正文承诺”。
 
 # 钩子开场文案
 
@@ -232,4 +240,3 @@ tags:
 
 ---
 ````
-
