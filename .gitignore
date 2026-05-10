@@ -13,6 +13,7 @@ desktop.ini
 worktrees/
 local-reports/
 .codex-temp/
+.codex_hex_*.html
 *.log
 
 # Obsidian local UI/cache churn

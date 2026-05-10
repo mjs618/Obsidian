@@ -29,6 +29,17 @@ tags:
 - `.obsidian/workspace*.json`
 - `.obsidian/cache/`
 - `.obsidian/graph.json`
+- `.codex-temp/`
+- `local-reports/`
+- `.codex_hex_*.html`
+
+## 自动化产物边界
+
+自动化或外部工具生成的临时文件默认不作为知识库正文提交，除非它们已经被整理成 Markdown 笔记、审查记录或模板说明。
+
+- `.codex-temp/`、`local-reports/` 和 `.codex_hex_*.html` 视为临时输出，默认忽略。
+- `docs/superpowers/` 目前保留为自动化计划和规格记录；若某份计划已经沉淀为正式治理文档，再把结论迁移到 `00-管理` 或对应分区。
+- 根目录出现新的脚本、HTML、报告或批量工具时，先判断是“长期维护工具”还是“一次性产物”。长期工具需要说明入口；一次性产物应忽略、归档或转写成审查记录。
 
 ## 已跟踪状态文件的处理
 
@@ -45,6 +56,15 @@ git rm --cached -- .obsidian/plugins/recent-files-obsidian/data.json
 ```powershell
 git status --short
 ```
+
+## 备份策略
+
+`Obsidian Git` 的 30 分钟自动提交只是本地版本快照；没有自动 push 时，不等于异地备份。当前建议：
+
+- 本地自动提交用于找回近期误改。
+- 每周至少手动检查一次 `git status --short` 和远程 push 状态。
+- 每月确认一次远程仓库、云盘或磁盘快照是否能独立恢复。
+- 不把 `.obsidian/workspace*.json`、`graph.json` 和运行态插件缓存作为备份完整性的判断标准。
 
 ## 换行规则
 
