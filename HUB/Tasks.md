@@ -33,6 +33,11 @@ tags:
 >
 > 每月复查模块边界和元数据例外，避免提示词库、日记、学习资料和主题页互相污染。
 
+> [!task] 知识库原则卡片
+> [[40-知识库/知识库核心知识与构建方法总结#原则到行动]]
+>
+> 已补原则到维护动作的映射；下一步从实践中挑 1 条真正反复使用的原则，必要时升级为独立 Permanent Note。
+
 > [!done] Karpathy 转录
 > [[80-Clippings/The End of Coding Andrej Karpathy on Agents, AutoResearch, and the Loopy Era of AI]]
 >
