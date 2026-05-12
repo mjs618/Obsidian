@@ -15,6 +15,7 @@ tags:
 
 ## 相关日报
 
+- [[20-AI/AI日记/2026/05/2026-05-12|2026-05-12]] Anthropic 把与 SpaceX 的新增算力更直接地兑现为 Claude Code 和 Opus API 提额，说明基础设施兑现速度已成为前台产品竞争力的一部分。
 - [[20-AI/AI日记/2026/05/2026-05-10|2026-05-10]] Anthropic 把 SpaceX 新增算力继续兑现为 Claude Code 与 Opus API 的可见供给改善，说明基础设施扩张正在直接影响前台体验。
 - [[20-AI/AI日记/2026/05/2026-05-09|2026-05-09]] Anthropic 把 SpaceX 新增算力快速兑现为 Claude Code 和 Opus API 限额提升，说明基础设施供给已经直接影响用户前台体验。
 - [[20-AI/AI日记/2026/05/2026-05-08|2026-05-08]] Anthropic 锁定 SpaceX Colossus 1 的大规模算力容量，并把新增供给转化为 Claude Code 与 Opus API 限额提升，说明 Claude 热度已经直接转化为基础设施争夺。
@@ -26,5 +27,5 @@ tags:
 ## 待跟踪
 
 - 企业 AI 服务合资模式能否成为 Claude 在中型企业中的新分发渠道。
-- 新增算力是否会直接改善 Claude Pro、Claude Max 和 Claude Code 的供给与限额。
-- Anthropic 是否会通过并购快速补齐实施团队、咨询能力与行业模板。
+- 新增算力是否会持续改善 Claude Pro、Claude Max、Claude Code 和 Opus API 的供给与稳定性。
+- Anthropic 是否会继续通过并购快速补齐实施团队、咨询能力与行业模板。
