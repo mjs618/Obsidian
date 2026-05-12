@@ -21,7 +21,7 @@ tags:
 
 > [!dusk-hero]
 > **知识工作台**
-> 唯一日常入口 · 捕获 · 项目 · 任务 · 沉淀
+> 唯一日常入口 · 捕获 · 项目 · 任务 · 沉淀 · 输出
 
 > [!dusk-actions]
 > `BUTTON[open_moc]` `BUTTON[open_daily_note]` `BUTTON[create_new_note]` `BUTTON[quick_switcher]` `BUTTON[open_inbox]`
@@ -31,7 +31,7 @@ tags:
 >
 > `BUTTON[quick_switcher]` `BUTTON[recent_files]`
 >
-> [[HUB/Map|知识地图]] · [[HUB/Inbox|收件箱]] · [[PARA/Projects|项目]] · [[ZETA/00-ZETA|沉淀]]
+> [[HUB/Map|知识地图]] · [[HUB/Inbox|收件箱]] · [[PARA/Projects|项目]] · [[ZETA/00-ZETA|沉淀]] · [[HUB/Outputs|输出]]
 
 > [!dusk-status]+ 库概览
 > ```dataviewjs
@@ -51,7 +51,7 @@ tags:
 > ```
 
 > [!dusk-flow]+ 工作流
-> [[HUB/Inbox|01 捕获]] → [[PARA/Projects|02 推进]] → [[HUB/Tasks|03 整理]] → [[ZETA/00-ZETA|04 沉淀]] → [[DAILY/00-DAILY|05 复盘]]
+> [[HUB/Inbox|01 捕获]] → [[PARA/Projects|02 推进]] → [[HUB/Tasks|03 整理]] → [[ZETA/00-ZETA|04 沉淀]] → [[HUB/Outputs|05 输出]] → [[DAILY/00-DAILY|06 复盘]]
 
 > [!dusk-use]+ 今天只做三件事
 > 1. 先把新想法、链接、临时任务放进 [[HUB/Inbox]]，不现场分类。
@@ -64,7 +64,9 @@ tags:
 >   ["捕获新内容", "HUB/Inbox"],
 >   ["推进项目", "PARA/Projects"],
 >   ["处理整理队列", "HUB/Tasks"],
->   ["沉淀可复用知识", "ZETA/00-ZETA"]
+>   ["沉淀可复用知识", "ZETA/00-ZETA"],
+>   ["准备输出成果", "HUB/Outputs"],
+>   ["复习关键笔记", "HUB/Review"]
 > );
 > const wrap = dv.container.createDiv({ cls: "dusk-next-grid" });
 > for (const [label, path] of items) {
@@ -151,7 +153,7 @@ tags:
 > ........................................................................................................................
 
 > [!dusk-map]+ 快速地图
-> [[HUB/Map|全库地图]] · [[PARA/00-PARA|PARA]] · [[ZETA/00-ZETA|ZETA]] · [[DAILY/00-DAILY|日记]] · [[STICKY/00-STICKY|便签]] · [[SYSTEM/00-SYSTEM|系统]]
+> [[HUB/Map|全库地图]] · [[HUB/Outputs|输出]] · [[HUB/Review|复习]] · [[PARA/00-PARA|PARA]] · [[ZETA/00-ZETA|ZETA]] · [[DAILY/00-DAILY|日记]] · [[STICKY/00-STICKY|便签]] · [[SYSTEM/00-SYSTEM|系统]]
 
 ````tabs
 tab: 工作

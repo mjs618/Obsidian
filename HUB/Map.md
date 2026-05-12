@@ -25,9 +25,9 @@ tags:
 ## Core Modules
 
 > [!hub] HUB
-> [[HUB/Home]] · [[HUB/How to Use]] · [[HUB/Inbox]] · [[HUB/Tasks]]
+> [[HUB/Home]] · [[HUB/How to Use]] · [[HUB/Inbox]] · [[HUB/Tasks]] · [[HUB/Outputs]] · [[HUB/Review]]
 >
-> 每天打开的入口层。`Home` 做行动，`Map` 做结构，`How to Use` 做最短路径说明，`Inbox` 做捕获，`Tasks` 做页面级整理。
+> 每天打开的入口层。`Home` 做行动，`Map` 做结构，`How to Use` 做最短路径说明，`Inbox` 做捕获，`Tasks` 做页面级整理，`Outputs` 做成果出口，`Review` 做高价值复习。
 
 > [!para] PARA
 > [[PARA/Projects]] · [[PARA/Areas]] · [[PARA/Resources]] · [[PARA/Archive]]
@@ -60,6 +60,8 @@ tags:
 flowchart TD
     Home[HUB Home] --> Inbox[HUB Inbox]
     Home --> Tasks[HUB Tasks]
+    Home --> Outputs[HUB Outputs]
+    Home --> Review[HUB Review]
     Home --> PARA[PARA]
     Home --> ZETA[ZETA]
     Home --> DAILY[DAILY]
@@ -80,7 +82,7 @@ flowchart TD
 
 | 模块 | 用途 | 对应现有内容 |
 | --- | --- | --- |
-| HUB | 首页、地图、收件箱、任务 | [[首页]]、[[00-管理/任务邮箱]]、[[未分类/收件箱处理台]] |
+| HUB | 首页、地图、收件箱、任务、输出、复习 | [[首页]]、[[00-管理/任务邮箱]]、[[未分类/收件箱处理台]]、[[HUB/Outputs]]、[[HUB/Review]] |
 | PARA | 项目、领域、资源、归档 | `30-工作`、`10/20/50/60`、`70/80`、`99-归档` |
 | ZETA | 临时笔记、文献笔记、永久笔记 | `未分类`、`80-Clippings`、主题 MOC |
 | DAILY | 日/周/月复盘 | 周报、日记模板、月度总结模板 |
@@ -93,6 +95,8 @@ flowchart TD
 | --- | --- | --- |
 | 快速记一条东西 | [[HUB/Inbox]] | 临时记录或待整理任务 |
 | 推进项目 | [[PARA/Projects]] | 下一步、资料和复盘 |
+| 把知识变成成果 | [[HUB/Outputs]] | 文章、方案、SOP、Permanent Note 或提示词资产 |
+| 复习高价值笔记 | [[HUB/Review]] | 回链、升级、归档或进入输出台 |
 | 查技术资料 | [[10-技术笔记/00-索引]] | 命令、场景和踩坑记录 |
 | 跟踪 AI | [[20-AI/AI日记/Topics/00-AI主题地图]] | 主题判断和日报链接 |
 | 整理剪藏 | [[80-Clippings/剪藏处理台]] | 摘要、观点和主题链接 |
