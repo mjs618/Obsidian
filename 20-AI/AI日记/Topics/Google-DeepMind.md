@@ -11,10 +11,11 @@ tags:
 # Google-DeepMind
 
 ## 简介
-聚焦 Google 与 Google DeepMind 的模型分发、终端入口、云与基础设施动作。
+聚焦 Google 与 Google DeepMind 的模型分发、终端入口、系统交互与基础设施动作。
 
-## 相关日报
+## 相关日记
 
+- [[20-AI/AI日记/2026/05/2026-05-13|2026-05-13]] Google DeepMind 把“指针 + 语音 + 上下文理解”推到系统级入口层，说明 Gemini 的竞争重心正在从单独窗口扩展到日常工作流。
 - [[20-AI/AI日记/2026/05/2026-05-12|2026-05-12]] Google 一边改造 AI Mode 与 AI Overviews 的导流逻辑，一边把 Gemini API File Search 推向 multimodal RAG 与页级引用，说明其正同时争夺搜索入口与企业检索基础设施。
 - [[20-AI/AI日记/2026/05/2026-05-10|2026-05-10]] Google DeepMind 强调 AlphaEvolve 已把影响范围扩展到科研、电网与计算基础设施，agent 价值叙事继续从编程助手上移。
 - [[20-AI/AI日记/2026/05/2026-05-09|2026-05-09]] Google DeepMind 强调 AlphaEvolve 已延伸到电网和计算基础设施优化，Google Search 也继续改造 AI Mode 与 AI Overviews，争夺 AI 时代的默认分发入口。
@@ -26,6 +27,6 @@ tags:
 
 ## 待跟踪
 
-- Gemini Enterprise Agent Platform 与 Gemma 开放模型之间是否会形成更清晰的开发者闭环。
-- Google DeepMind 的前沿模型发布流程是否会进一步制度化地接入政府评测。
-- AI Mode 的网页导流修正，是否真的能缓解内容生态对生成式搜索的反弹。
+- 系统级 AI 指针交互会不会真正进入 Chrome、桌面和终端默认体验。
+- Google 是否能同时维持“更强 AI 回答”和“更强网页导流”的搜索生态平衡。
+- Gemini 产品入口、Gemini API 与 Google Workspace/Chrome 的结合是否会进一步收紧。
