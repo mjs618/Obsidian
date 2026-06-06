@@ -11,10 +11,18 @@ tags:
 # Google-DeepMind
 
 ## 简介
+- [[20-AI/AI日记/2026/05/2026-05-29|2026-05-29]] YouTube 将 AI 视频标签移到更显眼位置，并引入平台内部信号辅助识别，说明 Google 体系内的内容治理正在从创作者自报转向更强的平台主动介入。
 聚焦 Google 与 Google DeepMind 的模型分发、终端入口、系统交互与基础设施动作。
+- [[20-AI/AI日记/2026/05/2026-05-28|2026-05-28]] Google/YouTube 把 AI 视频标签从创作者自报推进到平台自动识别，DeepMind 则把 agent 时代描述为 AGI 前的社会压力测试，说明 Google 的 AI 主线同时覆盖内容治理和 agent 路线。
 
 ## 相关日记
 
+- [[20-AI/AI日记/2026/05/2026-05-28|2026-05-28]] YouTube 自动标识 AI 视频强化了平台级内容治理，Demis Hassabis 对 agent/AGI 时间表的表述则把近期 agent 浪潮放进更长期的社会准备框架。
+- [[20-AI/AI日记/2026/05/2026-05-23|2026-05-23]] Google 一边把 Search agents、AI 搜索框和 Antigravity 继续并入默认入口，一边把 Co-Scientist 推向真实科研工作流，说明其正同时争夺大众分发前台与高价值专业场景。
+- [[20-AI/AI日记/2026/05/2026-05-21|2026-05-21]] Google I/O 2026 总览把 Search agents、Universal Cart、Gemini Spark、Daily Brief 和 Antigravity 放进同一套 agent 分发策略里，说明 Google 正把持续监控与执行能力推向搜索、购物、助手和开发工具等默认入口。
+- [[20-AI/AI日记/2026/05/2026-05-22|2026-05-22]] Google 进一步明确 Search agents 会以 information agents 形态在后台持续监控网页、新闻、社交、金融与购物变化，并把 agentic booking 与 Search 内生成式 UI 一起并入搜索入口，说明其竞争重点正从一次性回答转向持续任务代理。
+- [[20-AI/AI日记/2026/05/2026-05-20|2026-05-20]] Google I/O 2026 把 Gemini 3.5 Flash、Managed Agents、Search AI Mode 与 Gemini Spark 连成一体，说明 Google 正把 agent 做成默认平台层；同日与 Blackstone 的 TPU cloud 合资则把算力供给进一步从 Google Cloud 中抽离成独立资产。
+- [[20-AI/AI日记/2026/05/2026-05-16|2026-05-16]] Google 强调 Gmail、Search、Chrome 和 Phone by Google 中的 AI 反诈骗能力，说明平台派正把 AI 安全能力前移到终端和高频入口层。
 - [[20-AI/AI日记/2026/05/2026-05-13|2026-05-13]] Google DeepMind 把“指针 + 语音 + 上下文理解”推到系统级入口层，说明 Gemini 的竞争重心正在从单独窗口扩展到日常工作流。
 - [[20-AI/AI日记/2026/05/2026-05-12|2026-05-12]] Google 一边改造 AI Mode 与 AI Overviews 的导流逻辑，一边把 Gemini API File Search 推向 multimodal RAG 与页级引用，说明其正同时争夺搜索入口与企业检索基础设施。
 - [[20-AI/AI日记/2026/05/2026-05-10|2026-05-10]] Google DeepMind 强调 AlphaEvolve 已把影响范围扩展到科研、电网与计算基础设施，agent 价值叙事继续从编程助手上移。
@@ -27,6 +35,8 @@ tags:
 
 ## 待跟踪
 
+- Co-Scientist 这类多 agent 科研系统，是否会从实验入口继续扩展到付费科研工具或 Google Cloud 场景。
+- 端侧 AI 风险识别会不会进一步扩展为 Android、搜索和通信产品里的默认安全层。
 - 系统级 AI 指针交互会不会真正进入 Chrome、桌面和终端默认体验。
 - Google 是否能同时维持“更强 AI 回答”和“更强网页导流”的搜索生态平衡。
 - Gemini 产品入口、Gemini API 与 Google Workspace/Chrome 的结合是否会进一步收紧。
