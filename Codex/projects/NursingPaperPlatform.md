@@ -857,3 +857,11 @@
 - 修正测试工作流中质量评价绑定虚构 literature ID 的旧夹具问题，改为绑定实际纳入文献。
 - 已验证：`npm run test:api` 98/98 通过；`npm run test:deploy` 5/5 通过；`\.\deploy.ps1 restart` 已重建并重启容器；`\.\deploy.ps1 smoke` 通过，ready/health 均为 200，导出任务 succeeded；应用内浏览器页面可正常加载且无控制台 error/warn。
 - 项目目录当前不是 Git 仓库，未提交 commit。
+
+## 2026-06-11 Meta 留一法敏感性分析与 Git 管理
+- 项目已初始化 Git，`main` 基线提交为 `eff13db`；当前功能分支为 `feat/meta-sensitivity-analysis`。
+- 新增 Meta leave-one-out 敏感性分析：逐项排除研究后重新计算 DerSimonian-Laird 随机效应，输出 pooled effect、95% CI、相对完整模型变化量、最大绝对变化和对应 extraction ID。
+- 新增 `sensitivity` SVG 导出及导出前置校验；有效研究少于 3 项时返回 409 `EXPORT_SENSITIVITY_ANALYSIS_INCOMPLETE`。
+- audit JSON 新增 `sensitivity_analysis` 和 `meta.sensitivity` 来源映射；结果只提供诊断信息，不自动判定稳健性。
+- 功能分支提交：`68e9f7c`（计划）、`2f50d1f`（测试）、`92218c9`（计算）、`1786673`（SVG 导出）。
+- 已验证：`npm run test:api` 101/101 通过；`npm run test:deploy` 5/5 通过；容器重建重启及 smoke 通过；应用内浏览器加载正常且无 console error/warn。
