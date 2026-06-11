@@ -866,3 +866,12 @@
 - 功能分支提交：`68e9f7c`（计划）、`2f50d1f`（测试）、`92218c9`（计算）、`1786673`（SVG 导出）。
 - 已验证：`npm run test:api` 101/101 通过；`npm run test:deploy` 5/5 通过；容器重建重启及 smoke 通过；应用内浏览器加载正常且无 console error/warn。
 - Git 收尾：功能分支已快进合并到 `main`（HEAD `1786673`），合并后 API 101/101、部署契约 5/5 通过，功能分支已删除，工作区干净；仓库尚未配置远程地址。
+
+## 2026-06-12 发表偏倚诊断与漏斗图导出
+- 新增功能分支 `feat/publication-bias-diagnostics`，提交：`c45ea47`（spec/plan）、`fbd8a3f`（红测）、`f271fb5`（实现）。
+- 新增 `funnel` 导出格式，输出 SVG 漏斗图，包含 DerSimonian-Laird 随机效应参考线、95% pseudo-confidence funnel、研究点和小样本效应解释提示。
+- audit JSON 新增 `publication_bias`：包含 `funnel_plot`、`egger_regression`、`source_map['meta.publication_bias']` 和解释说明。
+- Egger 诊断采用透明的依赖内置实现：标准化效应 `effect_size / standard_error` 对精度 `1 / standard_error` 的 OLS 回归；少于 10 个有效研究时只输出 `not_performed / insufficient_studies_for_formal_test`，不做正式检验。
+- `funnel` 导出前置校验：少于 2 个有效 extraction rows 时返回 409 `EXPORT_PUBLICATION_BIAS_INCOMPLETE`；其他导出格式不受该校验阻断。
+- 已验证：红测先失败；目标测试 `npm run test:api -- --test-name-pattern funnel` 与 `--test-name-pattern Egger` 通过；全量 `npm run test:api` 105/105 通过；`npm run test:deploy` 5/5 通过；`./deploy.ps1 restart` 已重建镜像 `nursing-paper-platform:latest`（sha `c7b566...`）并重启；`./deploy.ps1 smoke` 通过，ready/health 均为 200，导出任务 succeeded；首页 `http://127.0.0.1:8787/` 返回 200。
+- Git 收尾：`feat/publication-bias-diagnostics` 已快进合并到 `main`（HEAD `f271fb5`），合并后 `npm run test:api` 105/105、`npm run test:deploy` 5/5 通过，功能分支已删除，工作区干净；仓库仍未配置远程地址。
