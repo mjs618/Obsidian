@@ -865,3 +865,4 @@
 - audit JSON 新增 `sensitivity_analysis` 和 `meta.sensitivity` 来源映射；结果只提供诊断信息，不自动判定稳健性。
 - 功能分支提交：`68e9f7c`（计划）、`2f50d1f`（测试）、`92218c9`（计算）、`1786673`（SVG 导出）。
 - 已验证：`npm run test:api` 101/101 通过；`npm run test:deploy` 5/5 通过；容器重建重启及 smoke 通过；应用内浏览器加载正常且无 console error/warn。
+- Git 收尾：功能分支已快进合并到 `main`（HEAD `1786673`），合并后 API 101/101、部署契约 5/5 通过，功能分支已删除，工作区干净；仓库尚未配置远程地址。
