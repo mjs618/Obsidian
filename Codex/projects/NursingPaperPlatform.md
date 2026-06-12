@@ -923,3 +923,10 @@
 - 部署：`deploy.ps1 restart` 已重建 `nursing-paper-platform:latest` 并重启；当前 compose 中 platform healthy，worker、Redis、MinIO 均运行；生产 smoke 完成 MinIO 对象存储与导出任务。
 - 浏览器验证：`http://127.0.0.1:8787/` 中测试项目可登录、选择抽取步骤、只显示纳入文献、编辑保存生效、删除确认可打开/取消、Gate C 后锁定；桌面与 390px 移动端无横向溢出，登录后控制台无 error/warning。
 - Git 收尾：`codex/meta-effect-size-pipeline` 已快进合并到 `main`，HEAD 为 `812841e`；合并后再次验证 `npm run test:api` 115/115、`npm run test:client` 30/30、`npm run test:extraction-form` 14/14、`npm run test:extraction-crud` 1/1、`npm run test:api-sync` 1/1 和 `npm run build` 均通过；功能分支已删除。
+
+## 2026-06-12 Hartung-Knapp 与预测区间设计
+- 用户确认方案 A：优先增强 Meta 统计不确定性表达，补 Hartung-Knapp 调整置信区间和 95% prediction interval。
+- 新分支：`codex/meta-hk-prediction-interval`。
+- 设计文档：`docs/superpowers/specs/2026-06-12-meta-hartung-knapp-prediction-interval-design.md`，提交 `a600026`。
+- 设计范围：保留 DerSimonian-Laird pooled estimate，新增 modified Hartung-Knapp CI、prediction interval、小样本状态标记、audit/source map、manuscript、GRADE、forest SVG 和分析面板展示。
+- 下一步：用户审核 spec 后，写 implementation plan，再按 TDD 实现。
