@@ -941,3 +941,12 @@
 - Docker 镜像 `nursing-paper-platform:latest` 已重建为 sha `c5cba573...`；`deploy.ps1 smoke` 通过，ready/health 均为 200，`task-25` succeeded，artifactBytes=21462，Redis 队列为 0。
 - 应用内浏览器验证：部署页可见 Hartung-Knapp 和 Prediction interval；桌面与 390px 移动端无横向溢出，控制台无 error/warn。
 - Git 收尾：`codex/meta-hk-prediction-interval` 已快进合并到 `main`，HEAD 为 `1752486`；合并后再次验证 API 116/116、Meta 44/44、client 30/30、部署契约 5/5、Extraction Playwright 1/1 和生产构建均通过；功能分支已删除。
+
+## 2026-06-12 RoB 2 双人独立复核设计
+- 用户确认优先实现个体随机、平行组 RCT 的 RoB 2 结果级评价，目标效应为“分配至干预的效应”。
+- 采用生产级多账号：管理员创建本地账号并分配项目评审池；每个具体结果分配两名不同评审员和一名独立裁决员，提交前严格互盲，分歧逐题裁决并填写理由。
+- 平台不内置受许可约束的官方题目；管理员导入并发布不可变、版本化的授权模板，模板包含域、问题、答案、条件跳转、判定算法、引用、许可和授权声明。
+- 算法建议允许人工覆盖，但必须保留算法结果、人工结果、理由和审计记录。旧 JBI/通用自由文本评价保留给非 RCT，不能满足支持范围内 RCT 的投稿完整性。
+- 最终结果将接入 Gate C、排除高风险研究的 Meta 敏感性分析、GRADE、审计、稿件和 risk-of-bias 图表。
+- 分支：`codex/rob2-dual-review`。设计规格：`docs/superpowers/specs/2026-06-12-rob2-dual-review-design.md`，提交 `5a966e1`。
+- 当前状态：等待用户审核书面规格；确认后编写详细实施计划。
