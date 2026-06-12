@@ -895,3 +895,20 @@
 - 最终验证：合并后 `npm run test:api` 110/110、`npm run test:deploy` 5/5、`node --check backend/api.mjs`、`git diff --check` 均通过。
 - 部署验证：镜像 `nursing-paper-platform:latest` 已重建并重启；`deploy.ps1 smoke` 通过，`/ready` 与 `/health` 均为 200，Redis worker 完成 `task-20`，MinIO 产物下载成功，artifactBytes=21462。
 
+
+## 2026-06-12 量化效应量管线与分组 Meta 工作流
+- 当前分支：`codex/meta-effect-size-pipeline`。已实现 RR/OR、MD/SMD 和预计算效应量的严格校验与计算，并对数值不稳定、双零事件、重复比较和共享对照进行阻断或标记。
+- 量化 extraction 已持久化到 SQLite，支持创建、更新、删除；Gate C 通过后保持锁定。新增按 outcome + timepoint + effect measure 隔离的 Meta 分组 API，避免 MD/SMD、RR/OR 等不兼容证据混合。
+- 分组详情提供 fixed/random effects、Q/I²/tau²、leave-one-out、漏斗图与 Egger 条件诊断；稿件、GRADE、审计和导出均可按 `group_key` 限定证据范围。
+- 前端 API client、TypeScript 类型和 Vue 工作台已接入：支持描述性、二分类原始数据、连续变量原始数据、预计算效应量录入；分析页可查看 Meta 分组状态；导出页可选择分组。
+- Git 提交包括：`a68063d`、`d36e984`、`72e6502`、`be55415`、`7c55698`、`0c43859`、`3fc78ef`、`b420411`、`a6b4168`、`88fc8af`、`e5eb477`。
+- 验证：Meta 核心测试 39/39、API 115/115、client 30/30、`npm run build` 通过；`deploy.ps1 smoke` 通过，Redis worker 完成导出、MinIO 产物可下载；最终 `/ready` 与 `/health` 均为 200。
+- Docker 镜像 `nursing-paper-platform:latest` 已重建；平台容器 healthy，worker/Redis/MinIO 正常运行。浏览器验证桌面与 390px 移动端无横向溢出，量化模式控件可访问，控制台无 error/warning。
+- 下一批生产级重点：完善 extraction 编辑/删除 UI 与文献选择器；增加 RoB 2/ROBINS-I 域级质量评价和双人复核/冲突裁决；实现 Hartung-Knapp、REML/Paule-Mandel、亚组/Meta 回归与预测区间；补完整 PRISMA 2020 checklist、协议注册字段、引用核验和投稿前人工签核；增加备份恢复、迁移演练和并发/负载验证。
+
+## 2026-06-12 Extraction CRUD 工作流计划
+- 已确认方案 A：量化提取只从人工纳入文献中选择来源；复用顶部表单编辑；删除需要行内二次确认；Gate C 通过后禁用创建、编辑和删除。
+- 设计文档：`docs/superpowers/specs/2026-06-12-extraction-crud-workflow-design.md`，提交 `6b902f2`。
+- 实施计划：`docs/superpowers/plans/2026-06-12-extraction-crud-workflow.md`，提交 `2683db2`。
+- 计划采用 Node 纯函数测试加 Playwright 真实 API/Vite 验收，不新增依赖；成功变更后统一刷新 extraction rows 和 Meta groups，失败时保留表单与确认状态。
+- 当前尚未修改业务代码；下一步选择子代理逐任务执行或当前会话内联执行。
