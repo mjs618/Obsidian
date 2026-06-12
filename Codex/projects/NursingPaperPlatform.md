@@ -930,3 +930,14 @@
 - 设计文档：`docs/superpowers/specs/2026-06-12-meta-hartung-knapp-prediction-interval-design.md`，提交 `a600026`。
 - 设计范围：保留 DerSimonian-Laird pooled estimate，新增 modified Hartung-Knapp CI、prediction interval、小样本状态标记、audit/source map、manuscript、GRADE、forest SVG 和分析面板展示。
 - 下一步：用户审核 spec 后，写 implementation plan，再按 TDD 实现。
+
+## 2026-06-12 Hartung-Knapp 与预测区间实现
+- 分支：`codex/meta-hk-prediction-interval`；提交包括 `4ea060a`、`aa120e5`、`d03b362`、`30d6de9`、`1752486`。
+- Meta 纯引擎已实现 modified Hartung-Knapp 95% CI 和 DerSimonian-Laird prediction interval；两项研究标记 HK `unstable`，少于三项研究不执行预测区间。
+- 比例效应 RR/OR 的区间已在展示层反变换；修复了 `null` 被 `Math.exp(null)` 误显示为 1 的问题。
+- 新结果已进入 Meta group detail、audit/source map、GRADE imprecision caution、manuscript draft、forest SVG 和 Vue 分析面板。
+- 部署 smoke 首次暴露 external worker 与 API 并发访问 SQLite 时的瞬时 `database is locked`；连接增加 5 秒 `busy_timeout`，并补独立线程持锁回归测试。
+- 最终验证：Meta 44/44、API 116/116、client 30/30、部署契约 5/5、构建和 Extraction Playwright 通过。
+- Docker 镜像 `nursing-paper-platform:latest` 已重建为 sha `c5cba573...`；`deploy.ps1 smoke` 通过，ready/health 均为 200，`task-25` succeeded，artifactBytes=21462，Redis 队列为 0。
+- 应用内浏览器验证：部署页可见 Hartung-Knapp 和 Prediction interval；桌面与 390px 移动端无横向溢出，控制台无 error/warn。
+- Git 收尾：`codex/meta-hk-prediction-interval` 已快进合并到 `main`，HEAD 为 `1752486`；合并后再次验证 API 116/116、Meta 44/44、client 30/30、部署契约 5/5、Extraction Playwright 1/1 和生产构建均通过；功能分支已删除。
