@@ -885,3 +885,13 @@
 - 已验证：`npm run test:api -- --test-name-pattern GRADE` 通过（实际执行 108/108）；`node --check backend/api.mjs` 通过；`git diff --check` 通过；`npm run test:api` 108/108 通过；`npm run test:deploy` 5/5 通过；`./deploy.ps1 restart` 已重建镜像并重启；`./deploy.ps1 smoke` 通过，ready/health 均为 200，生产 smoke 导出任务 succeeded，artifactBytes=12995。
 - Git 收尾：`feat/grade-summary-of-findings` 已快进合并到 `main`（HEAD `804ebe6`），合并后 `npm run test:api` 108/108、`npm run test:deploy` 5/5 通过，功能分支已删除；仓库仍未配置远程地址。
 
+## 2026-06-12 可追溯 Meta 稿件草稿
+- 新增确定性、证据驱动的 Meta 稿件草稿生成：DOCX 按 Abstract、Introduction、Methods、Results、Discussion、Conclusion 排列，并保留 Summary of Findings、证据附录和参考文献。
+- Methods/Results 复用项目中的 PRISMA、质量评价、Meta、敏感性分析、发表偏倚和 GRADE 结果；Discussion/Conclusion 明确保留人工撰写与审校，不自动生成无证据的临床结论。
+- audit JSON 新增 `manuscript_draft`，包含 19 个有序章节、生成方法、人工复核标记和段落级 `source_map`。
+- 代码审查补齐研究筛选与质量评价段落的来源覆盖：检索记录、筛选文献、全文记录、纳入文献和质量评价记录均可追溯。
+- 设计与计划：`docs/superpowers/specs/2026-06-12-manuscript-draft-design.md`、`docs/superpowers/plans/2026-06-12-manuscript-draft.md`。
+- Git 提交：`a9c8459`、`5d2d9f8`、`fa47a9c`、`c14ccbf`、`da7c235`、`e1fcaca`；已快进合并到 `main`，HEAD 为 `e1fcaca`，功能分支已删除。
+- 最终验证：合并后 `npm run test:api` 110/110、`npm run test:deploy` 5/5、`node --check backend/api.mjs`、`git diff --check` 均通过。
+- 部署验证：镜像 `nursing-paper-platform:latest` 已重建并重启；`deploy.ps1 smoke` 通过，`/ready` 与 `/health` 均为 200，Redis worker 完成 `task-20`，MinIO 产物下载成功，artifactBytes=21462。
+
