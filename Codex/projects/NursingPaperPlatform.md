@@ -875,3 +875,13 @@
 - `funnel` 导出前置校验：少于 2 个有效 extraction rows 时返回 409 `EXPORT_PUBLICATION_BIAS_INCOMPLETE`；其他导出格式不受该校验阻断。
 - 已验证：红测先失败；目标测试 `npm run test:api -- --test-name-pattern funnel` 与 `--test-name-pattern Egger` 通过；全量 `npm run test:api` 105/105 通过；`npm run test:deploy` 5/5 通过；`./deploy.ps1 restart` 已重建镜像 `nursing-paper-platform:latest`（sha `c7b566...`）并重启；`./deploy.ps1 smoke` 通过，ready/health 均为 200，导出任务 succeeded；首页 `http://127.0.0.1:8787/` 返回 200。
 - Git 收尾：`feat/publication-bias-diagnostics` 已快进合并到 `main`（HEAD `f271fb5`），合并后 `npm run test:api` 105/105、`npm run test:deploy` 5/5 通过，功能分支已删除，工作区干净；仓库仍未配置远程地址。
+
+## 2026-06-12 GRADE Summary of Findings MVP
+- 新增功能分支 `feat/grade-summary-of-findings`，提交：`7ba8e88`（spec/plan）、`cf8d918`（红测）、`804ebe6`（实现）。
+- audit JSON 新增 `grade_summary`：按 outcome 汇总 eligible Meta rows、DerSimonian-Laird 随机效应、I²/tau²、质量评价覆盖、发表偏倚诊断状态、GRADE-style 机器初评 certainty、downgrade reasons 与 source_map。
+- manuscript DOCX 新增 `Summary of Findings` 表，包含 Outcome、Studies、Random-effects effect、I-squared、Certainty、Downgrade reasons、Review note；所有结果标记 `requires_human_review: true`。
+- 确定性规则：risk_of_bias、inconsistency、imprecision、publication_bias 分域降级；I² >=75% 计两级，I² >=50% 计一级；3 项及以下研究或随机效应 CI 跨 0 计 imprecision；Egger p<0.10 才自动 publication_bias 降级。
+- 导出预检：manuscript/audit 在已录入定量 Meta 行但无任何 outcome 满足至少 2 条有效行时返回 409 `EXPORT_GRADE_SUMMARY_INCOMPLETE`；普通非定量结构化提取不被该预检阻断。
+- 已验证：`npm run test:api -- --test-name-pattern GRADE` 通过（实际执行 108/108）；`node --check backend/api.mjs` 通过；`git diff --check` 通过；`npm run test:api` 108/108 通过；`npm run test:deploy` 5/5 通过；`./deploy.ps1 restart` 已重建镜像并重启；`./deploy.ps1 smoke` 通过，ready/health 均为 200，生产 smoke 导出任务 succeeded，artifactBytes=12995。
+- Git 收尾：`feat/grade-summary-of-findings` 已快进合并到 `main`（HEAD `804ebe6`），合并后 `npm run test:api` 108/108、`npm run test:deploy` 5/5 通过，功能分支已删除；仓库仍未配置远程地址。
+
