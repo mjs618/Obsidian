@@ -912,3 +912,14 @@
 - 实施计划：`docs/superpowers/plans/2026-06-12-extraction-crud-workflow.md`，提交 `2683db2`。
 - 计划采用 Node 纯函数测试加 Playwright 真实 API/Vite 验收，不新增依赖；成功变更后统一刷新 extraction rows 和 Meta groups，失败时保留表单与确认状态。
 - 当前尚未修改业务代码；下一步选择子代理逐任务执行或当前会话内联执行。
+
+## 2026-06-12 Extraction CRUD 工作流实现
+- 当前分支：`codex/meta-effect-size-pipeline`。已完成 Extraction CRUD 工作流：纳入文献来源选择、顶部表单编辑、行内删除二次确认、Gate C 锁定后禁用创建/编辑/删除。
+- 新增纯函数模块 `src/features/extraction/extraction-form.mjs` 与类型声明，集中处理表单默认值、模式切换、included-only 文献选项、payload 映射和校验。
+- 前端 `ExtractionWorkspace.vue` 与 `App.vue` 已接入 create/update/delete API；成功后刷新 extraction rows 与 Meta groups，失败时保留表单或确认状态。
+- 修正 API 同步 E2E 中质量评价绑定虚构 literature ID 的旧夹具问题，改为绑定实际纳入文献。
+- Git 提交：`7789fc4`、`1c12d4d`、`ea4f6d2`、`cc718a4`、`3f76630`、`812841e`。
+- 验证：`npm run test:extraction-form` 14/14、`npm run test:extraction-crud` 1/1、`npm run test:api-sync` 1/1、`npm run test:api` 115/115、`npm run test:client` 30/30、`npm run build`、`deploy.ps1 smoke` 均通过。
+- 部署：`deploy.ps1 restart` 已重建 `nursing-paper-platform:latest` 并重启；当前 compose 中 platform healthy，worker、Redis、MinIO 均运行；生产 smoke 完成 MinIO 对象存储与导出任务。
+- 浏览器验证：`http://127.0.0.1:8787/` 中测试项目可登录、选择抽取步骤、只显示纳入文献、编辑保存生效、删除确认可打开/取消、Gate C 后锁定；桌面与 390px 移动端无横向溢出，登录后控制台无 error/warning。
+- Git 收尾：`codex/meta-effect-size-pipeline` 已快进合并到 `main`，HEAD 为 `812841e`；合并后再次验证 `npm run test:api` 115/115、`npm run test:client` 30/30、`npm run test:extraction-form` 14/14、`npm run test:extraction-crud` 1/1、`npm run test:api-sync` 1/1 和 `npm run build` 均通过；功能分支已删除。
