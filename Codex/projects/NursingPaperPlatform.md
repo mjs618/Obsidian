@@ -1098,3 +1098,17 @@
 - smoke 新增断言：同一 `group_key`、RR null value、eligible rows、随机效应 pooled estimate 为正、任务 result file metadata、artifact content-type/attachment filename、forest SVG 包含两项研究标签、manuscript DOCX 为 zip payload 且包含已核查人工摘要。
 - 验证：`node --check tests/deploy/production-smoke.mjs`、`git diff --check -- tests/deploy/production-smoke.mjs`、`npm run test:deploy` 5/5 通过。
 - 真实 `deploy.ps1 smoke` 仍未完成：`docker version` 在重启 Docker Desktop Service 后仍 64 秒超时，Docker CLI/后端在当前机器上无响应；只能确认 smoke 脚本和部署契约通过，不能确认生产栈运行通过。
+
+## 2026-06-16 写作工作台投稿差距行动面板
+
+- 提交 `948c10c feat: surface manuscript readiness actions`。
+- 写作工作台新增“投稿差距 / 下一步行动”面板：按证据不足、人工正文未完成、证据更新需复核、人工核查未完成、投稿前质控未通过生成优先行动项；投稿就绪时显示可整理投稿文件。
+- 移动端写作页修复论文章节抽屉关闭状态遮挡正文的问题，改为按抽屉宽度移出屏幕。
+- 已验证：`npm run test:manuscript-frontend`、`node --test tests\\frontend\\ui-copy.test.mjs`、`npm run build`、`git diff --check`，并生成桌面/移动 Playwright 截图到 `output/playwright/readiness-actions-*.png`。
+
+## 2026-06-16 导出页投稿包清单完成
+
+- 提交 `4b43aa4 feat: show submission package checklist`。
+- 导出归档页新增“投稿包清单”：按质控关卡 A-E、Meta 结果分组、论文 DOCX、PRISMA 流程图、题录与筛选表、审计追溯文件显示完成/待生成/阻断/需确认状态。
+- 新增 `src/features/export/submission-package.mjs` 纯函数和 `tests/frontend/export-package.test.mjs`，把投稿包完整性规则从 Vue 模板中抽离，便于后续扩展投稿前检查。
+- 已验证：`node --test tests\\frontend\\export-package.test.mjs`、`node --test tests\\frontend\\ui-copy.test.mjs`、`npm run test:manuscript-frontend`、`npm run test:client`、`npm run build`、`git diff --check`，并生成桌面/移动截图到 `output/playwright/submission-package-*.png`。
