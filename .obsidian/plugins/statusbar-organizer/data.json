@@ -91,6 +91,10 @@
       "plugin-obsidian-git-obsidian-git-statusbar-idle-obsidian-git-statusbar-status-obsidian-git-statusbar-add;1": {
         "position": 22,
         "visible": true
+      },
+      "plugin-obsidian-git-obsidian-git-statusbar-idle-obsidian-git-statusbar-status-obsidian-git-statusbar-add-obsidian-git-statusbar-commit-obsidian-git-statusbar-message;1": {
+        "position": 23,
+        "visible": true
       }
     }
   },
