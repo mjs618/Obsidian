@@ -949,4 +949,152 @@
 - 算法建议允许人工覆盖，但必须保留算法结果、人工结果、理由和审计记录。旧 JBI/通用自由文本评价保留给非 RCT，不能满足支持范围内 RCT 的投稿完整性。
 - 最终结果将接入 Gate C、排除高风险研究的 Meta 敏感性分析、GRADE、审计、稿件和 risk-of-bias 图表。
 - 分支：`codex/rob2-dual-review`。设计规格：`docs/superpowers/specs/2026-06-12-rob2-dual-review-design.md`，提交 `5a966e1`。
-- 当前状态：等待用户审核书面规格；确认后编写详细实施计划。
+- 当前状态：规格已确认，详细实施计划已写入 `docs/superpowers/plans/2026-06-13-rob2-dual-review.md`，正在按 TDD 分阶段实现。
+
+## 2026-06-13 RoB 2 生产化基础与结果目标
+- 当前分支：`codex/rob2-dual-review`。
+- 已完成授权模板纯引擎、持久用户/会话、强制改密、Cookie CSRF、管理员用户管理、项目成员角色和项目级 IDOR 防护。
+- 已完成授权风险模板的 SQLite 版本化生命周期：草稿导入、授权声明与安全校验、规范化校验和、发布后不可变、退役后只读。
+- 已完成结果级 RoB 目标基础：文献 `study_design`、稳定结果身份快照、已发布模板绑定、两名不同 reviewer 与独立 adjudicator 分配、结果身份变化后 stale/version 递增。
+- 新增迁移：`20260613_012_identity_and_audit`、`20260613_013_rob_templates`、`20260613_014_rob_targets`。
+- Git 提交：`012a157`、`1e4aa77`、`3282312`、`9b99e42`；工作区在提交后干净。
+- 最新验证：API 122/122、RoB workflow 4/4、RoB template 6/6、Vue 生产构建通过；认证 E2E 和部署契约在身份/授权阶段通过。
+- 下一步：实现 `20260613_015_rob_reviews`，包括 reviewer 私有草稿、乐观版本控制、不可变提交快照和提交前严格互盲。
+
+## 2026-06-13 RoB 2 双盲评审草稿与不可变提交
+- 当前分支：`codex/rob2-dual-review`；最新提交 `1a82e35`（`feat: enforce blinded immutable risk reviews`）。
+- 已实现迁移 `20260613_015_rob_reviews`：新增 reviewer 私有草稿表 `rob_review_drafts` 与不可变提交表 `rob_review_submissions`，并纳入 SQLite load/save 与迁移快照。
+- 已实现 reviewer 任务接口：`GET /api/rob-tasks`、`GET/PUT /api/rob-tasks/{target_id}/draft`、`POST /api/rob-tasks/{target_id}/submit`。草稿使用乐观版本控制，冲突返回 `ROB_DRAFT_VERSION_CONFLICT`。
+- 已实现提交前校验与服务器端快照：验证可达必答问题、证据条目和人工覆盖理由；提交时重新计算模板算法判定，保存模板 checksum、目标快照、算法判定、最终判定和提交版本，并删除可变草稿。
+- 已实现互盲视图：reviewer 只能看到自己的草稿/提交状态，不能看到另一 reviewer 的草稿、备注或进度；提交状态只暴露中性 workflow status。
+- 已实现 `POST /api/projects/{project_id}/rob-targets/{target_id}/return-review`：项目管理员或 adjudicator 可退回某 reviewer 的有效提交，旧提交标记 `superseded_at`，目标状态按剩余有效提交回退。
+- 验证：新增退回评审红测先失败于 404，补实现后通过；`npm run test:rob-workflow` 7/7、`npm run test:api` 123/123、`npm run build`、`git diff --check` 均通过。
+- 下一步：继续实现分歧比较与逐题裁决，生成最终 RoB 结果并接入后续 Gate/Meta/GRADE/导出链路。
+
+## 2026-06-13 RoB 2 独立裁决与最终结果
+- 当前分支：`codex/rob2-dual-review`；最新提交 `c985fcd`（`feat: add independent risk adjudication`）。
+- 已实现迁移 `20260613_016_rob_adjudication`：新增 `rob_adjudications` 裁决草稿表和 `rob_final_results` 最终 RoB 结果表，并纳入 SQLite load/save 与迁移快照。
+- `backend/rob-workflow.mjs` 新增 `compareSubmissions`、`validateAdjudicationDraft`、`finalizeAdjudication`、`createConsensusFinalResult`：答案/适用性差异和覆盖差异会形成冲突，证据或备注差异不单独形成冲突；冲突裁决必须包含选择值和不少于 10 个非空白字符的理由。
+- 已实现 `GET/PUT/POST /api/rob-adjudications/{target_id}` 系列接口：reviewer 在两份当前提交存在后可只读查看 comparison；只有指定 adjudicator 可保存裁决草稿和 finalize；草稿使用乐观版本控制，冲突返回 `ROB_ADJUDICATION_VERSION_CONFLICT`。
+- finalization 会重新计算最终 answers、domain judgments 和 overall judgment，生成不可变 final result，并把 target 状态更新为 `finalized`；一致提交可通过自动共识纯函数生成 `automatic_consensus` 结果。
+- 验证：纯函数红测先失败于缺少导出，API 红测先失败于 404；实现后 `npm run test:rob-workflow` 9/9、`npm run test:api` 124/124、`npm run build`、`git diff --check` 均通过。
+- 下一步：进入 Task 9 tamper-evident audit chain，把模板、分配、草稿、提交、退回、裁决和最终结果纳入防篡改审计链。
+
+## 2026-06-13 RoB 2 防篡改审计链
+- 当前分支：`codex/rob2-dual-review`；最新提交 `4c9dfec`（`feat: add tamper-evident review audit`）。
+- 新增 `backend/audit-chain.mjs` 和 `tests/backend/audit-chain.test.mjs`：支持审计 metadata 敏感字段递归脱敏、按 `chain_scope` + sequence 串联 previous hash、事件 canonical JSON 哈希和链验证。
+- 审计脱敏覆盖 `password|secret|token|authorization|cookie|csrf|hash`；测试确认 `must-not-appear` 不会进入事件 JSON，篡改 `metadata_json` 会返回 `ok:false`、index、expected/actual hash。
+- API 已接入项目级 `GET /api/projects/{project_id}/audit-events/verify` 和管理员全局 `GET /api/admin/audit-events/verify`。
+- 已为关键动作追加审计事件：登录、登出、改密、用户创建/更新/重置密码、项目成员变更、模板导入/发布/退役、RoB target 创建/分配/stale、review submit/return、adjudication draft/finalize、Gate 确认、export task 创建。
+- publication 类导出（`manuscript`、`audit`、`prisma`、`forest` 及预留 RoB 图表格式）在创建任务前先校验项目审计链；链失效返回 409 `AUDIT_CHAIN_INVALID`。
+- 验证：审计链模块红测先失败于缺少模块，API 红测先失败于 404；实现后 `npm run test:audit-chain` 2/2、`npm run test:api` 125/125、`npm run build`、`git diff --check` 均通过。
+- 下一步：进入 Task 10，把最终 RoB 结果接入 Meta 敏感性分析、GRADE、稿件和 RoB 表/traffic-light/summary artifact。
+
+## 2026-06-13 全站工作台视觉统一优化
+- 当前分支：`codex/rob2-dual-review`。
+- 用户确认使用 Product Design 插件直接优化现有 Vue 前端，全站工作台统一改造，方向为克制的现代科研/医疗 SaaS 工作台，并保持完整现有交互。
+- 已完成共享视觉系统调整：`src/styles.css` 统一背景、三栏工作台、顶部栏、流程导航、按钮、表格、指标卡、导入/导出选项、空状态和移动端断点；`StatusBadge.vue` 改为更轻的状态胶囊；`App.vue` 登录/接口提示样式同步新 token。
+- 设计决策：保留现有三栏业务结构与 props/events，不重写业务逻辑、不新增功能、不引入新依赖；重点降低旧式卡片和网格背景的视觉噪音，强化当前步骤、Gate/审计/任务状态和数据表格可读性。
+- 验证：`npm run build` 通过；内置浏览器检查 `http://127.0.0.1:5173/`，1280x720 桌面与 390x844 移动端均无横向溢出。移动端顶部栏高度从 405px 降至 315px。
+
+## 2026-06-13 生产 smoke Meta 分组覆盖增强
+- 在当前工作区仅修改 `tests/deploy/production-smoke.mjs`：生产 smoke 从单条描述性 extraction 升级为两篇 RIS 文献、两条同组 RR 原始二分类量化 extraction，并断言同一 `group_key`、Meta group list/detail ready、两条 eligible rows、随机效应 pooled estimate 为正。
+- smoke 现在在 Gate C 前创建两条质量评价和两条量化 extraction，Gate C 通过后继续 Gate D/E，并分别创建 selected-group `forest` 与 `manuscript` 导出任务。
+- 新增断言覆盖：group outcome/timepoint/benefit_direction、source extraction ids、detail rows、RR null value、analysis-scale pooling状态、任务 result file metadata、artifact content-type/attachment filename、forest SVG 双研究标签、manuscript DOCX zip payload；forest/manuscript 任务均持久化 `group_key`，Redis worker 将任务推进到 `succeeded`。
+- 本轮本地验证：`node --check tests/deploy/production-smoke.mjs`、`git diff --check -- tests/deploy/production-smoke.mjs`、`npm run test:deploy` 5/5 通过。未运行真实 `deploy.ps1 smoke`，因为当前会话未重启部署栈或提供生产 smoke 运行上下文。
+
+## 2026-06-13 UI 工作台补充优化
+- 本轮目标：继续优化 Nursing Paper Platform 的可见 UI，使首页工作台更明确服务“护理科研论文产出”，而不是泛化自动化平台。
+- 已改动：`WorkflowShell.vue` 顶栏文案改为“护理科研论文工作台”，新增从 PICO 到投稿草稿的证据链副标题；`ProjectSidebar.vue` 侧栏改为“研究项目 / 论文产出流程”；`src/styles.css` 进一步收敛为临床科研工作台色系，并修复深色左栏未激活步骤文字对比度不足的问题。
+- 新增回归测试：`tests/frontend/ui-copy.test.mjs` 检查核心 UI 壳层中文文案可读，并断言左栏未激活导航有显式浅色文字规则。
+- 验证：先红测确认新增左栏可读性断言失败，修复后 `node --test tests/frontend/ui-copy.test.mjs` 2/2、`npm run build`、`npm run test:client` 30/30、`npm run test:extraction-form` 14/14 均通过；Playwright 桌面 1440x1000 与移动 390x900 截图均无横向溢出，左栏未激活步骤颜色为 `rgb(237, 247, 247)`。
+
+## 2026-06-13 写作与投稿导出 UI 增强
+- 本轮目标：继续推进“能产出真正科研文章”的前端体验，重点增强论文写作和导出归档两个临近产出环节。
+- 已改动：`WritingWorkspace.vue` 新增“投稿准备总览”，从现有 `sections` 派生已人工核查章节、待核查章节和证据来源覆盖数；当前章节下方新增证据来源条，提醒每段草稿必须回到 PICO、PRISMA、分析或 Gate 记录。
+- 已改动：`ExportWorkspace.vue` 将导出状态语义调整为“投稿文件包”，并重写 DOCX、PRISMA、CSV、XLSX、audit 的说明，使其更像投稿材料和补充材料整理，而不是普通文件下载。
+- 回归测试：`tests/frontend/ui-copy.test.mjs` 新增写作/导出产出信号断言，先红测失败于缺少“投稿准备总览”，实现后通过。
+- 验证：`node --test tests/frontend/ui-copy.test.mjs` 3/3、`npm run build`、`npm run test:client` 30/30、`npm run test:extraction-form` 14/14 均通过；Playwright 进入写作与导出步骤，桌面 1440x1000 和移动 390x900 均无横向溢出，且可见“投稿准备总览”“证据来源”“投稿文件包”“DOCX”“PRISMA”。
+
+## 2026-06-13 数据提取与质控 UI 中文化
+- 数据提取页补充“提取质量概览”，显示提取记录、Meta 分析就绪和需复核数量，强化“结果可写入稿件”的目标导向。
+- 数据提取表单、操作按钮、删除确认和校验错误改为中文科研语境；状态徽标从内部状态码映射为“待完成 / 当前 / 已完成 / 已通过 / 可导出”等中文展示。
+- 右侧质控面板、来源追溯和导出汇总统一使用“质控关卡 / 质控日志”，保留内部 gate id 不变。
+- 验证：`node --test tests/frontend/ui-copy.test.mjs`、`npm run test:extraction-form`、`npm run test:client`、`npm run build` 均通过；Playwright 检查桌面 1440x1000 与移动 390x900，保存截图到 `test-results/ui/desktop-extraction-form-cn.png` 和 `test-results/ui/mobile-extraction-form-cn.png`。
+
+## 2026-06-13 统计分析与导出 UI 中文化补充
+- 统计分析页将 Meta 分组状态、分析状态、预测区间、无随访时间等展示改为中文稿件语境，避免暴露 `ready`、`no timepoint`、`eligible/reporting`、`Prediction interval` 等开发者文案。
+- 导出页的 Meta 分组选项和当前分组摘要改为中文展示：无随访时间、可汇总、可纳入、已报告。
+- 全局文件上传控件隐藏浏览器原生 file input，避免在 CSV 上传区域显示 `Choose File / No file chosen`，保留中文“选择 CSV 文件”入口。
+- 验证：`node --test tests/frontend/ui-copy.test.mjs` 9/9、`npm run build`、`npm run test:client` 30/30、`npm run test:extraction-form` 14/14 均通过；Playwright 检查统计分析页桌面 1440x1000 与移动 390x900，无横向溢出并保存截图到 `test-results/ui/desktop-analysis-cn.png` 和 `test-results/ui/mobile-analysis-cn.png`。
+
+## 2026-06-13 写作与任务状态 UI 收敛
+- 将写作页证据来源与稿件核查说明中的 `Gate` 改为“质控关卡”，并把 Methods 示例来源改为“质控 A / 质控 B”。
+- 将任务状态徽标 `queued/running/succeeded/failed` 映射为“排队中/运行中/已完成/失败”，导出任务提交提示也显示中文状态。
+- 将提取记录创建、更新、删除以及草稿核查的接口/本地反馈改为中文；提取审计事件和“质控 C 已锁定提取数据”提示同步中文化。
+- 增加 `tests/frontend/ui-copy.test.mjs` 覆盖写作、任务状态、App 操作反馈和提取锁定提示；验证通过：`node --test tests\frontend\ui-copy.test.mjs`、`npm run test:client`、`npm run test:extraction-form`、`npm run build`。
+- Playwright 已在桌面和移动视口验证写作页无 Gate/英文任务状态残留，截图：`test-results/ui/desktop-writing-cn.png`、`test-results/ui/mobile-writing-cn.png`。
+
+## 2026-06-13 写作结构与展示值 UI 收敛
+- 写作草稿种子章节从 `Abstract/Methods/Results/Discussion` 改为“摘要/方法/结果/讨论”，来源中的 `Table 1` 改为“表 1：基线特征”。
+- 增加旧 localStorage 草稿章节归一化：已保存的旧英文标题和 `Gate A/B`、`Table 1` 来源会在恢复时迁移为中文展示，保留正文和核查状态。
+- 数据提取表格不再直接展示 `descriptive_only`、`dichotomous_raw`、`eligible` 等内部枚举，改为“描述性记录/二分类效应量/可纳入 Meta 分析/仅作描述”等中文标签。
+- 本地 PRISMA SVG 导出文案改为中文：“PRISMA 流程图摘要、项目、导入题录、纳入研究、排除研究、已筛选、待确认”。
+- 统计分析页和右侧溯源中的 `Table 1` 改为“表 1：基线特征”。
+- 验证：`node --test tests\frontend\ui-copy.test.mjs` 17/17、`npm run test:client` 30/30、`npm run test:extraction-form` 14/14、`npm run build` 均通过；Playwright 验证并保存截图 `desktop-writing-sections-cn.png`、`desktop-writing-migrated-cn.png`、`desktop-extraction-labels-cn.png`、`desktop-analysis-trace-cn.png`。
+
+## 2026-06-13 PICO、检索与筛选 UI 收敛
+- PICO 页将“研究类型/时间与语言待配置”占位替换为研究问题完整度、PICO 结构状态和下一步提示，四项填满后明确显示“可生成检索式”。
+- 检索策略页新增检索覆盖、已导入批次、检索式状态总览；生成按钮改为“生成可复核检索式”，非 PubMed 数据库的占位“测试”改为“待接入导入”。
+- 文献筛选页新增“文献筛选总览”，集中显示待确认、纳入全文精筛、排除记录和全文材料；删除重复统计条，并将全文上传/文本提取/人工决定等内部状态映射为中文展示。
+- 回归测试：`tests/frontend/ui-copy.test.mjs` 扩展至 20 项，覆盖前置科研流程总览、状态码中文化和筛选页单一统计区。
+- 验证：`node --test tests\frontend\ui-copy.test.mjs` 20/20、`npm run build`、`npm run test:client` 30/30、`npm run test:extraction-form` 14/14 均通过；Playwright 真实填写 PICO、生成 4 条检索式并进入初筛页，确认无“测试”按钮、3 个数据库显示“待接入导入”、初筛统计区仅 1 组。截图保存在 `output/playwright/desktop-pico-readiness-cn.png`、`desktop-search-readiness-cn.png`、`desktop-screening-readiness-cn.png`。
+
+## 2026-06-13 项目标题按需编辑
+- 顶部项目标题不再常驻显示重复输入框，默认展示标题和“编辑”入口；进入编辑态后才显示输入框、保存和取消操作。
+- 保留原有项目重命名事件与接口同步逻辑，保存成功后退出编辑态。
+- 新增独立回归测试 `tests/e2e/title-edit.spec.js`；验证通过：该 Playwright 用例 1/1、`npm run build`。
+
+## 2026-06-13 独立质量评价工作区
+- 修复“质量评价”步骤错误复用文献筛选界面的问题，新增 `QualityAssessmentWorkspace.vue`，按已纳入研究、评价工具、评价领域、风险判断、原文依据和人工备注记录方法学质量证据。
+- 质量页新增已纳入研究覆盖率、评价记录数、需重点讨论数和待评价研究数；支持 JBI、ROB 2.0、ROBINS-I、CASP 工具，并将内部 judgment 映射为低风险、存在一些疑虑、高风险、信息不明确。
+- 前端接入现有 `quality-assessments` API；本地模式同步支持创建、localStorage 持久化、项目重置、审计时间线、本地 audit JSON 和 manuscript DOCX 摘要。
+- 更新 `tests/e2e/flow-closure.spec.js` 到当前中文 UI，并让流程闭环真实完成一条质量评价后再进入数据提取。
+- 验证：`node --test tests\frontend\ui-copy.test.mjs` 21/21、`npm run build`、`npm run test:client` 30/30、`npm run test:extraction-form` 14/14、`npm run test:flow` 1/1 均通过；Playwright 桌面 1440x1000 与移动 390x900 均无页面级横向溢出，截图为 `output/playwright/desktop-quality-assessment-cn.png` 和 `mobile-quality-assessment-cn.png`。
+
+## 2026-06-13 证据驱动中文论文写作工作台设计
+- 用户确认写作工作台采用中文护理核心期刊通用结构，使用 6 个分组、19 个章节，不再停留在摘要/方法/结果/讨论四个文本框。
+- 稿件采用双层模型：机器证据稿只读、确定性生成并保留来源；人工论文稿独立编辑和持久化。刷新证据不得覆盖人工正文。
+- 桌面端使用章节大纲、正文编辑、证据核查三栏；移动端使用正文/证据切换和章节抽屉。
+- 章节核查同时绑定人工正文版本和证据指纹；证据变化后正文保留，但核查状态失效。
+- 阶段性 DOCX 可继续导出，但必须与“投稿准备检查已通过”明确区分。
+- 设计规格：`E:\product\nursing_paper_platform\docs\superpowers\specs\2026-06-13-evidence-driven-writing-workbench-design.md`；提交 `f678fd6`。
+- 实施计划：`E:\product\nursing_paper_platform\docs\superpowers\plans\2026-06-13-evidence-driven-writing-workbench.md`；提交 `f9160ff`。
+- 计划分 12 个任务：后端稿件领域模型、中文机器证据稿、SQLite 人工章节持久化、workbench/save/review API、DOCX 与 audit 人工稿优先、前端 API client、本地模式迁移、三栏写作 UI、自动保存与证据插入、响应式和 E2E、完整回归与部署 smoke。
+- 当前状态：规格和实施计划均已完成；等待选择执行方式，尚未开始实现。
+
+## 2026-06-13 中文机器证据稿后端实现
+- Task 2 已完成并提交 `47108e5`：`backend/api.mjs` 将 19 个 manuscript machine sections 改为中文确定性证据稿，新增 `language=zh-CN`、`rules_version=2026-06-13.1`、草稿/章节 evidence fingerprint、`evidence_status` 和未知 section id 校验。
+- audit JSON 与 manuscript DOCX 的机器章节标题/正文同步为中文；人工作文占位统一使用“需人工撰写：”，证据缺口使用“证据不足：”。
+- 验证：先红测 `npm run test:api -- --test-name-pattern "Chinese manuscript|evidence-grounded manuscript draft"` 失败于缺少 `language`；实现后 `npm run test:api -- --test-name-pattern "Chinese manuscript|evidence-grounded manuscript draft|publication-oriented manuscript"` 125/125 通过。
+
+## 2026-06-14 证据驱动中文论文写作工作台完成
+- 当前分支：`codex/rob2-dual-review`。
+- 实施提交：`bed8e6d` 导出已核查人工稿、`6c29541` 前端 workbench client、`2a78959` 本地稿件状态、`e0c08fd` 三栏稿件 UI、`58c7a67` 自动保存与核查、`b18c9b0` 本地稿件迁移、`8ce8944` 写作工作台工作流 E2E。
+- 已落地 6 组 19 节中文护理综述稿件结构：摘要、引言、方法 8 节、结果 7 节、讨论、结论；机器证据稿只读，人工正文单独保存。
+- 后端新增 SQLite 迁移 `20260613_017_manuscript_sections` 和接口：`GET /api/projects/{id}/manuscript-workbench`、`PUT /api/projects/{id}/manuscript-sections/{section_id}`、`POST /api/projects/{id}/manuscript-sections/{section_id}/review`。
+- 人工核查绑定正文版本和机器证据 fingerprint；证据刷新或 extraction/source 变化后保留人工正文，但状态回到“待核查”，UI 显示“证据已更新，请重新核查”。
+- 前端写作页已替换旧四段草稿：桌面为章节大纲 / 人工正文 / 机器证据稿三栏；移动端为章节抽屉与正文/证据切换；证据段落可插入当前光标位置。
+- 本地模式已从旧 `draftSections` 迁移到 `manuscript.schemaVersion = 1`，继续只读兼容旧草稿一版，但新保存只写 19 节人工稿结构。本地 DOCX 导出包含全部 19 节，空节输出“本节尚未完成人工撰写。”，并加“研究草稿，需人工核查；当前文件不应直接作为投稿终稿。”声明。
+- DOCX/audit 导出优先使用已保存人工正文；机器稿和 source map 保留为可追溯证据，不解析人工正文到句级数值来源。
+- 视觉验收截图已生成：`output/playwright/desktop-manuscript-workbench.png`、`tablet-manuscript-workbench.png`、`mobile-manuscript-editor.png`、`mobile-manuscript-evidence.png`；四个视口均无页面级横向溢出。
+- 2026-06-14 本地验证通过：`node --check backend/api.mjs`、`node --check backend/manuscript-workbench.mjs`、`node --check src/features/manuscript/workbench.mjs`、`git diff --check`、`npm run test:manuscript-domain`、`npm run test:manuscript-frontend`、`npx playwright test tests/e2e/manuscript-workbench.spec.js --reporter=line`、`npm run test:api`（130/130）、`npm run test:client`（31/31）、`npm run test:extraction-form`（14/14）、`npm run test:rob-template`（6/6）、`npm run test:rob-workflow`（9/9）、`npm run test:audit-chain`（2/2）、`npm run test:deploy`（5/5）、`npm run test:api-sync`、`npm run test:flow`、`npm run build`。
+- 生产 smoke 未完成：`deploy.ps1 restart` 304 秒超时，随后 `docker compose ps`、`docker ps`、`docker version` 均 64 秒超时，判断为 Docker/Compose 引擎当前无响应；不能声称生产栈验证通过。
+- 剩余限制：尚无富文本编辑、期刊特异模板、自动学术解释生成；浏览器端不计算 pooled effects、CI、heterogeneity、Egger 或 GRADE，必须使用后端证据或人工核查。
+
+## 2026-06-14 生产 smoke Meta 导出覆盖提交
+- 当前分支：`codex/rob2-dual-review`；新增提交 `57bdda9`（`test: cover production meta smoke exports`）。
+- `tests/deploy/production-smoke.mjs` 已从单条描述性 extraction 升级为两篇 RIS 文献、两条同组 RR 原始二分类量化 extraction，覆盖 Meta group list/detail、analysis ready、forest 导出和 manuscript DOCX 人工摘要。
+- smoke 新增断言：同一 `group_key`、RR null value、eligible rows、随机效应 pooled estimate 为正、任务 result file metadata、artifact content-type/attachment filename、forest SVG 包含两项研究标签、manuscript DOCX 为 zip payload 且包含已核查人工摘要。
+- 验证：`node --check tests/deploy/production-smoke.mjs`、`git diff --check -- tests/deploy/production-smoke.mjs`、`npm run test:deploy` 5/5 通过。
+- 真实 `deploy.ps1 smoke` 仍未完成：`docker version` 在重启 Docker Desktop Service 后仍 64 秒超时，Docker CLI/后端在当前机器上无响应；只能确认 smoke 脚本和部署契约通过，不能确认生产栈运行通过。

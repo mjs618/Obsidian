@@ -21,3 +21,23 @@
 - 已给 `twitter.cmd` 设置 `PYTHONUTF8=1` 和 `PYTHONIOENCODING=utf-8`，避免 Windows GBK 控制台输出帮助文本时报 UnicodeEncodeError。
 - 2026-06-11 验证：`twitter --help` 可用；`twitter status` 返回 `not_authenticated`，当前阻塞是缺少 Twitter/X Cookie。
 - 自动从 Chrome/Edge 提取 Cookie 的操作被权限审查拒绝；后续需要用户主动提供 Cookie-Editor 导出的 Header String，再运行 `agent-reach configure twitter-cookies "..."` 后复查。
+
+## 2026-06-13 Agent Reach Twitter Cookie 尝试
+
+- 用户明确授权直接读取本机浏览器 Twitter/X Cookie。
+- 已尝试 Chrome/Edge 的 `browser-cookie3` 与 `rookiepy`；新版 Chromium App-Bound 加密导致库读取失败。
+- 已短暂关闭普通 Chrome，并用默认配置档案调试端口检查；Default、Profile 1、Profile 7、Profile 13 以及 Edge/Brave/Firefox 常见 profile 均未发现 `x.com/twitter.com` 的 `auth_token` 与 `ct0` Cookie 键。
+- 普通 Chrome 已用 `--restore-last-session` 重新打开。当前结论：Twitter 渠道工具已安装，但本机浏览器没有可直接复用的 Twitter/X 登录 Cookie；需要用户先在浏览器登录 X，或提供 Cookie-Editor 导出的 Header String。
+
+## 2026-06-13 Agent Reach Twitter 打通
+
+- 已将用户提供的 Twitter/X Cookie 中的 `auth_token` 与 `ct0` 写入 `C:\Users\Administrator\.agent-reach\config.yaml`，未记录 Cookie 值。
+- 已新增 `C:\Users\Administrator\.local\bin\twitter-agent-reach.py`，并更新 `C:\Users\Administrator\.local\bin\twitter.cmd`：运行 `twitter` 时自动从 Agent Reach 配置注入 `TWITTER_AUTH_TOKEN` / `TWITTER_CT0`。
+- 2026-06-13 验证：`twitter status` 返回 `ok: true`；`twitter whoami` 可读取当前账号；`agent-reach doctor` 显示 Twitter/X 推文渠道完整可用，状态为 `8/13`。
+
+## 2026-06-13 Agent Reach 小宇宙打通
+
+- 已安装 Agent Reach 小宇宙渠道脚本：`C:\Users\Administrator\.agent-reach\tools\xiaoyuzhou\transcribe.sh`。
+- 已通过 Scoop 安装 `ffmpeg` 8.1.1，`ffmpeg` 与 `ffprobe` shim 位于 `C:\Users\Administrator\scoop\shims`。
+- 已配置用户提供的 Groq API Key 到 `C:\Users\Administrator\.agent-reach\config.yaml`，未记录 Key 值。
+- 2026-06-13 验证：`agent-reach doctor` 显示“小宇宙播客转文字 — 完整可用（播客下载 + Whisper 转录）”，总状态为 `9/13`；Git Bash 可执行 `transcribe.sh --help`。
