@@ -1112,3 +1112,10 @@
 - 导出归档页新增“投稿包清单”：按质控关卡 A-E、Meta 结果分组、论文 DOCX、PRISMA 流程图、题录与筛选表、审计追溯文件显示完成/待生成/阻断/需确认状态。
 - 新增 `src/features/export/submission-package.mjs` 纯函数和 `tests/frontend/export-package.test.mjs`，把投稿包完整性规则从 Vue 模板中抽离，便于后续扩展投稿前检查。
 - 已验证：`node --test tests\\frontend\\export-package.test.mjs`、`node --test tests\\frontend\\ui-copy.test.mjs`、`npm run test:manuscript-frontend`、`npm run test:client`、`npm run build`、`git diff --check`，并生成桌面/移动截图到 `output/playwright/submission-package-*.png`。
+
+## 2026-06-16 Meta 结果段落草稿完成
+
+- 提交 `bf03ed1 feat: draft meta result paragraphs`。
+- 分析页新增“结果段落草稿”：根据 Meta 分组详情生成可写入 Results 的中文摘要，并提示复制到写作前需人工核查效应方向、量纲、时间点、纳入研究数和置信区间。
+- 新增 `src/features/analysis/meta-result-summary.mjs` 和 `tests/frontend/meta-result-summary.test.mjs`，把结果段落摘要规则从 Vue 模板中抽离。
+- 已验证：`node --test tests\frontend\meta-result-summary.test.mjs`、`node --test tests\frontend\ui-copy.test.mjs`、`npm run test:client`、`npm run test:manuscript-frontend`、`npm run build`、`git diff --check`，并生成分析页桌面截图到 `output/playwright/analysis-result-summary-desktop.png`。
