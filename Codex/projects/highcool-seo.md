@@ -23,10 +23,9 @@ HighCool 官网：https://highcool.com/
 
 ## 下一步
 
-- 建立 SERP 采集表。
-- 按 30 个英文核心关键词抓取前 10 个自然结果。
-- 将竞对按品牌、供应商、分销商、安装店、平台页分类。
-- 输出 HighCool 页面机会、内容机会和外链机会优先级。
+- 配置真实 SerpAPI Key 后运行 30 个英文核心关键词的全球英文 SERP。
+- 复查真实抓取生成的报告和 CSV，确认竞对分类、页面缺口、内容机会和外链机会优先级。
+- 后续再接 Ahrefs / Semrush / GSC 的关键词量、外链和真实表现数据。
 
 ## 2026-06-16 交付状态
 
@@ -49,6 +48,24 @@ HighCool 官网：https://highcool.com/
 
 下一步：
 
-- 将 Web UI 的 `Run Mock Research` 扩展为可选择 `mock` / `serpapi`。
 - 接入真实 SerpAPI / DataForSEO Key 后跑真实全球英文 SERP。
 - 后续再接 Ahrefs / Semrush / GSC 的关键词量、外链和真实表现数据。
+
+## 2026-06-17 状态更新
+
+已将 `E:\project\SEO` 的运行路径改为真实 SerpAPI：
+
+- 默认 `SERP_PROVIDER` 为 `serpapi`，不再默认 mock。
+- Web UI 的运行按钮改为 `Run Live Research`，按配置调用真实 provider。
+- 生产代码删除 `MockSerpProvider`、mock SERP fixture 和 mock 页面生成分支。
+- 缺少 `SERPAPI_KEY` 时，任务会创建 failed run，Web 请求返回项目页而不是断开。
+- 测试改为使用测试内 stub 隔离外部网络，不再依赖生产 mock provider。
+
+验证：
+
+- `python -B -m unittest discover -v`，21 个测试全部通过。
+- Web 模块导入通过，`127.0.0.1:8765` 端口绑定 smoke 通过。
+
+下一步：
+
+- 设置 `SERPAPI_KEY` 后执行真实 30 词采集，并复查 `data\reports\run-*` 报告与 CSV。
