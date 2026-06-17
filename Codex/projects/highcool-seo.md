@@ -72,3 +72,25 @@ HighCool 官网：https://highcool.com/
 下一步：
 
 - 设置 `SERPAPI_KEY` 后执行真实 30 词采集，并复查 `data\reports\run-*` 报告与 CSV。
+
+## 2026-06-17 客户目标补强
+
+根据客户目标“先按目标品类和地区找排名竞对，再分析竞对为什么排名好、做了哪些外链，并反推关键词和动作”，已继续增强 `E:\project\SEO`：
+
+- Web UI 新增项目设置：目标网站、目标品类、目标地区、默认语言。
+- 支持多地区关键词导入；SerpAPI 按 keyword 的 `region` 传 `gl`。
+- 报告新增地区竞对分布。
+- 从 SerpAPI `related_searches` 提取关键词扩展建议，输出 `keyword-suggestions.csv`。
+- 基于 SERP 排名、关键词匹配、页面意图、信任信号和 CTA 增加启发式排名原因评分，写入报告和 `page-analysis.csv`。
+- 新增外链状态模块：未配置 Ahrefs / Semrush / DataForSEO Backlinks 等真实外链 API 时，明确显示“未配置真实外链 API”，不伪造 backlink、DR/DA、anchor text。
+- 报告表格增加基础转义，避免真实数据中的 `|` 破坏 Markdown 表格。
+
+验证：
+
+- `python -B -m unittest discover -v`，26 个测试全部通过。
+- 本地页面 smoke 确认包含 `项目设置`、`目标网站`、`目标品类`、`目标地区`、`运行真实研究`。
+
+仍需后续接入：
+
+- 真实外链 provider（Ahrefs / Semrush / DataForSEO Backlinks 任选其一）后，才能回答“竞对具体有哪些反向外链、引用域、锚文本和权重”。
+- 当前排名原因评分是启发式分析，不是 Google 排名因子证明；报告中需保持人工复查口径。
