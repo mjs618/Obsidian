@@ -60,11 +60,14 @@ HighCool 官网：https://highcool.com/
 - 生产代码删除 `MockSerpProvider`、mock SERP fixture 和 mock 页面生成分支。
 - 缺少 `SERPAPI_KEY` 时，任务会创建 failed run，Web 请求返回项目页而不是断开。
 - 测试改为使用测试内 stub 隔离外部网络，不再依赖生产 mock provider。
+- Web UI 已中文化：页面语言为 `zh-CN`，按钮、表头、运行状态、错误提示改为中文。
+- Markdown 报告模板已中文化：报告标题、章节、表头、静态建议和说明改为中文；英文关键词本身保留原文。
 
 验证：
 
-- `python -B -m unittest discover -v`，21 个测试全部通过。
+- `python -B -m unittest discover -v`，22 个测试全部通过。
 - Web 模块导入通过，`127.0.0.1:8765` 端口绑定 smoke 通过。
+- 本地页面 smoke 确认包含 `HighCool SEO 研究系统` 和 `运行真实研究`，且不再包含旧按钮 `Run Live Research`。
 
 下一步：
 
