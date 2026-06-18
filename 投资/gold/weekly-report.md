@@ -2,11 +2,11 @@
 
 > 生成时间：2026-06-19 07:19:08（Asia/Shanghai）  
 > 数据截至：2026-06-18 美盘收盘后 / 2026-06-19 07:19（Asia/Shanghai）  
-> 结论先行：本周黄金不是趋势性转强，而是“急跌后技术修复 + FOMC 再压制”的震荡周。COMEX 前月黄金周线小涨约 **+0.22%** 至 **4,224.10 美元/盎司**，但 6 月 18 日单日下跌 **3.09%**，说明上方抛压仍重；XAU/USD 现货金在 6 月 18 日亚洲早盘一度报 **4,326.79 美元/盎司**，随后跟随期货回落。短线交易上先看 **4,200/4,090** 支撑与 **4,330/4,400** 阻力；中期多头逻辑仍靠央行购金和储备多元化托底，但美元指数升至 100 附近、10 年 TIPS 实际利率升至 **2.23%**，会压制无息资产估值。
+> 结论先行：本周黄金不是趋势性转强，而是“急跌后技术修复 + FOMC 再压制”的震荡周。XAU/USD 现货金按 Investing.com 6 月 12 日至 6 月 18 日收盘计算约 **-0.54%**，6 月 18 日收 **4,196.36 美元/盎司**；COMEX 前月黄金周线小涨约 **+0.22%** 至 **4,224.10 美元/盎司**，但 6 月 18 日单日下跌 **3.09%**，说明上方抛压仍重。短线交易上先看 **4,200/4,090** 支撑与 **4,330/4,400** 阻力；中期多头逻辑仍靠央行购金和储备多元化托底，但美元指数升至 100 附近、10 年 TIPS 实际利率升至 **2.23%**，会压制无息资产估值。
 
 ## 1. 本周国际金价变化
 
-- **XAU/USD 现货金**：WSJ/Dow Jones Market Data 在 6 月 18 日亚洲早盘记录现货金 **+1.6% 至 4,326.79 美元/盎司**，显示周中受美伊临时协议、油价回落和避险缓和后的利率预期修复推动出现反弹；但同日报道随后显示纽约期货在 FOMC 偏鹰信号后回落，说明现货反弹未能独立延续。[来源：WSJ / Dow Jones Market Data](https://www.wsj.com/finance/commodities-futures/gold-rises-after-fed-leaves-rates-unchanged-aacdebef)
+- **XAU/USD 现货金**：Investing.com XAU/USD 历史表显示，6 月 12 日收 **4,219.32**，6 月 18 日收 **4,196.36**，按收盘口径周内约 **-0.54%**；周内高点 **4,382.85**（6 月 17 日），低点 **4,023.55**（6 月 11 日），6 月 18 日单日 **-1.91%**。WSJ/Dow Jones Market Data 另记录 6 月 18 日亚洲早盘现货金一度 **+1.6% 至 4,326.79**，但随后期货回落，说明现货反弹未能延续到收盘口径。[来源：Investing.com XAU/USD Historical Data](https://www.investing.com/currencies/xau-usd-historical-data)、[来源：WSJ / Dow Jones Market Data](https://www.wsj.com/finance/commodities-futures/gold-rises-after-fed-leaves-rates-unchanged-aacdebef)
 - **COMEX 黄金期货**：WSJ/Dow Jones Market Data 显示，前月 COMEX 黄金截至 6 月 18 日收于 **4,224.10 美元/盎司**，本周 **+9.10 美元 / +0.22%**，终结两周连跌；但 6 月 18 日单日 **-134.80 美元 / -3.09%**，为 6 月 10 日以来最大单日跌幅。[来源：WSJ / Dow Jones Market Data](https://www.wsj.com/finance/commodities-futures/gold-rises-after-fed-leaves-rates-unchanged-aacdebef)
 - **交叉核对**：Yahoo Finance 的 COMEX `GC=F`（Gold Aug 26）日线接口显示，6 月 11 日至 6 月 18 日收盘序列为 **4,090.30 → 4,215.00 → 4,328.00 → 4,330.90 → 4,358.90 → 4,219.20**，周内高点 **4,377.00**、低点 **4,031.00**；该口径与 WSJ 的“周线小涨、周四急跌”方向一致，但合约月份/结算口径不同，因此本报告涨跌幅优先采用 WSJ 前月合约口径。[来源：Yahoo Finance Chart API](https://query1.finance.yahoo.com/v8/finance/chart/GC=F?period1=1781136000&period2=1781913600&interval=1d)
 - **主要驱动因素**：6 月 17 日 FOMC 维持联邦基金目标区间 **3.5%-3.75%**，但声明强调通胀仍高于 2% 目标、能源等供给冲击仍在，市场重新计入年内加息风险；同时美伊临时协议和油价回落削弱部分避险买盘。结果是：央行购金提供中期底部，但短线定价被美元和实际利率主导。[来源：Federal Reserve](https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm)、[来源：MarketWatch / CME FedWatch](https://www.marketwatch.com/livecoverage/stock-market-today-dow-jones-nasdaq-s-p-500-fed-interest-rate-hike-suggestion-oil-us-iran-deal/card/traders-boost-bets-for-fed-rate-hikes-after-the-central-bank-leaves-door-open-to-further-increases-WTn9eoWRR24D1DPY5kFo)
@@ -37,6 +37,7 @@
 ## 5. 来源链接
 
 - WSJ / Dow Jones Market Data：<https://www.wsj.com/finance/commodities-futures/gold-rises-after-fed-leaves-rates-unchanged-aacdebef>
+- Investing.com XAU/USD 历史行情：<https://www.investing.com/currencies/xau-usd-historical-data>
 - Yahoo Finance GC=F 日线接口：<https://query1.finance.yahoo.com/v8/finance/chart/GC=F?period1=1781136000&period2=1781913600&interval=1d>
 - Yahoo Finance DXY 日线接口：<https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?period1=1781136000&period2=1781913600&interval=1d>
 - 国家外汇管理局官方储备资产（2026）：<https://www.safe.gov.cn/safe/2026/0206/27116.html>
