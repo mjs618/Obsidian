@@ -1,3 +1,58 @@
+# 黄金周报 - 2026-06-19（复核更新）
+
+> 生成时间：2026-06-19 08:03:22（Asia/Shanghai）  
+> 数据截至：2026-06-18 美盘收盘后 / 2026-06-19 08:03（Asia/Shanghai）  
+> 结论先行：本次复核未发现比 6 月 18 日美盘收盘更完整的新收盘口径。本周黄金核心不是单边趋势，而是 FOMC 后美元与实际利率上行压制反弹。XAU/USD 现货金按 Investing.com 6 月 12 日至 6 月 18 日收盘约 **-0.54%**；COMEX 前月黄金按 WSJ/Dow Jones Market Data 截至 6 月 18 日收 **4,224.10 美元/盎司**，本周 **+0.22%**，但 6 月 18 日单日 **-3.09%**。交易上先看 **4,200/4,090** 支撑与 **4,330/4,400** 阻力；中期央行购金仍托底，但美元指数回到 100 附近、10 年 TIPS 实际利率升至 **2.23%**，限制上行弹性。
+
+## 1. 本周国际金价变化
+
+- **XAU/USD 现货金**：Investing.com XAU/USD 历史表显示，6 月 12 日收 **4,219.32**，6 月 18 日收 **4,196.36**，收盘口径周内约 **-0.54%**；周内高点 **4,382.85**、低点 **4,023.55**。现货与期货的日内表现不完全一致，但方向均显示 6 月 18 日反弹失败、收盘承压。[来源：Investing.com XAU/USD Historical Data](https://www.investing.com/currencies/xau-usd-historical-data)
+- **COMEX 黄金期货**：WSJ/Dow Jones Market Data 显示，前月 COMEX 黄金截至 6 月 18 日收于 **4,224.10 美元/盎司**，本周 **+9.10 美元 / +0.22%**，结束两周连跌；但 6 月 18 日单日下跌 **134.80 美元 / 3.09%**，说明周线小涨主要来自前半周修复，尾盘抛压仍重。[来源：WSJ / Dow Jones Market Data](https://www.wsj.com/finance/commodities-futures/gold-rises-after-fed-leaves-rates-unchanged-aacdebef)
+- **交叉核对**：Yahoo Finance 的 `GC=F`（Gold Aug 26）日线接口显示，6 月 11 日至 6 月 18 日收盘约 **4,090.30 -> 4,219.20**，周内高点 **4,377.00**、低点 **4,031.00**。该口径与 WSJ 的“周内小涨、周四急跌”一致；因合约月份和结算口径不同，本报告期货涨跌幅优先采用 WSJ 前月合约口径。[来源：Yahoo Finance Chart API](https://query1.finance.yahoo.com/v8/finance/chart/GC=F?period1=1781136000&period2=1781913600&interval=1d)
+- **主要驱动因素**：6 月 17 日 FOMC 维持联邦基金目标区间 **3.5%-3.75%**，同时强调通胀仍高于 2% 目标，市场重新计入更久限制性利率甚至加息风险；美元和实际利率走强压制无息资产，抵消了部分央行购金和地缘风险溢价。[来源：Federal Reserve](https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm)
+
+## 2. 中国黄金储备变化
+
+- **最新披露月份**：国家外汇管理局官方储备资产表已更新至 **2026 年 5 月末**。[来源：SAFE 官方储备资产（2026）](https://www.safe.gov.cn/safe/2026/0206/27116.html)
+- **储备规模**：2026 年 5 月末中国黄金储备为 **7,496 万盎司**，4 月末为 **7,464 万盎司**，环比增加 **32 万盎司**，折合约 **9.95 吨**；黄金储备美元价值由 4 月的 **3,441.72 亿美元**降至 5 月的 **3,407.52 亿美元**，说明月末价格回落抵消了实物增持的估值贡献。[来源：SAFE 官方储备资产（2026）](https://www.safe.gov.cn/safe/2026/0206/27116.html)
+- **连续性判断**：WGC 公开储备数据说明其国家储备数据基于 IMF IFS、央行和 WGC 统计。此前 WGC 口径确认中国 4 月约增持 **8 吨**、连续第 **18** 个月增持；SAFE 5 月盎司数继续增加，因此按官方口径推算为连续第 **19** 个月增持。本次具体数值优先采用 SAFE，WGC 用作方法与跨国口径交叉验证。[来源：World Gold Council Gold Reserves by Country](https://www.gold.org/goldhub/data/gold-reserves-by-country)
+
+## 3. 未来金价趋势判断
+
+- **短期（1-2 周）**：中性偏弱震荡。4,330/4,400 上方若不能重新站稳，6 月 18 日长阴会压制追多；跌破 4,200 后，价格容易回测 4,090/4,030。
+- **中期（1-3 个月）**：结构性多头未破，但上涨节奏放慢。央行购金、储备多元化和地缘风险仍托底；美元维持 100 附近、实际利率在 2% 上方时，黄金很难恢复单边强势。
+- **美元指数**：Yahoo Finance 的 DXY 日线显示 6 月 17 日收 **100.09**，周内从 99.5 附近回升；美元走强会抬高非美买家的黄金成本，也会压制以美元计价黄金的估值。[来源：Yahoo Finance Chart API](https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?period1=1781136000&period2=1781913600&interval=1d)
+- **美债实际利率**：FRED 显示 10 年 TIPS 实际收益率 6 月 17 日为 **2.23%**，高于 6 月 12 日 **2.17%**；这是本周压制金价的核心变量。[来源：FRED DFII10](https://fred.stlouisfed.org/series/DFII10)
+- **通胀预期**：FRED 10 年盈亏平衡通胀率 6 月 18 日为 **2.25%**，较 6 月 15 日 **2.32%**回落；通胀预期降温而实际利率上行，对黄金不友好。[来源：FRED T10YIE](https://fred.stlouisfed.org/series/T10YIE)
+- **ETF 持仓**：WGC 5 月报告显示，全球实物黄金 ETF 5 月净流出约 **20 亿美元**，AUM 环比降 **2%**至 **6,040 亿美元**，持仓降至 **4,121 吨**；截至 6 月 12 日的周度数据仍显示资金观望，ETF 没有持续流入前，反弹更偏交易性。[来源：World Gold Council Gold ETF Flows May 2026](https://www.gold.org/goldhub/research/gold-etfs-holdings-and-flows/2026/06)
+
+## 4. 交易员视角
+
+- **关键支撑**：4,200；4,090；4,030；4,000。
+- **关键阻力**：4,330；4,400；4,500；4,600。
+- **上行情景**：DXY 跌回 99.5 下方，10 年 TIPS 实际利率回落至 2.15% 下方，ETF 流出收敛，金价收复 4,400 后可看 4,500/4,600。
+- **下行情景**：Fed 官员继续释放加息信号、DXY 突破 100.8、实际利率维持 2.2% 上方，金价跌破 4,200 后优先看 4,090/4,030；若 4,000 失守，中期多头需要重新定价。
+- **下周重点**：美国初请、PMI、Fed 官员讲话、DXY 是否延续突破、FRED 实际利率、WGC/ETF 周度数据、SAFE/PBOC 后续储备披露、美伊协议执行与油价。
+
+## 5. 来源链接
+
+- WSJ / Dow Jones Market Data：<https://www.wsj.com/finance/commodities-futures/gold-rises-after-fed-leaves-rates-unchanged-aacdebef>
+- Investing.com XAU/USD 历史行情：<https://www.investing.com/currencies/xau-usd-historical-data>
+- Yahoo Finance GC=F 日线接口：<https://query1.finance.yahoo.com/v8/finance/chart/GC=F?period1=1781136000&period2=1781913600&interval=1d>
+- Yahoo Finance DXY 日线接口：<https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?period1=1781136000&period2=1781913600&interval=1d>
+- 国家外汇管理局官方储备资产（2026）：<https://www.safe.gov.cn/safe/2026/0206/27116.html>
+- World Gold Council 黄金储备数据：<https://www.gold.org/goldhub/data/gold-reserves-by-country>
+- World Gold Council 5 月黄金 ETF 报告：<https://www.gold.org/goldhub/research/gold-etfs-holdings-and-flows/2026/06>
+- Federal Reserve 2026-06-17 FOMC 声明：<https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm>
+- FRED 10 年 TIPS 实际收益率：<https://fred.stlouisfed.org/series/DFII10>
+- FRED 10 年盈亏平衡通胀率：<https://fred.stlouisfed.org/series/T10YIE>
+
+## 6. 风险提示
+
+本报告仅用于市场跟踪和研究，不构成投资建议、交易指令或收益承诺。黄金价格受美元、实际利率、通胀预期、央行政策、ETF 资金、地缘政治、流动性和市场情绪共同影响，趋势判断存在显著不确定性；任何交易都应自行复核数据并严格控制仓位风险。
+
+---
+
 # 黄金周报 - 2026-06-19
 
 > 生成时间：2026-06-19 07:19:08（Asia/Shanghai）  
