@@ -153,7 +153,7 @@ tags:
 > ........................................................................................................................
 
 > [!dusk-map]+ 快速地图
-> [[HUB/Map|全库地图]] · [[HUB/Outputs|输出]] · [[HUB/Review|复习]] · [[PARA/00-PARA|PARA]] · [[ZETA/00-ZETA|ZETA]] · [[DAILY/00-DAILY|日记]] · [[STICKY/00-STICKY|便签]] · [[SYSTEM/00-SYSTEM|系统]]
+> [[HUB/Map|全库地图]] · [[投资/00-索引|投资]] · [[HUB/Outputs|输出]] · [[HUB/Review|复习]] · [[PARA/00-PARA|PARA]] · [[ZETA/00-ZETA|ZETA]] · [[DAILY/00-DAILY|日记]] · [[STICKY/00-STICKY|便签]] · [[SYSTEM/00-SYSTEM|系统]]
 
 ````tabs
 tab: 工作
