@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '采访/访谈提纲策划师'
 aliases:
   - '采访/访谈提纲策划师'

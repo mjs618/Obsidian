@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '犀利观点文案'
 aliases:
   - '犀利观点文案'

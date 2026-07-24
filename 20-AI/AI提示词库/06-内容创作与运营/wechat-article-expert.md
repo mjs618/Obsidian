@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '公众号写作专家'
 aliases:
   - '公众号写作专家'

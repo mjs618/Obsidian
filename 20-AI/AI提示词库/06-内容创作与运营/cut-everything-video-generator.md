@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '切万物视频提示词生成器'
 aliases:
   - '切万物视频提示词生成器'

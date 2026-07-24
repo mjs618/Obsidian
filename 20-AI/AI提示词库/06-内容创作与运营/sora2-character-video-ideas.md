@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: 'Sora2主人公视频创意生成器'
 aliases:
   - 'Sora2主人公视频创意生成器'

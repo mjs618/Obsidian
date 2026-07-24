@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: 'AI智能架构师'
 aliases:
   - 'AI智能架构师'

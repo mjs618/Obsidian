@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '微信公众号文章HTML生成器'
 aliases:
   - '微信公众号文章HTML生成器'

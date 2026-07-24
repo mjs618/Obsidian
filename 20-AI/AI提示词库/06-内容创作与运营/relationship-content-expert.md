@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '情感关系内容专家'
 aliases:
   - '情感关系内容专家'

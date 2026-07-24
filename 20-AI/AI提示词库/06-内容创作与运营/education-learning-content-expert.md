@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '教育学习内容专家'
 aliases:
   - '教育学习内容专家'

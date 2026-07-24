@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '高互动文案'
 aliases:
   - '高互动文案'

@@ -1,5 +1,6 @@
 ﻿---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '官网权威化改造提示词'
 aliases:
   - '官网权威化改造提示词'

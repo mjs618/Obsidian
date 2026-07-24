@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: 'Nano Banana PPT 场景提示词合集'
 aliases:
   - 'Nano Banana PPT 场景提示词合集'

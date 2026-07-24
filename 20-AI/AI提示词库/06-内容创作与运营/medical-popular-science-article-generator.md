@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '医疗科普文章生成提示词'
 aliases:
   - '医疗科普文章生成提示词'

@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: 'B站UP主助手'
 aliases:
   - 'B站UP主助手'

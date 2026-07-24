@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '合同生成器'
 aliases:
   - '合同生成器'

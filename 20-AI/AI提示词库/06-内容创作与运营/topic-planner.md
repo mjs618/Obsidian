@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '选题策划师'
 aliases:
   - '选题策划师'

@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '口播爆款文案'
 aliases:
   - '口播爆款文案'

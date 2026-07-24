@@ -1,5 +1,6 @@
 ﻿---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: 'GEO增长诊断提示词'
 aliases:
   - 'GEO增长诊断提示词'

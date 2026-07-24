@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '温暖陪伴博主'
 aliases:
   - '温暖陪伴博主'

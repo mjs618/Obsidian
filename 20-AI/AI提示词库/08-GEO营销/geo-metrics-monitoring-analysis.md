@@ -1,5 +1,6 @@
 ﻿---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: 'GEO数据监测分析提示词'
 aliases:
   - 'GEO数据监测分析提示词'

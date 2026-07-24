@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '智能元提示词生成系统 V0.6'
 aliases:
   - '智能元提示词生成系统 V0.6'

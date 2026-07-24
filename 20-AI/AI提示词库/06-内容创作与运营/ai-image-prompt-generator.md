@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: 'AI绘画提示词生成器'
 aliases:
   - 'AI绘画提示词生成器'

@@ -1,5 +1,6 @@
 ﻿---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '行业GEO策略定制提示词'
 aliases:
   - '行业GEO策略定制提示词'

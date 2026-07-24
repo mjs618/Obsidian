@@ -1,5 +1,6 @@
 ﻿---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '营销范式转型评估提示词'
 aliases:
   - '营销范式转型评估提示词'

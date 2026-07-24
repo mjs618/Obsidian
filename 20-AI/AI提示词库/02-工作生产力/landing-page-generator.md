@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '个性化高转化着陆页生成器'
 aliases:
   - '个性化高转化着陆页生成器'

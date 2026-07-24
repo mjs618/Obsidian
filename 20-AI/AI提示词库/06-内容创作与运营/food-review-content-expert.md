@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '美食探店内容专家'
 aliases:
   - '美食探店内容专家'

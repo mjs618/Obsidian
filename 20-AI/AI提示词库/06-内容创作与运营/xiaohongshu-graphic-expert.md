@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '小红书爆款图文专家'
 aliases:
   - '小红书爆款图文专家'

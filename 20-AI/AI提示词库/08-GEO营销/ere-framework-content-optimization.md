@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: 'ERE框架内容优化提示词'
 aliases:
   - 'ERE框架内容优化提示词'

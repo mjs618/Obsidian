@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '知识库AI写作法'
 aliases:
   - '知识库AI写作法'

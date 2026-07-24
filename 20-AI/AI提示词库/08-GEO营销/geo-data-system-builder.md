@@ -1,5 +1,6 @@
 ﻿---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: 'GEO数据体系构建提示词'
 aliases:
   - 'GEO数据体系构建提示词'

@@ -1,5 +1,6 @@
 ﻿---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: 'Schema.org结构化数据GEO优化提示词'
 aliases:
   - 'Schema.org结构化数据GEO优化提示词'

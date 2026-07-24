@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '50个 Nano Banana 创意提示词'
 aliases:
   - '50个 Nano Banana 创意提示词'

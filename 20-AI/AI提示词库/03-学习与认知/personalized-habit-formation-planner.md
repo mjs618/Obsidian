@@ -1,5 +1,6 @@
 ﻿---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '个性化习惯养成计划'
 aliases:
   - '个性化习惯养成计划'

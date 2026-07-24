@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '私域成交话术专家'
 aliases:
   - '私域成交话术专家'

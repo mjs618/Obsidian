@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '抖音风格产品原型生成器'
 aliases:
   - '抖音风格产品原型生成器'

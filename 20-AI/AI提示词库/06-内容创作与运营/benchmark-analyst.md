@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '对标分析师'
 aliases:
   - '对标分析师'

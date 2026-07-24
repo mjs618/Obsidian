@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '网页PPT生成器 V3.0'
 aliases:
   - '网页PPT生成器 V3.0'

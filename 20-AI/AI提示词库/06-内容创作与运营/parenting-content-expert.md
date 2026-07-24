@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '母婴育儿内容专家'
 aliases:
   - '母婴育儿内容专家'

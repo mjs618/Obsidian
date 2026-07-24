@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: 'LISP结构化元提示词系统 V0.8'
 aliases:
   - 'LISP结构化元提示词系统 V0.8'

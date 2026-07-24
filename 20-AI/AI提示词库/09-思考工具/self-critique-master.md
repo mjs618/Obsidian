@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '自我批判大师'
 aliases:
   - '自我批判大师'

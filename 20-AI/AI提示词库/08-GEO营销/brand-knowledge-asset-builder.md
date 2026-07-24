@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '品牌知识资产构建提示词'
 aliases:
   - '品牌知识资产构建提示词'

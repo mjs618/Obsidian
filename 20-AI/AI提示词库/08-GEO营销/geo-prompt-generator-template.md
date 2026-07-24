@@ -1,5 +1,6 @@
 ﻿---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: 'GEO提示词生成模板'
 aliases:
   - 'GEO提示词生成模板'

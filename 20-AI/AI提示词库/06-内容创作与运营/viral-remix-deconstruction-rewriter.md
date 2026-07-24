@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '爆款仿写拆解与重构专家'
 aliases:
   - '爆款仿写拆解与重构专家'

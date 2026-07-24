@@ -1,5 +1,6 @@
 ﻿---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: 'GEO合规与安全管理提示词'
 aliases:
   - 'GEO合规与安全管理提示词'

@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: 'AI引用率优化策略提示词'
 aliases:
   - 'AI引用率优化策略提示词'

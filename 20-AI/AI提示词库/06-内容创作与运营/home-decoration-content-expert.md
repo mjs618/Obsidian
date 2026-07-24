@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '家居装修内容专家'
 aliases:
   - '家居装修内容专家'

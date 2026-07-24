@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: 'AI私域销售提示词'
 aliases:
   - 'AI私域销售提示词'

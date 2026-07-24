@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '智能文章润色系统 V3.0'
 aliases:
   - '智能文章润色系统 V3.0'

@@ -1,5 +1,6 @@
 ﻿---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '记忆宫殿的建筑大师'
 aliases:
   - '记忆宫殿的建筑大师'

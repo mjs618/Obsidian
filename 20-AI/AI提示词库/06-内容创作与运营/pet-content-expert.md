@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '宠物内容专家'
 aliases:
   - '宠物内容专家'

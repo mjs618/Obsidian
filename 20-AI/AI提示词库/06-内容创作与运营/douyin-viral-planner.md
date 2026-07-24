@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '抖音爆款策划师'
 aliases:
   - '抖音爆款策划师'

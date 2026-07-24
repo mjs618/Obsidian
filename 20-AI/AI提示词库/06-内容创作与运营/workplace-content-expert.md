@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '职场干货内容专家'
 aliases:
   - '职场干货内容专家'

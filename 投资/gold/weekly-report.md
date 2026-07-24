@@ -1,5 +1,5 @@
 ---
-date: 2026-07-17
+date: 2026-07-24
 type: 市场周报
 domain: 投资
 status: 进行中
@@ -7,6 +7,60 @@ tags:
   - 领域/投资
   - 类型/汇总
   - 黄金
+---
+
+# 黄金周报 - 2026-07-24
+
+> 生成时间：2026-07-24 16:22:00（Asia/Shanghai）  
+> 数据截至：2026-07-23 美盘收盘后 / 2026-07-24 16:22（Asia/Shanghai）  
+> 结论先行：黄金本周先修复、后回吐，整体仍围绕 **4,000-4,170 美元/盎司**震荡。XAU/USD 现货金按 Investing.com 日线口径从 7 月 17 日收 **4,017.60** 升至 7 月 23 日 **4,047.15 美元/盎司**，约 **+0.74%**，周内高点 **4,166.42**、低点 **3,982.51**；COMEX/纽约黄金期货按 WSJ/Dow Jones 口径 7 月 23 日跌 **2.4%** 至 **4,046.50 美元/盎司**，但较 7 月 17 日周收 **4,012.70** 仍约 **+0.84%**。短线不是单边多头，**4,000/3,980** 是下方生命线，**4,100/4,170** 是反弹确认区。
+
+## 1. 本周国际金价变化
+
+- **XAU/USD 现货金**：Investing.com 日线显示，7 月 17 日收 **4,017.60**，7 月 23 日收 **4,047.15 美元/盎司**，区间约 **+0.74%**；7 月 20-23 日高点 **4,166.42**、低点 **3,982.51**。7 月 21-22 日连续反弹后，7 月 23 日单日跌 **2.02%**，说明 4,130/4,170 区域抛压仍重。7 月 24 日盘中约 **4,040.60**，仍未脱离 4,000 上方震荡区。[Investing.com XAU/USD](https://www.investing.com/currencies/xau-usd-historical-data)
+- **COMEX/纽约黄金期货**：WSJ/Dow Jones Market Data 显示，COMEX 黄金 7 月 17 日当周收 **4,012.70 美元/盎司**，7 月 23 日前月黄金跌 **2.4%** 至 **4,046.50 美元/盎司**，按两端粗略计算约 **+0.84%**；Investing.com 黄金期货同区间为 7 月 17 日 **4,018.80** 至 7 月 23 日 **4,050.20**，约 **+0.78%**，方向一致但合约和结算口径略有差异。[WSJ 7月17日](https://www.wsj.com/finance/commodities-futures/gold-rises-central-bank-buying-likely-to-remain-structural-driver-f10d22c2)；[WSJ 7月23日](https://www.wsj.com/finance/commodities-futures/gold-steady-ahead-of-central-bank-decisions-562c7fb4)；[Investing.com 黄金期货](https://www.investing.com/commodities/gold-historical-data)
+- **交叉验证与差异**：Twelve Data 7 月 24 日显示 XAU/USD 最新约 **4,047.34**，日内区间 **4,022.09-4,053.34**，与 Investing.com 现货盘中 **4,040-4,047** 区间一致；WSJ 7 月 24 日亚洲盘报道现货金跌 **0.15%** 至 **4,043.12**，纽约期货约 **4,052.40**。差异主要来自现货/期货、盘中/收盘和数据更新时间。[Twelve Data XAU/USD](https://twelvedata.com/markets/300755/commodity/xau-usd/historical-data)；[WSJ 7月24日](https://www.wsj.com/finance/commodities-futures/gold-declines-on-stronger-dollar-fed-rate-hike-prospects-71b26469)
+- **主要驱动因素**：本周上涨来自上周急跌后的技术修复、地缘风险和中国/央行购金预期；周四回吐则由美元反弹、实际利率上行、油价推升通胀与 Fed 再加息预期共同触发。MarketWatch 引述 CME 数据称 7 月 29 日加息 25bp 概率升至 **35.8%**，9 月会议后出现加息的概率升至 **80.1%**；WSJ 7 月 24 日称 DXY 仍在 **101.384** 附近，明显压制无息资产。[MarketWatch FedWatch](https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-ai-spending-alphabet-capex-hike-oil-prices/card/odds-of-rate-hike-this-month-have-more-than-tripled-in-a-week-IhEridDPYIyYKtPnUtXT)；[WSJ 美元](https://www.wsj.com/finance/currencies/yen-consolidates-near-40-year-low-vs-dollar-may-weaken-further-cc2a60ae)
+
+## 2. 中国黄金储备变化
+
+- **最新披露月份：2026 年 6 月**。国家外汇管理局 2026 年官方储备资产表于 **2026-07-07** 发布，6 月末中国黄金储备为 **7,544 万盎司**，5 月末为 **7,496 万盎司**，环比增加 **48 万盎司**，折合约 **14.93 吨**；按盎司折算，6 月末约 **2,346.3 吨**。[SAFE 官方储备资产（2026年）](https://www.safe.gov.cn/en/2021/0203/2045.html)
+- **连续增持判断**：WGC 7 月中国市场更新称，PBoC 6 月购金约 **15 吨**，官方黄金储备升至 **2,346 吨**，占官方外汇储备资产约 **8%**，并将连续增持期延长至 **20 个月**。SAFE 与 WGC 方向一致；吨数微差来自四舍五入和盎司/吨换算。[WGC 中国黄金市场更新](https://www.gold.org/goldhub/gold-focus/2026/07/china-gold-market-update-june-concludes-divided-h1)
+
+## 3. 未来金价趋势判断
+
+- **短期（1-2 周）**：中性偏弱震荡。4,000 上方有买盘，但 4,100/4,170 上方缺少连续追涨；若 Fed 加息预期继续升温，黄金仍可能先回测 3,980/3,950。
+- **美元与实际利率**：WSJ 7 月 24 日显示 DXY 约 **101.384**，较上周 100.5 附近明显走强；FRED 10 年期 TIPS 实际利率 7 月 22 日升至 **2.39%**，高于 7 月 17 日 **2.31%**。这是当前黄金反弹最直接的压力。[WSJ 美元](https://www.wsj.com/finance/currencies/yen-consolidates-near-40-year-low-vs-dollar-may-weaken-further-cc2a60ae)；[FRED DFII10](https://fred.stlouisfed.org/series/DFII10)
+- **通胀预期与 Fed**：FRED 10 年盈亏平衡通胀率 7 月 23 日为 **2.28%**，高于 7 月 17 日 **2.24%**；油价和中东冲突推升再通胀担忧，MarketWatch 报道 10 年期美债收益率升至 **4.682%**，接近 2025 年 5 月以来最高收盘水平。通胀预期上行本应支撑黄金，但如果体现为“Fed 更鹰 + 实际利率更高”，短线反而利空黄金。[FRED T10YIE](https://fred.stlouisfed.org/series/T10YIE)；[MarketWatch 美债收益率](https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-ai-spending-alphabet-capex-hike-oil-prices/card/benchmark-treasury-yields-eye-14-month-high-as-oil-price-surge-boosts-inflation-fears-ESsFJ7EX6jqi6ViTiqwk)
+- **央行购金与 ETF**：中国 6 月继续增持是中期支撑；WGC 7 月 20 日 ETF 数据页显示 ETF 数据每周/月度更新，6 月月报仍为最新可下载月度口径，全球实物黄金 ETF 6 月净流出 **89 亿美元**，持仓减少 **74 吨** 至 **4,047 吨**。央行需求托底，ETF 资金端仍未转强。[WGC ETF 数据](https://www.gold.org/goldhub/data/gold-etfs-holdings-and-flows)；[WGC 6月ETF月报](https://www.gold.org/goldhub/data/global-gold-backed-etf-holdings-and-flows)
+- **中期（1-3 个月）**：维持宽幅震荡、逢低有战略买盘的判断。WGC 周度市场监测认为地缘风险升级、美国通胀放缓但消费和就业仍韧性，黄金在 4,000 附近存在“软底”；但只要 DXY 保持 101 上方、10 年实际利率接近 2.4%、市场交易 Fed 可能再加息，黄金上行需要更多催化，不能仅靠避险叙事突破。[WGC Weekly Markets Monitor](https://www.gold.org/goldhub/gold-focus/2026/07/weekly-markets-monitor-soft-floor)
+
+## 4. 交易员视角
+
+- **关键支撑**：4,020/4,000；3,980/3,950；3,900；3,850。
+- **关键阻力**：4,080/4,100；4,130/4,170；4,200；4,300。
+- **上行情景**：日线重新站上 4,100，并突破 4,130/4,170；同时 DXY 回落至 101 下方、10 年期 TIPS 跌回 2.30% 以下、ETF 流出放缓。届时先看 4,200，突破再看 4,300/4,377（此前 WGC 技术口径提到的 55 日均线附近）。
+- **下行情景**：4,000 失守且 3,980 下方收盘，DXY 继续上冲、10 年实际利率逼近 2.45%、7 月 FOMC 加息概率继续上升。届时 3,950 是第一止跌观察位，跌破后看 3,900/3,850。
+- **下周重点**：7 月 29 日 FOMC 决议、美国 PCE/就业和 PMI 数据、Fed 官员对油价冲击的表态、DXY 101/102、10 年 TIPS 实际利率、WGC ETF 周度数据、中东局势和油价、中国后续储备/IMF 口径更新。
+
+## 5. 来源链接
+
+- [Investing.com：XAU/USD 历史日线](https://www.investing.com/currencies/xau-usd-historical-data)
+- [Investing.com：黄金期货历史日线](https://www.investing.com/commodities/gold-historical-data)
+- [Twelve Data：XAU/USD 历史与盘中数据](https://twelvedata.com/markets/300755/commodity/xau-usd/historical-data)
+- [WSJ/Dow Jones：7月23日黄金期货](https://www.wsj.com/finance/commodities-futures/gold-steady-ahead-of-central-bank-decisions-562c7fb4)
+- [WSJ/Dow Jones：7月24日黄金与美元](https://www.wsj.com/finance/commodities-futures/gold-declines-on-stronger-dollar-fed-rate-hike-prospects-71b26469)
+- [SAFE：Official Reserve Assets (2026)](https://www.safe.gov.cn/en/2021/0203/2045.html)
+- [WGC：中国黄金市场更新 - 2026年6月](https://www.gold.org/goldhub/gold-focus/2026/07/china-gold-market-update-june-concludes-divided-h1)
+- [WGC：Gold ETFs holdings and flows](https://www.gold.org/goldhub/data/gold-etfs-holdings-and-flows)
+- [FRED：10年期 TIPS 实际利率 DFII10](https://fred.stlouisfed.org/series/DFII10)
+- [FRED：10年盈亏平衡通胀率 T10YIE](https://fred.stlouisfed.org/series/T10YIE)
+- [CME FedWatch](https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html)
+
+## 6. 风险提示
+
+本报告仅用于市场跟踪与研究，**不构成投资建议、交易指令或收益承诺**。黄金受美元、实际利率、通胀、央行政策、ETF 资金、地缘政治、流动性和合约换月共同影响；不同报价源、合约月份、结算价和实时盘中价会产生差异。趋势判断存在显著不确定性，任何交易都应独立复核数据并严格控制仓位与止损。
+
 ---
 
 # 黄金周报 - 2026-07-17

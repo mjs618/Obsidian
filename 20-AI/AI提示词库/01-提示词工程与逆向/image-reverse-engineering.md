@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '图片反编译：RTF通用提示词'
 aliases:
   - '图片反编译：RTF通用提示词'

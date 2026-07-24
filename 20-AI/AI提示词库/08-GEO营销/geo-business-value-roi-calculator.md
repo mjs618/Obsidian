@@ -1,5 +1,6 @@
 ﻿---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: 'GEO商业价值评估与ROI计算提示词'
 aliases:
   - 'GEO商业价值评估与ROI计算提示词'

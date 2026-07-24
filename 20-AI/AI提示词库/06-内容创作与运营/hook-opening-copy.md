@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '钩子开场文案'
 aliases:
   - '钩子开场文案'

@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '视频号运营师'
 aliases:
   - '视频号运营师'

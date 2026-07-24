@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '三毛风格回忆录生成器'
 aliases:
   - '三毛风格回忆录生成器'

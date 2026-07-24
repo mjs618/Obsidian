@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '答案空间占领策略提示词'
 aliases:
   - '答案空间占领策略提示词'

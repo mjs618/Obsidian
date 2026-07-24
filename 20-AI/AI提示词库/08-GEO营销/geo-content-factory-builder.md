@@ -1,5 +1,6 @@
 ﻿---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: 'GEO内容工厂搭建提示词'
 aliases:
   - 'GEO内容工厂搭建提示词'

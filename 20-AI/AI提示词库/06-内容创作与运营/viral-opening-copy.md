@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '文案爆款开头'
 aliases:
   - '文案爆款开头'

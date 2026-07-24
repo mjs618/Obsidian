@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: 'AI答案生成机制分析提示词'
 aliases:
   - 'AI答案生成机制分析提示词'

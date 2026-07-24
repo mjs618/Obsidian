@@ -1,5 +1,6 @@
 ﻿---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: 'SEO到GEO转型对比分析提示词'
 aliases:
   - 'SEO到GEO转型对比分析提示词'

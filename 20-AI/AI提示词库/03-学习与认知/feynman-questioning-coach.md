@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: 'AI费曼提问学习法'
 aliases:
   - 'AI费曼提问学习法'

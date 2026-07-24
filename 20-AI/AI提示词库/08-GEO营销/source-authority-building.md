@@ -1,5 +1,6 @@
 ﻿---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '权威信源建设提示词'
 aliases:
   - '权威信源建设提示词'

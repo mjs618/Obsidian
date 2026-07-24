@@ -1,5 +1,6 @@
 ﻿---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: 'GEO与传统营销协同提示词'
 aliases:
   - 'GEO与传统营销协同提示词'

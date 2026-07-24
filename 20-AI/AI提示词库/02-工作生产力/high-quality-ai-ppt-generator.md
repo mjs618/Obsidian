@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '生成高质量PPT'
 aliases:
   - '生成高质量PPT'

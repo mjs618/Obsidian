@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '儿童小游戏：鲨鱼抓小鱼'
 aliases:
   - '儿童小游戏：鲨鱼抓小鱼'

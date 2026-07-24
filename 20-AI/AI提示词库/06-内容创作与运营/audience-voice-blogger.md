@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '用户心声表达博主'
 aliases:
   - '用户心声表达博主'

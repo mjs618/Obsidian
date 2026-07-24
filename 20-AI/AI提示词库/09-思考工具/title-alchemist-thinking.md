@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '标题炼金术师（思考版）'
 aliases:
   - '标题炼金术师（思考版）'

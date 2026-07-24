@@ -1,5 +1,6 @@
 ﻿---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: 'GEO白帽合规策略提示词'
 aliases:
   - 'GEO白帽合规策略提示词'

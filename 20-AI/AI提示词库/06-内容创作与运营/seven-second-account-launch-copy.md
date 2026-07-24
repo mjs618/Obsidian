@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '7秒起号文案'
 aliases:
   - '7秒起号文案'

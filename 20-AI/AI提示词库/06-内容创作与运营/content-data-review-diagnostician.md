@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '数据复盘诊断师'
 aliases:
   - '数据复盘诊断师'

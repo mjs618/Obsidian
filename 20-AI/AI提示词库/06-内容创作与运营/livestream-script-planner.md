@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '直播脚本策划师'
 aliases:
   - '直播脚本策划师'

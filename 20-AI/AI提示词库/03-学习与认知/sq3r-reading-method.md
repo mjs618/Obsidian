@@ -1,5 +1,6 @@
 ﻿---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: 'SQ3R阅读法：科学阅读五步走'
 aliases:
   - 'SQ3R阅读法：科学阅读五步走'

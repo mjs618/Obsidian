@@ -1,5 +1,6 @@
 ---
 type: 'AI提示词'
+domain: 'AI提示词'
 title: '生成世界级高水平网页'
 aliases:
   - '生成世界级高水平网页'
