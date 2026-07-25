@@ -41,6 +41,20 @@ tags:
 >
 > 个人工具、热点跟踪和工具集。
 
+## Codex 项目记忆
+
+> [!info]+ AI 协作项目
+> 这里动态显示 `Codex/projects` 中最近更新的项目记忆，只提供统一入口，不改变项目正文归属。
+
+[[Codex/TODO|跨项目待办]]
+
+```dataview
+TABLE dateformat(file.mtime, "yyyy-MM-dd HH:mm") AS "最近更新"
+FROM "Codex/projects"
+SORT file.mtime DESC
+LIMIT 10
+```
+
 ## Reviews
 
 - [[30-工作/周工作总结/2025-08-11——2025-08-15]]
