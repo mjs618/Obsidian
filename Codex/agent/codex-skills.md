@@ -1,4 +1,4 @@
-﻿# Codex Skills
+# Codex Skills
 
 ## 已安装集合
 

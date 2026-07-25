@@ -1,4 +1,4 @@
-﻿# Codex Plugins
+# Codex Plugins
 
 ## 2026-06-09 插件审计
 
