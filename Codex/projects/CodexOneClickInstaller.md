@@ -1,4 +1,4 @@
-﻿# Codex One Click Installer
+# Codex One Click Installer
 
 ## 2026-06-02
 

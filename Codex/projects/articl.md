@@ -1,4 +1,4 @@
-﻿# articl / Article Fetcher
+# articl / Article Fetcher
 
 ## 2026-06-11 项目检查
 

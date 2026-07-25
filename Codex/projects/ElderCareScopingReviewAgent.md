@@ -1,4 +1,4 @@
-﻿# Elder Care Scoping Review Agent
+# Elder Care Scoping Review Agent
 
 ## 状态
 
