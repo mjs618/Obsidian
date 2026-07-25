@@ -35,15 +35,20 @@ tags:
 
 > [!dusk-status]+ 库概览
 > ```dataviewjs
+> const isContentPage = page =>
+>   !["工作台", "索引", "MOC"].includes(String(page.type ?? ""));
+> const countContent = prefixes => dv.pages()
+>   .where(page => prefixes.some(prefix => String(page.file.path).startsWith(prefix)))
+>   .where(page => isContentPage(page))
+>   .length;
 > const items = Array.of(
->   ["项目", '"30-工作"'],
->   ["AI", '"20-AI"'],
->   ["剪藏", '"80-Clippings"'],
->   ["收件箱", '"HUB"']
+>   ["项目", countContent(["30-工作/项目/"])],
+>   ["AI", dv.pages('"20-AI"').length],
+>   ["剪藏", countContent(["80-Clippings/"])],
+>   ["收件箱", countContent(["未分类/", "STICKY/"])]
 > );
 > const wrap = dv.container.createDiv({ cls: "dusk-stat-grid" });
-> for (const [label, query] of items) {
->   const count = dv.pages(query).length;
+> for (const [label, count] of items) {
 >   const card = wrap.createDiv({ cls: "dusk-stat" });
 >   card.createSpan({ text: String(count), cls: "dusk-stat-number" });
 >   card.createSpan({ text: label, cls: "dusk-stat-label" });
@@ -84,7 +89,8 @@ tags:
 > > ```dataviewjs
 > > const actionable = path =>
 > >   path === "Codex/TODO.md" ||
-> >   /^(Codex\/projects|30-工作|DAILY|未分类|投资)\//.test(path);
+> >   /^(Codex\/projects|30-工作|未分类|投资)\//.test(path) ||
+> >   /^DAILY\/(DAILY|WEEKLY|MONTHLY)\//.test(path);
 > > const tasks = dv.pages()
 > >   .file.tasks
 > >   .where(t => !t.completed && actionable(t.path))
@@ -102,13 +108,14 @@ tags:
 > > }
 > > ```
 >
-> > [!custom_today]+ 今日焦点
-> > **今天**
+> > [!custom_today]+ 行动概览
+> > **当前**
 > >
 > > ```dataviewjs
 > > const actionable = path =>
 > >   path === "Codex/TODO.md" ||
-> >   /^(Codex\/projects|30-工作|DAILY|未分类|投资)\//.test(path);
+> >   /^(Codex\/projects|30-工作|未分类|投资)\//.test(path) ||
+> >   /^DAILY\/(DAILY|WEEKLY|MONTHLY)\//.test(path);
 > > const pages = dv.pages().where(p => actionable(String(p.file.path)));
 > > const todo = pages.file.tasks.where(t => !t.completed && actionable(t.path)).length;
 > > const done = pages.file.tasks.where(t => t.completed && actionable(t.path)).length;
@@ -116,16 +123,27 @@ tags:
 > >   .where(p => p.file.cday && p.file.cday.toISODate() === dv.date("today").toISODate())
 > >   .length;
 > > const wrap = dv.container.createDiv({ cls: "dusk-mini-grid" });
-> > for (const [label, value] of Array.of(["待办", todo], ["完成", done], ["新增", fresh])) {
+> > for (const [label, value] of Array.of(["待办", todo], ["已完成", done], ["今日新增", fresh])) {
 > >   const card = wrap.createDiv({ cls: "dusk-mini" });
 > >   card.createSpan({ text: String(value), cls: "dusk-mini-number" });
 > >   card.createSpan({ text: label, cls: "dusk-mini-label" });
 > > }
+> > const isContentPage = page =>
+> >   !["工作台", "索引", "MOC"].includes(String(page.type ?? ""));
+> > const countContent = prefixes => dv.pages()
+> >   .where(page => prefixes.some(prefix => String(page.file.path).startsWith(prefix)))
+> >   .where(page => isContentPage(page))
+> >   .length;
 > > const queue = dv.container.createDiv({ cls: "dusk-inbox-strip" });
-> > for (const [label, query] of Array.of(["收件箱", '"HUB"'], ["未分类", '"未分类"'], ["剪藏", '"80-Clippings"'])) {
+> > const queueItems = Array.of(
+> >   ["收件箱", countContent(["未分类/", "STICKY/"])],
+> >   ["未分类", countContent(["未分类/"])],
+> >   ["剪藏", countContent(["80-Clippings/"])]
+> > );
+> > for (const [label, value] of queueItems) {
 > >   const item = queue.createDiv({ cls: "dusk-inbox-item" });
 > >   item.createSpan({ text: label, cls: "dusk-inbox-label" });
-> >   item.createSpan({ text: String(dv.pages(query).length), cls: "dusk-inbox-number" });
+> >   item.createSpan({ text: String(value), cls: "dusk-inbox-number" });
 > > }
 > > ```
 > >
@@ -204,7 +222,7 @@ id: open_daily_note
 style: primary
 actions:
   - type: command
-    command: obsidian-hotkeys-for-specific-files:DAILY/00-DAILY.md
+    command: journals:journal:calendar:open-day
 ```
 
 ```meta-bind-button
