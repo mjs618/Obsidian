@@ -82,12 +82,12 @@ tags:
 >
 > > [!custom_task]+ 任务摘要
 > > ```dataviewjs
-> > const excluded = path =>
-> >   /^(SYSTEM|00-管理|Templates|docs)\//.test(path) ||
-> >   path.includes("定期维护清单");
+> > const actionable = path =>
+> >   path === "Codex/TODO.md" ||
+> >   /^(Codex\/projects|30-工作|DAILY|未分类|投资)\//.test(path);
 > > const tasks = dv.pages()
 > >   .file.tasks
-> >   .where(t => !t.completed && !excluded(t.path))
+> >   .where(t => !t.completed && actionable(t.path))
 > >   .slice(0, 6);
 > > const wrap = dv.container.createDiv({ cls: "dusk-task-list" });
 > > if (!tasks.length) {
@@ -106,11 +106,15 @@ tags:
 > > **今天**
 > >
 > > ```dataviewjs
-> > const exclude = p => !String(p.file.path).match(/^(SYSTEM|00-管理|Templates|docs)\//);
-> > const pages = dv.pages().where(exclude);
-> > const todo = pages.file.tasks.where(t => !t.completed).length;
-> > const done = pages.file.tasks.where(t => t.completed).length;
-> > const fresh = pages.where(p => p.file.cday && p.file.cday.toISODate() === dv.date("today").toISODate()).length;
+> > const actionable = path =>
+> >   path === "Codex/TODO.md" ||
+> >   /^(Codex\/projects|30-工作|DAILY|未分类|投资)\//.test(path);
+> > const pages = dv.pages().where(p => actionable(String(p.file.path)));
+> > const todo = pages.file.tasks.where(t => !t.completed && actionable(t.path)).length;
+> > const done = pages.file.tasks.where(t => t.completed && actionable(t.path)).length;
+> > const fresh = pages
+> >   .where(p => p.file.cday && p.file.cday.toISODate() === dv.date("today").toISODate())
+> >   .length;
 > > const wrap = dv.container.createDiv({ cls: "dusk-mini-grid" });
 > > for (const [label, value] of Array.of(["待办", todo], ["完成", done], ["新增", fresh])) {
 > >   const card = wrap.createDiv({ cls: "dusk-mini" });
